@@ -13,8 +13,6 @@ public class LoginPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
-
     @FindBy(xpath = "//div[@class='form-group field-login']/input")
     public WebElement emailBox;
 
@@ -23,6 +21,7 @@ public class LoginPage {
 
     @FindBy(xpath = "//div[@class='clearfix oe_login_buttons']/button")
     public WebElement login_button;
+
 
 
     public void userLogin(){

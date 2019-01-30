@@ -11,11 +11,6 @@ public class Pages {
     private CalendarListViewPage calendarListViewPage;
     private TopNavigationBar topNavigationBar;
     private ImportPage importPage;
-
-//---------------------------------------------------------------------------------------------------
-
-
-
     public LoginPage login(){
         if(login==null){
             login = new LoginPage();
