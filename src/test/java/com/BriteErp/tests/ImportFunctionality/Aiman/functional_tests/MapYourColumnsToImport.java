@@ -3,6 +3,8 @@ import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 public class MapYourColumnsToImport extends TestBase {
 
@@ -35,6 +37,7 @@ public class MapYourColumnsToImport extends TestBase {
         WebElement ch = pages.importPage().LoadFile;
         String file = "/Users/aimangainedenova/Downloads/Utility.xlsx";
         ch.sendKeys(file);
+
 
 
 

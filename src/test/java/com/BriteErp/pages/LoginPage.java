@@ -39,7 +39,7 @@ public class LoginPage {
     }
 
     public void open(){
-        Driver.getDriver().get("http://52.39.162.23/");
+        Driver.getDriver().get(ConfigurationReader.getProperties("url"));
     }
 
 }
