@@ -10,7 +10,7 @@ public class Pages {
     private LandingPage landing;
     private CalendarListViewPage calendarListViewPage;
     private TopNavigationBar topNavigationBar;
-
+    private ImportPage importPage;
     public LoginPage login(){
         if(login==null){
             login = new LoginPage();
@@ -53,6 +53,12 @@ public class Pages {
         return topNavigationBar;
     }
 
+    public ImportPage importPage(){
+        if(importPage==null){
+            importPage= new ImportPage ();
+        }
+        return importPage;
+    }
 
 
 }

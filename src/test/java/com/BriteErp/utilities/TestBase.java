@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeTest;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class TestBase extends BrowserUtils{
+public class TestBase extends BrowserUtils implements ApplicationConstants{
 
     protected WebDriver driver;
     protected Pages pages;
