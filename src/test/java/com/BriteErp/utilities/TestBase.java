@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeTest;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class TestBase {
+public class TestBase extends BrowserUtils{
 
     protected WebDriver driver;
     protected Pages pages;
@@ -26,8 +26,8 @@ public class TestBase {
     public void setupMethod() {
         driver = Driver.getDriver();
         pages = new Pages();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get(ConfigurationReader.getProperties("url"));
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//        driver.get(ConfigurationReader.getProperties("url"));
     }
 
     @AfterMethod
@@ -42,7 +42,7 @@ public class TestBase {
         } else if (result.getStatus() == ITestResult.SKIP) {
             extentLogger.skip("Test Case Skipped: " + result.getName());
         }
-        Driver.closeDriver();
+//        Driver.closeDriver();
     }
 
     @BeforeTest

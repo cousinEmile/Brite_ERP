@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Calendar_ListViewPage extends TopNavigationBar {
+public class CalendarListViewPage{
 
-    public Calendar_ListViewPage(){
+    public CalendarListViewPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

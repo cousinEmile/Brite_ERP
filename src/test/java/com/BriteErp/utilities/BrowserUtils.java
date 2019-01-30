@@ -17,6 +17,7 @@ import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
 public class BrowserUtils {
+
     public static void wait(int secs) {
         try {
             Thread.sleep(1000 * secs);

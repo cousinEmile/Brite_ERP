@@ -2,6 +2,7 @@ package com.BriteErp.pages;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.Driver;
+import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -23,17 +24,23 @@ public class LoginPage {
     @FindBy(xpath = "//div[@class='clearfix oe_login_buttons']/button")
     public WebElement login_button;
 
+
     public void userLogin(){
         this.emailBox.sendKeys(ConfigurationReader.getProperties("user"));
         this.passwordBox.sendKeys(ConfigurationReader.getProperties("userpass"));
         this.login_button.click();
     }
 
+
     public void managerLogin(){
-        this.emailBox.sendKeys(ConfigurationReader.getProperties("manager"));
-        this.passwordBox.sendKeys(ConfigurationReader.getProperties("manpass"));
-        this.login_button.click();
+
+        emailBox.sendKeys(ConfigurationReader.getProperties("manager"));
+        passwordBox.sendKeys(ConfigurationReader.getProperties("managerpass"));
+        login_button.click();
     }
 
+    public void open(){
+        Driver.getDriver().get("http://52.39.162.23/");
+    }
 
 }

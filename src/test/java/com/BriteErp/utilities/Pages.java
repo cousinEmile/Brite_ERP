@@ -1,9 +1,6 @@
 package com.BriteErp.utilities;
 
-import com.BriteErp.pages.CalendarPage;
-import com.BriteErp.pages.InboxPage;
-import com.BriteErp.pages.LandingPage;
-import com.BriteErp.pages.LoginPage;
+import com.BriteErp.pages.*;
 
 public class Pages {
 
@@ -11,7 +8,8 @@ public class Pages {
     private CalendarPage calendar;
     private InboxPage inbox;
     private LandingPage landing;
-
+    private CalendarListViewPage calendarListViewPage;
+    private TopNavigationBar topNavigationBar;
 
     public LoginPage login(){
         if(login==null){
@@ -19,18 +17,21 @@ public class Pages {
         }
         return login;
     }
+
     public CalendarPage calendar(){
         if(calendar==null){
             calendar = new CalendarPage();
         }
         return calendar;
     }
+
     public InboxPage inbox(){
         if(inbox==null){
             inbox = new InboxPage();
         }
         return inbox;
     }
+
     public LandingPage landing(){
         if(landing==null){
             landing = new LandingPage();
@@ -38,8 +39,19 @@ public class Pages {
         return landing;
     }
 
+    public CalendarListViewPage calendarListViewPage(){
+        if(calendarListViewPage==null){
+            calendarListViewPage = new CalendarListViewPage();
+        }
+        return calendarListViewPage;
+    }
 
-
+    public TopNavigationBar topNavigationBar(){
+        if(topNavigationBar==null){
+            topNavigationBar = new TopNavigationBar();
+        }
+        return topNavigationBar;
+    }
 
 
 
