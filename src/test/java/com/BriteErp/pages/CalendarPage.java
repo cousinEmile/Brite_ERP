@@ -59,12 +59,15 @@ public class CalendarPage{
     @FindBy(xpath = "(//table)[3]/tbody/tr/td[5]")
     public WebElement _011618_allDay;
 
+
     @FindBy(xpath = "//div[@class='modal-content']/div/div/input")
     public WebElement addMeetingBox_popOut;
 
     @FindBy(xpath = "//div[@class='modal-footer']/button")
     public WebElement popOutCreate_button;
 
+    @FindBy(xpath="//input[@class='o_input']")
+    public WebElement summaryInputBox;
 
 
 

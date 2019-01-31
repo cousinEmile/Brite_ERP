@@ -11,9 +11,9 @@ public interface ApplicationConstants {
     String INVOICING_PAGE_TITLE = "Customer Invoices - Odoo";
     String EMPLOYEES_PAGE_TITLE = "Employees - Odoo";
     String LEAVES_PAGE_TITLE = "Leaves Summary - Odoo";
-    String EXPENSES_PAGE_TITLE = "My Expenses to Submit - Odoo";
+    String EXPENSES_PAGE_TITLE = "Tre Expenses to Submit - Odoo";
     String MAINTENANCE_PAGE_TITLE = "Maintenance Teams - Odoo";
-    String DASHBOARDS_PAGE_TITLE = "My Dashboard - Odoo";
+    String DASHBOARDS_PAGE_TITLE = "Tre Dashboard - Odoo";
     String LANDING_PAGE_TITLE = "Odoo";
     String LOGIN_PAGE_TITLE = "Login | Website localhost";
     String LIST_ICON = "List";
