@@ -1,15 +1,18 @@
 package com.BriteErp.tests.ImportFunctionality.Aiman.functional_tests;
 import com.BriteErp.utilities.ConfigurationReader;
+import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class MapYourColumnsToImport extends TestBase {
+public class BRIT_213 extends TestBase {
 
     @Test
-    public void MapYourColumnsToImport() {
+    public void TheFirstRowContainsTheLabel() {
         extentLogger = report.createTest("Map your columns to import");
         driver.manage().window().maximize();
 
@@ -22,9 +25,9 @@ public class MapYourColumnsToImport extends TestBase {
         extentLogger.info("3.Enter email and password for Inventory User 4 and click Log in");
         pages.login().userLogin();
 
+        waitForPageToLoad(2);
         extentLogger.info("4.Click on Calendar tab on the top");
         pages.topNavigationBar().calendar_button.click();
-        wait(2);
 
         extentLogger.info("5.Click on List button on the right, at the top of the mini-Calendar");
         pages.calendar().listView.click();
@@ -33,15 +36,13 @@ public class MapYourColumnsToImport extends TestBase {
         pages.calendarListViewPage().import_button.click();
 
         extentLogger.info("7.Click on Load File and select a CSV or Excel file to import");
-
-        WebElement ch = pages.importPage().loadFile;
+        WebElement chooseFile = pages.importPage().loadFile;
         String file = "/Users/aimangainedenova/Downloads/Utility.xlsx";
-        ch.sendKeys(file);
+        chooseFile.sendKeys(file);
 
-
-
-
-        //extentLogger.info("8. Click on The first row contains the label of the column");
+        wait(2);
+        extentLogger.info("8. Click on 'The first row contains the label of the column'");
+        pages.importPage().theFirstRowLabel.click();
 
 
     }

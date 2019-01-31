@@ -14,6 +14,12 @@ public class ImportPage {
     @FindBy(xpath = "//label[@class='btn btn-primary']/input")
     public WebElement loadFile;
 
+    @FindBy(id = "oe_import_has_header")
+    public WebElement theFirstRowLabel;
+
+    @FindBy(id = "oe_import_advanced_mode")
+    public WebElement showFields;
+
 
 
 }
