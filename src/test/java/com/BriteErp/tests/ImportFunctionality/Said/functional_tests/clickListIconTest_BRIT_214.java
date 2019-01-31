@@ -1,20 +1,13 @@
 package com.BriteErp.tests.ImportFunctionality.Said.functional_tests;
 
-import com.BriteErp.pages.CalendarListViewPage;
-import com.BriteErp.pages.TopNavigationBar;
-import com.BriteErp.tests.ImportFunctionality.Aiman.regression_tests.FunFun;
-import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class importBasedModul extends TestBase {
-
-
+public class clickListIconTest_BRIT_214 extends TestBase {
 
     @Test
-    public void BRIT_217 (){
+    public void BRIT_214(){
         extentLogger = report.createTest("clickListIconBRIT_214 Test");
         waitForPageToLoad(5);
 
@@ -54,54 +47,7 @@ public class importBasedModul extends TestBase {
         extentLogger.info("expected Result: list page should be opened ");
         pages.calendar().listView.click();
 
-        pages.calendarListViewPage().import_button.click();
-
-        String userFolder = System.getProperty("user.home");
-
-        pages.importPage().loadFile.click();
-
-        String path = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
-        pages.importPage().loadFile.sendKeys(path);
-
+        extentLogger.pass("BRIT_214 Test PASS");
     }
-
-    @Test
-    public void BRIT_222 (){
-
-    }
-    @Test
-    public void BRIT_226 (){
-
-    }
-    @Test
-    public void BRIT_229 (){
-
-    }
-    @Test
-    public void BRIT_233 (){
-    }
-    @Test
-    public void BRIT_240 (){
-    }
-    @Test
-    public void BRIT_245 (){
-
-    }
-    @Test
-    public void BRIT_246 (){
-
-    }
-    @Test
-    public void BRIT_248 (){
-
-    }
-
-
-
-
-
-
-
-
 
 }

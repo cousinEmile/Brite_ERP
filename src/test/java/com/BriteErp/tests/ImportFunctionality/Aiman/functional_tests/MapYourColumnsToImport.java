@@ -1,14 +1,8 @@
 package com.BriteErp.tests.ImportFunctionality.Aiman.functional_tests;
 import com.BriteErp.utilities.ConfigurationReader;
-import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
@@ -40,9 +34,10 @@ public class MapYourColumnsToImport extends TestBase {
 
         extentLogger.info("7.Click on Load File and select a CSV or Excel file to import");
 
-        WebElement chooseFile = pages.importPage().loadFile;
+        WebElement ch = pages.importPage().loadFile;
         String file = "/Users/aimangainedenova/Downloads/Utility.xlsx";
-        chooseFile.sendKeys(file);
+        ch.sendKeys(file);
+
 
 
 
