@@ -14,7 +14,7 @@ public class ImportPage {
     @FindBy(xpath = "//label[@class='btn btn-primary']/input")
     public WebElement loadFile;
 
-    @FindBy(id = "oe_import_has_header")
+    @FindBy(xpath = "(//input[@checked = 'checked'])[2]")
     public WebElement theFirstRowLabel;
 
     @FindBy(id = "oe_import_advanced_mode")

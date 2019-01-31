@@ -3,11 +3,12 @@ package com.BriteErp.tests.ImportFunctionality.Aiman.functional_tests;
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BRIT_235 extends TestBase {
     @Test
-    public void TheFirstRowContainsTheLabel() {
+    public void ShowFieldsOfRelationFields() {
         extentLogger = report.createTest("Map your columns to import");
         driver.manage().window().maximize();
 
@@ -36,7 +37,11 @@ public class BRIT_235 extends TestBase {
         chooseFile.sendKeys(file);
 
         wait(2);
-        extentLogger.info("8. Click on 'Show fields of relation fields (advanced)' ");
+        extentLogger.info("8. Verify Checkbox 'Show fields of relation fields (advanced)' is selected by default");
+        Assert.assertTrue(pages.importPage().showFields.isSelected());
+
+        extentLogger.info("9. Click on Checkbox 'Show fields of relation fields (advanced)' ");
         pages.importPage().showFields.click();
+
     }
 }
