@@ -34,7 +34,7 @@ public class MapYourColumnsToImport extends TestBase {
 
         extentLogger.info("7.Click on Load File and select a CSV or Excel file to import");
 
-        WebElement ch = pages.importPage().LoadFile;
+        WebElement ch = pages.importPage().loadFile;
         String file = "/Users/aimangainedenova/Downloads/Utility.xlsx";
         ch.sendKeys(file);
 
