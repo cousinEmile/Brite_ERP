@@ -12,7 +12,7 @@ public class ImportPage {
     }
 
     @FindBy(xpath = "//label[@class='btn btn-primary']")
-    public WebElement LoadFile;
+    public WebElement loadFile;
 
 
 
