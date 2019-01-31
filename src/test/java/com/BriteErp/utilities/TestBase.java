@@ -42,6 +42,12 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
         } else if (result.getStatus() == ITestResult.SKIP) {
             extentLogger.skip("Test Case Skipped: " + result.getName());
         }
+//        else if (result.getStatus() == ITestResult.SUCCESS) {
+//            String screenshotLocation = BrowserUtils.getScreenshot(result.getName());
+//            extentLogger.pass(result.getName());
+//            extentLogger.addScreenCaptureFromPath(screenshotLocation);
+//            extentLogger.pass(result.getThrowable());
+//        }
 //        Driver.closeDriver();
     }
 

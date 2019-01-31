@@ -4,12 +4,11 @@ import com.BriteErp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class clickListIconTest_BRIT_214 extends TestBase {
+public class BRIT_214_ListIconTest extends TestBase {
 
     @Test
     public void BRIT_214(){
-        extentLogger = report.createTest("clickListIconBRIT_214 Test");
-        waitForPageToLoad(5);
+        extentLogger = report.createTest("BRIT_214_ListIcon Test");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
 
@@ -25,8 +24,8 @@ public class clickListIconTest_BRIT_214 extends TestBase {
         extentLogger.info("expected Result: Login successful");
         pages.login().managerLogin();
 
-        extentLogger.info("5. Verify the Calendar on the left side of Top Navigation Bar");
-        extentLogger.info("expected Result: Calendar is displayed");
+        extentLogger.info("5. Verify the Calendar sign on the left side of Top Navigation Bar");
+        extentLogger.info("expected Result: Calendar sign is displayed");
         Assert.assertTrue(pages.topNavigationBar().calendar_button.getAttribute("innerText").contains(CALENDAR_ICON));
 
         extentLogger.info("6. Clicking on Calendar on Top Navigation Bar on the left side");
@@ -47,7 +46,7 @@ public class clickListIconTest_BRIT_214 extends TestBase {
         extentLogger.info("expected Result: list page should be opened ");
         pages.calendar().listView.click();
 
-        extentLogger.pass("BRIT_214 Test PASS");
+        extentLogger.pass("BRIT_214_ListIcon Test PASS");
     }
 
 }

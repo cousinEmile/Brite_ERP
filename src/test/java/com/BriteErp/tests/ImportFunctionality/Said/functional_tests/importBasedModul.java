@@ -15,7 +15,7 @@ public class importBasedModul extends TestBase {
 
     @Test
     public void BRIT_217 (){
-        extentLogger = report.createTest("clickListIconBRIT_214 Test");
+        extentLogger = report.createTest("ListIconBRIT_214 Test");
         driver.manage().window().maximize();
         waitForPageToLoad(5);
 
@@ -58,8 +58,6 @@ public class importBasedModul extends TestBase {
         pages.calendarListViewPage().import_button.click();
 
         String userFolder = System.getProperty("user.home");
-
-//        pages.importPage().loadFile.click();
 
         String path = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
         pages.importPage().loadFile.sendKeys(path);
