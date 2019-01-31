@@ -16,6 +16,7 @@ public class importBasedModul extends TestBase {
     @Test
     public void BRIT_217 (){
         extentLogger = report.createTest("clickListIconBRIT_214 Test");
+        driver.manage().window().maximize();
         waitForPageToLoad(5);
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
@@ -58,7 +59,7 @@ public class importBasedModul extends TestBase {
 
         String userFolder = System.getProperty("user.home");
 
-        pages.importPage().loadFile.click();
+//        pages.importPage().loadFile.click();
 
         String path = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
         pages.importPage().loadFile.sendKeys(path);

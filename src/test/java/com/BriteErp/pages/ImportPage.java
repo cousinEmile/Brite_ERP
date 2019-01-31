@@ -11,7 +11,7 @@ public class ImportPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//label[@class='btn btn-primary']")
+    @FindBy(xpath = "//label[@class='btn btn-primary']/input")
     public WebElement loadFile;
 
 
