@@ -20,6 +20,11 @@ public class ImportPage {
     @FindBy(id = "oe_import_advanced_mode")
     public WebElement showFields;
 
+    @FindBy(xpath = "//input[@class='oe_import_file_show form-control']")
+    public WebElement loadFileInputLine;
+
+    @FindBy(xpath = "//div[@class='oe_import_with_file oe_padding col-sm-12']/h2")
+    public WebElement mapYourColumnsToImport;
 
 
 }

@@ -64,39 +64,6 @@ public class importBasedModul extends TestBase {
 
     }
 
-    @Test
-    public void BRIT_222 (){
-
-    }
-    @Test
-    public void BRIT_226 (){
-
-    }
-    @Test
-    public void BRIT_229 (){
-
-    }
-    @Test
-    public void BRIT_233 (){
-    }
-    @Test
-    public void BRIT_240 (){
-    }
-    @Test
-    public void BRIT_245 (){
-
-    }
-    @Test
-    public void BRIT_246 (){
-
-    }
-    @Test
-    public void BRIT_248 (){
-
-    }
-
-
-
 
 
 

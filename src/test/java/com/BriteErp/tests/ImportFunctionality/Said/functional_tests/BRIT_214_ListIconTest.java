@@ -13,23 +13,23 @@ public class BRIT_214_ListIconTest extends TestBase {
         extentLogger.info("1. Pre-Condition Environment is up and running.");
 
         extentLogger.info("2. Go to url");
-        extentLogger.info("expected Result: Homepage is displayed.");
+        extentLogger.info("Expected  Result: Home page is displayed.");
         pages.login().open();
 
         extentLogger.info("3. Click Brite Erp Demo");
-        extentLogger.info("expected Result: Clicked");
+        extentLogger.info("Expected  Result: Clicked");
         pages.landing().BriteErpDemo_button.click();
 
         extentLogger.info("4. Enter username and password for Inventory Manager 2 ");
-        extentLogger.info("expected Result: Login successful");
+        extentLogger.info("Expected  Result: Login successful");
         pages.login().managerLogin();
 
         extentLogger.info("5. Verify the Calendar sign on the left side of Top Navigation Bar");
-        extentLogger.info("expected Result: Calendar sign is displayed");
+        extentLogger.info("Expected  Result: Calendar sign is displayed");
         Assert.assertTrue(pages.topNavigationBar().calendar_button.getAttribute("innerText").contains(CALENDAR_ICON));
 
         extentLogger.info("6. Clicking on Calendar on Top Navigation Bar on the left side");
-        extentLogger.info("expected Result: clicked");
+        extentLogger.info("Expected  Result: clicked");
         pages.topNavigationBar().calendar_button.click();
 
         wait(2);
@@ -39,11 +39,11 @@ public class BRIT_214_ListIconTest extends TestBase {
         extentLogger.info("7. Saving List name");
         String list = pages.calendar().listView.getAttribute("data-original-title");
 
-        extentLogger.info("expected Result: list name should be displayed");
+        extentLogger.info("Expected  Result: list name should be displayed");
         Assert.assertEquals(LIST_ICON, list);
 
         extentLogger.info("8. click list button");
-        extentLogger.info("expected Result: list page should be opened ");
+        extentLogger.info("Expected  Result: list page should be opened ");
         pages.calendar().listView.click();
 
         extentLogger.pass("BRIT_214_ListIcon Test PASS");

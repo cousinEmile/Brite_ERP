@@ -18,6 +18,9 @@ public interface ApplicationConstants {
     String LOGIN_PAGE_TITLE = "Login | Website localhost";
     String LIST_ICON = "List";
     String CALENDAR_ICON = "Calendar";
+    String IMPORT_ICON = "Import";
+    String LOAD_FILE_INPUT_LINE = "No file chosen...";
+    String MAP_YOUR_COULMS_TO_IMPORT = "Map your columns to import";
 
 
 
