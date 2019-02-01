@@ -11,6 +11,7 @@ public class Pages {
     private CalendarListViewPage calendarListViewPage;
     private TopNavigationBar topNavigationBar;
     private ImportPage importPage;
+    private SearchPage searchPage;
 
     //-------------------------------------------------------
 
@@ -62,6 +63,11 @@ public class Pages {
         }
         return importPage;
     }
-
+public SearchPage searchPage(){
+        if(searchPage==null){
+            searchPage=new SearchPage();
+        }
+        return searchPage;
+}
 
 }
