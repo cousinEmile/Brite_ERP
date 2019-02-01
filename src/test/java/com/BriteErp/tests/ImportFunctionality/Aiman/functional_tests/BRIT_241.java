@@ -3,6 +3,7 @@ package com.BriteErp.tests.ImportFunctionality.Aiman.functional_tests;
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
+import net.bytebuddy.asm.Advice;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -35,7 +36,8 @@ public class BRIT_241 extends TestBase {
 
         extentLogger.info("7.Click on Load File and select a CSV or Excel file to import");
         WebElement chooseFile = pages.importPage().loadFile;
-        String file = "/Users/aimangainedenova/Downloads/Utility.xlsx";
+//        String file = "/Users/aimangainedenova/Downloads/Utility.xlsx";
+        String file = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
         chooseFile.sendKeys(file);
 
         wait(2);
@@ -44,11 +46,11 @@ public class BRIT_241 extends TestBase {
 
         extentLogger.info("9. Click on 'End Date' ");
 
-        //Driver.getDriver().findElement(By.xpath("//div[@id='s2id_autogen7']")).click();
+        Driver.getDriver().findElement(By.xpath("//div[@id='s2id_autogen7']")).click();
 
-        WebElement end = Driver.getDriver().findElement(By.id("select2-result-label-30"));
-        Select select = new Select(end);
-        select.selectByVisibleText("End Date");
+
+        WebElement end = Driver.getDriver().findElement(By.xpath("(//div[@class='select2-search'])[5]/input"));
+        end.sendKeys("End Date");
 
     }
 }
