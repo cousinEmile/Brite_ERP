@@ -47,7 +47,7 @@ public class BRIT_241 extends TestBase {
         extentLogger.info("9. Click on 'End Date' ");
 
         pages.importPage().dontImportField.click();
-        WebElement end = pages.importPage().searchDontImport;
+        WebElement end = pages.importPage().search;
         end.sendKeys("End Date" + Keys.ENTER);
 
         extentLogger.pass("End Date");

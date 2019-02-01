@@ -45,7 +45,7 @@ public class BRIT_243 extends TestBase {
         extentLogger.info("9. Click on 'Repeat Until' ");
 
         pages.importPage().dontImportField.click();
-        WebElement end = pages.importPage().searchDontImport;
+        WebElement end = pages.importPage().search;
         end.sendKeys("Repeat Until" + Keys.ENTER);
 
         extentLogger.pass("Repeat Until");

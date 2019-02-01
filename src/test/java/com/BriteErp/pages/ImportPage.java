@@ -30,9 +30,21 @@ public class ImportPage {
     public WebElement dontImportField;
 
     @FindBy(xpath = "(//div[@class='select2-search'])[5]/input")
-    public WebElement searchDontImport;
+    public WebElement search;
 
     @FindBy(xpath = "(//a[@class='select2-choice'])[5]/abbr")
     public WebElement xButton;
+
+    @FindBy(xpath = "//label[@for='encoding_export233']")
+    public WebElement encoding;
+
+    @FindBy(xpath = "(//a[@class='select2-choice'])[1]")
+    public WebElement encodingField;
+
+    @FindBy(xpath = "//label[@for='separator_export233']")
+    public WebElement separator;
+
+    @FindBy(xpath = "(//a[@class='select2-choice'])[2]")
+    public WebElement separatorField;
 
 }
