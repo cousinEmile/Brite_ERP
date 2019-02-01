@@ -26,6 +26,9 @@ public class CalendarPage{
     @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button")
     public WebElement viewDay_button;
 
+    @FindBy(xpath = "//button[@class='o_calendar_button_day btn btn-sm btn-default active']")
+    public WebElement dayButton;
+
     @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button[2]")
     public WebElement viewWeek_button;
 
@@ -59,12 +62,20 @@ public class CalendarPage{
     @FindBy(xpath = "(//table)[3]/tbody/tr/td[5]")
     public WebElement _011618_allDay;
 
+    @FindBy(xpath = "//td[@class='fc-day fc-widget-content fc-thu fc-today fc-state-highlight']")
+    public WebElement allDayBox;
+
     @FindBy(xpath = "//div[@class='modal-content']/div/div/input")
     public WebElement addMeetingBox_popOut;
 
     @FindBy(xpath = "//div[@class='modal-footer']/button")
     public WebElement popOutCreate_button;
 
+    @FindBy(xpath="//input[@class='o_input']")
+    public WebElement summaryInputBox;
+
+    @FindBy(xpath = "//*[@id=\"modal_20\"]/div/div/div[3]/button[2]")
+    public WebElement editButton;
 
 
 

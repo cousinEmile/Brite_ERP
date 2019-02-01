@@ -26,7 +26,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
     public void setupMethod() {
         driver = Driver.getDriver();
         pages = new Pages();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //        driver.get(ConfigurationReader.getProperties("url"));
     }
 
@@ -42,6 +42,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
         } else if (result.getStatus() == ITestResult.SKIP) {
             extentLogger.skip("Test Case Skipped: " + result.getName());
         }
+
 //        Driver.closeDriver();
     }
 

@@ -11,6 +11,20 @@ public class ImportPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//label[@class='btn btn-primary']")
-    public WebElement LoadFile;
+    @FindBy(xpath = "//label[@class='btn btn-primary']/input")
+    public WebElement loadFile;
+
+    @FindBy(xpath = "(//input[@checked = 'checked'])[2]")
+    public WebElement theFirstRowLabel;
+
+    @FindBy(id = "oe_import_advanced_mode")
+    public WebElement showFields;
+
+    @FindBy(xpath = "//input[@class='oe_import_file_show form-control']")
+    public WebElement loadFileInputLine;
+
+    @FindBy(xpath = "//div[@class='oe_import_with_file oe_padding col-sm-12']/h2")
+    public WebElement mapYourColumnsToImport;
+
+
 }

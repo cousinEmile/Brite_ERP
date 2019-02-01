@@ -1,17 +1,20 @@
 package com.BriteErp.tests.ImportFunctionality.Aiman.functional_tests;
 import com.BriteErp.utilities.ConfigurationReader;
+import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
-import com.sun.xml.internal.xsom.XSListSimpleType;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class MapYourColumnsToImport extends TestBase {
+public class BRIT_213 extends TestBase {
 
     @Test
-    public void MapYourColumnsToImport() {
-        extentLogger = report.createTest("Map your columns to import");
+    public void TheFirstRowContainsTheLabel() {
+        extentLogger = report.createTest("The First Row Contains The Label");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -23,9 +26,9 @@ public class MapYourColumnsToImport extends TestBase {
         extentLogger.info("3.Enter email and password for Inventory User 4 and click Log in");
         pages.login().userLogin();
 
+        waitForPageToLoad(2);
         extentLogger.info("4.Click on Calendar tab on the top");
         pages.topNavigationBar().calendar_button.click();
-        wait(2);
 
         extentLogger.info("5.Click on List button on the right, at the top of the mini-Calendar");
         pages.calendar().listView.click();
@@ -34,15 +37,18 @@ public class MapYourColumnsToImport extends TestBase {
         pages.calendarListViewPage().import_button.click();
 
         extentLogger.info("7.Click on Load File and select a CSV or Excel file to import");
-
-        WebElement ch = pages.importPage().LoadFile;
+        WebElement chooseFile = pages.importPage().loadFile;
         String file = "/Users/aimangainedenova/Downloads/Utility.xlsx";
-        ch.sendKeys(file);
+        chooseFile.sendKeys(file);
 
+        wait(2);
+        extentLogger.info("8. Verify Checkbox 'The first row contains the label of the column' is selected by default");
+        Assert.assertTrue(pages.importPage().theFirstRowLabel.isSelected());
 
+        extentLogger.info("9. Click on Checkbox 'The first row contains the label of the column' ");
+        pages.importPage().theFirstRowLabel.click();
 
-
-        //extentLogger.info("8. Click on The first row contains the label of the column");
+        extentLogger.pass("The First Row Contains The Label");
 
 
     }
