@@ -9,7 +9,7 @@ public class BRIT_229_ReloadingFile extends TestBase {
 
     @Test
     public void BRIT_229(){
-        extentLogger = report.createTest("BRIT_229_ReloadingFileNotWorking");
+        extentLogger = report.createTest("BRIT_229_ReloadingFileNotWorking Test");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
 
@@ -54,5 +54,6 @@ public class BRIT_229_ReloadingFile extends TestBase {
         extentLogger.info("Expected  Result: \"Utility.xlsx\" displayed on the Input Line");
         Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), IMPORTED_FILE_UTILITY);
 
+        extentLogger.pass("BRIT_229_ReloadingFileNotWorking Test FAIL");
     }
 }

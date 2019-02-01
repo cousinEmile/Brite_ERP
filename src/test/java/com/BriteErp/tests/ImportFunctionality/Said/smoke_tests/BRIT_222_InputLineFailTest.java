@@ -5,11 +5,11 @@ import net.bytebuddy.asm.Advice;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BRIT_222_InputLineNegativeTest extends TestBase {
+public class BRIT_222_InputLineFailTest extends TestBase {
 
     @Test
     public void BRIT_222(){
-    extentLogger = report.createTest("BRIT_222_InputLineNegative Test");
+    extentLogger = report.createTest("BRIT_222_InputLineFail Test");
 
     extentLogger.info("1. Pre-Condition Environment is up and running.");
 
@@ -46,10 +46,10 @@ public class BRIT_222_InputLineNegativeTest extends TestBase {
     pages.importPage().loadFileInputLine.sendKeys("C:\\Users\\saidy\\Downloads\\Utility.xlsx" );
     Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "C:\\Users\\saidy\\Downloads\\Utility.xlsx");
 
-    extentLogger.info("10. verify that \"C:\\Users\\saidy\\Downloads\\Utility.xlsx\" file not uploaded after typing ");
-    extentLogger.info("Expected  Result: the file should not be uploaded and \"Map your columns to import\" should not be displayed");
+    extentLogger.info("10. verify that \"C:\\Users\\saidy\\Downloads\\Utility.xlsx\" file uploaded after typing  ");
+    extentLogger.info("Expected  Result: the file does not uploaded. Fail");
     Assert.assertNotEquals(pages.importPage().mapYourColumnsToImport.getText(), MAP_YOUR_COULMS_TO_IMPORT);
 
-    extentLogger.pass("BRIT_222_InputLineNegative Test PASS");
+    extentLogger.pass("BRIT_222_InputLineFail Test FAIL");
     }
 }
