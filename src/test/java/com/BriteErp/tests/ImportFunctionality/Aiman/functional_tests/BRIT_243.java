@@ -1,20 +1,17 @@
 package com.BriteErp.tests.ImportFunctionality.Aiman.functional_tests;
+
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 
-public class BRIT_213 extends TestBase {
-
+public class BRIT_243 extends TestBase {
     @Test
-    public void TheFirstRowContainsTheLabel() {
-        extentLogger = report.createTest("The First Row Contains The Label");
+    public void RepeatUntil() {
+        extentLogger = report.createTest("Repeat Until");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -25,8 +22,8 @@ public class BRIT_213 extends TestBase {
 
         extentLogger.info("3.Enter email and password for Inventory User 4 and click Log in");
         pages.login().userLogin();
-
         waitForPageToLoad(2);
+
         extentLogger.info("4.Click on Calendar tab on the top");
         pages.topNavigationBar().calendar_button.click();
 
@@ -42,14 +39,16 @@ public class BRIT_213 extends TestBase {
         chooseFile.sendKeys(file);
 
         wait(2);
-        extentLogger.info("8. Verify Checkbox 'The first row contains the label of the column' is selected by default");
-        Assert.assertTrue(pages.importPage().theFirstRowLabel.isSelected());
+        extentLogger.info("8. Unselect 'Show fields of relation fields (advanced)'");
+        pages.importPage().showFields.click();
 
-        extentLogger.info("9. Click on Checkbox 'The first row contains the label of the column' ");
-        pages.importPage().theFirstRowLabel.click();
+        extentLogger.info("9. Click on 'Repeat Until' ");
 
-        extentLogger.pass("The First Row Contains The Label");
+        Driver.getDriver().findElement(By.xpath("//div[@id='s2id_autogen7']")).click();
+        WebElement end = Driver.getDriver().findElement(By.xpath("(//div[@class='select2-search'])[5]/input"));
+        end.sendKeys("Repeat Until" + Keys.ENTER);
 
+        extentLogger.pass("Repeat Until");
 
     }
 }

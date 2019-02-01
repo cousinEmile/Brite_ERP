@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class BRIT_235 extends TestBase {
     @Test
     public void ShowFieldsOfRelationFields() {
-        extentLogger = report.createTest("Map your columns to import");
+        extentLogger = report.createTest("Show Fields Of Relation Fields");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -42,6 +42,8 @@ public class BRIT_235 extends TestBase {
 
         extentLogger.info("9. Click on Checkbox 'Show fields of relation fields (advanced)' ");
         pages.importPage().showFields.click();
+
+        extentLogger.pass("Show Fields Of Relation Fields");
 
     }
 }

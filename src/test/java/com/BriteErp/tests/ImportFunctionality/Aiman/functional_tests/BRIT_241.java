@@ -5,14 +5,15 @@ import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
 import net.bytebuddy.asm.Advice;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class BRIT_241 extends TestBase {
     @Test
-    public void optionsOfImporting() {
-        extentLogger = report.createTest("Map your columns to import");
+    public void EndDate() {
+        extentLogger = report.createTest("End Date");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -36,8 +37,7 @@ public class BRIT_241 extends TestBase {
 
         extentLogger.info("7.Click on Load File and select a CSV or Excel file to import");
         WebElement chooseFile = pages.importPage().loadFile;
-//        String file = "/Users/aimangainedenova/Downloads/Utility.xlsx";
-        String file = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
+        String file = "/Users/aimangainedenova/Downloads/Utility.xlsx";
         chooseFile.sendKeys(file);
 
         wait(2);
@@ -47,10 +47,11 @@ public class BRIT_241 extends TestBase {
         extentLogger.info("9. Click on 'End Date' ");
 
         Driver.getDriver().findElement(By.xpath("//div[@id='s2id_autogen7']")).click();
-
-
         WebElement end = Driver.getDriver().findElement(By.xpath("(//div[@class='select2-search'])[5]/input"));
-        end.sendKeys("End Date");
+        end.sendKeys("End Date" + Keys.ENTER);
+
+        extentLogger.pass("End Date");
+
 
     }
 }
