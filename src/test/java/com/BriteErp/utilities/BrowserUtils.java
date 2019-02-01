@@ -5,6 +5,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
+import org.testng.Assert;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,6 +14,8 @@ import java.time.Duration;
 import java.util.*;
 import java.util.function.Function;
 
+import static com.BriteErp.utilities.ApplicationConstants.*;
+import static com.BriteErp.utilities.TestBase.report;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
@@ -284,6 +287,21 @@ public class BrowserUtils {
         Arrays.sort(trans);
         return trans;
     }
+
+    public static void grabHold(WebDriver driver, String parentHandle){
+        /* /NOTE: Be sure to set -> String parentHandle=driver.getWindowHandle(); prior to the action preceding method deployment */
+        Set<String> windows= driver.getWindowHandles();
+        for(String window: windows){
+            if(window!=parentHandle)
+                driver.switchTo().window(window);
+        }
+    }
+
+    public static void waitUntilTitleEquals(int timeout, String x) {
+     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
+         wait.until(ExpectedConditions.titleContains(x));
+    }
+
 
 
 }

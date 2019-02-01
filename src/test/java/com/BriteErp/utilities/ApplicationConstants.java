@@ -1,5 +1,7 @@
 package com.BriteErp.utilities;
 
+import org.openqa.selenium.support.ui.Select;
+
 public interface ApplicationConstants {
     String DISCUSS_PAGE_TITLE = "#Inbox - Odoo";
     String CALENDAR_PAGE_TITLE = "Meetings - Odoo";
@@ -21,6 +23,7 @@ public interface ApplicationConstants {
     String IMPORT_ICON = "Import";
     String LOAD_FILE_INPUT_LINE = "No file chosen...";
     String MAP_YOUR_COULMS_TO_IMPORT = "Map your columns to import";
+    String MYEVENTS_SEARCHBARICON_LABEL = "My Events";
     String IMPORTED_FILE_UTILITY = "Utility.xlsx";
     String RELOAD_FILE_ICON = "Reload File";
 

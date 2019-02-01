@@ -37,7 +37,8 @@ public class BRIT_529_SaveFavorites extends TestBase {
 
 
         extentLogger.info("Sending Text On Save Current Search Box ");
-        pages.searchPage().SendTextOnSaveCurrentSearchBox.sendKeys("Heloo");
+        setAttribute(pages.searchPage().SendTextOnSaveCurrentSearchBox, "type", "Heloo"  );
+        //pages.searchPage().SendTextOnSaveCurrentSearchBox.sendKeys("Heloo");
 
         extentLogger.info("Clicking to save the text under save current search");
         pages.searchPage().SaveButtonOnFavorites.click();

@@ -82,4 +82,107 @@ public class SearchPage extends TestBase {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//===============Added By Albert 02//01/19=============
+
+
+    @FindBy(xpath = "(//div[@class='o_cp_right']/div/div/button)[1]")
+    public WebElement filters_button;
+
+    @FindBy(xpath = "//li[@title='My Events']/a" )
+    public WebElement MyEvents_filter;
+
+    @FindBy(css = "div.o_searchview_facet")
+    public WebElement MyEvents_SearchBarIcon;
+
+   @FindBy(css ="div.o_searchview_facet>div>span")
+   public WebElement MyEvents_Label_SearchBarIcon;
+
+
+    @FindBy(xpath = "//li[@title='My Meetings']/a")
+    public WebElement MyMeetings_filter;
+
+    @FindBy(xpath = "//li[@data-index='2']/a")
+    public WebElement UnreadMessages_filter;
+
+    @FindBy(css = "li.o_add_filter.o_closed_menu>a")
+    public WebElement RevealCustomFilter_button;
+
+    @FindBy(css= "select.o_input.o_searchview_extended_prop_field")
+    public WebElement CustomFilter_SelectElement;
+
+    @FindBy(css = "select.o_input.o_searchview_extended_prop_op")
+    public WebElement CustomFilterBoolean_SelectElement;
+
+    /** This is just the frame of a select method. Keep in mind that which ever you choose will effect the boolean dropdown
+     * Also note that when you add an additional custom filter, it duplicates an li node above
+     * the filter menu buttons -- these are not dynamic enough selector paths to withstand that.
+     * You must refactor selectors for both dropdowns before adding custom filters**/
+    public void CustomFilter_DropDownMenu(){
+        Select select = new Select(CustomFilter_SelectElement);
+    }
+    /**
+     * Remember that the choice of the above custom filter will determine the boolean Options
+     *      Needs be tailored to suit       **/
+    public void CustomFilterDynamicBoolean_DropDown(){
+        Select select = new Select(CustomFilterBoolean_SelectElement);
+    }
+
+    @FindBy(css = "button.btn.btn-primary.btn-sm.o_apply_filter")
+    public WebElement ApplyCustomFilter_Button;
+
+    @FindBy(css = "button.btn.btn-default.btn-sm.o_add_condition" )
+    public WebElement AdditionalCustomFeature_button;
+
+
+    @FindBy(xpath = "(//div[@class='o_cp_right']/div/div/button)[2]")
+    public WebElement GroupBy_button;
+
+    @FindBy(xpath = "//ul[@class='dropdown-menu o_group_by_menu']/li[1]/a")
+    public WebElement groupResponsible_button;
+
+    @FindBy(xpath = "//ul[@class='dropdown-menu o_group_by_menu']/li[2]/a")
+    public WebElement groupAvailability_button;
+
+    @FindBy(xpath = "//ul[@class='dropdown-menu o_group_by_menu']/li[3]/a")
+    public WebElement groupPrivacy_button;
+
+    @FindBy(css = "li.o_add_custom_group.o_closed_menu")
+    public WebElement AdditionalCustomGroup_button;
+
+    @FindBy(css = "select.o_input.o_add_group.o_group_selector")
+    public WebElement CustomGroupSelectElement;
+
+    /**Just the bones, add meat and season as required
+     * note : Static list. **/
+    public void CustomGroup_DropDown(){
+        Select select = new Select(CustomGroupSelectElement);
+    }
+
+
+
+
+
+
 }

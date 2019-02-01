@@ -74,7 +74,7 @@ public class CalendarPage{
     @FindBy(xpath="//input[@class='o_input']")
     public WebElement summaryInputBox;
 
-    @FindBy(xpath = "//*[@id=\"modal_20\"]/div/div/div[3]/button[2]")
+    @FindBy(xpath = "//*[@id='modal_20']/div/div/div[3]/button[2]")
     public WebElement editButton;
 
 
