@@ -26,5 +26,13 @@ public class ImportPage {
     @FindBy(xpath = "//div[@class='oe_import_with_file oe_padding col-sm-12']/h2")
     public WebElement mapYourColumnsToImport;
 
+    @FindBy(xpath = "//div[@id='s2id_autogen5']/a")
+    public WebElement dontImportField;
+
+    @FindBy(xpath = "(//div[@class='select2-search'])[5]/input")
+    public WebElement searchDontImport;
+
+    @FindBy(xpath = "(//a[@class='select2-choice'])[5]/abbr")
+    public WebElement xButton;
 
 }

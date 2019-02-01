@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class BRIT_244 extends TestBase {
     @Test
-    public void RepeatUntil() {
+    public void StartDate() {
         extentLogger = report.createTest("Start Date");
         driver.manage().window().maximize();
 
@@ -22,7 +22,7 @@ public class BRIT_244 extends TestBase {
 
         extentLogger.info("3.Enter email and password for Inventory User 4 and click Log in");
         pages.login().userLogin();
-        waitForPageToLoad(2);
+        waitForPageToLoad(3);
 
         extentLogger.info("4.Click on Calendar tab on the top");
         pages.topNavigationBar().calendar_button.click();
@@ -44,11 +44,12 @@ public class BRIT_244 extends TestBase {
 
         extentLogger.info("9. Click on 'Start Date' ");
 
-        Driver.getDriver().findElement(By.xpath("//div[@id='s2id_autogen7']")).click();
-        WebElement end = Driver.getDriver().findElement(By.xpath("(//div[@class='select2-search'])[5]/input"));
+        pages.importPage().dontImportField.click();
+        WebElement end = pages.importPage().searchDontImport;
         end.sendKeys("Start Date" + Keys.ENTER);
 
         extentLogger.pass("Start Date");
+
 
     }
 }
