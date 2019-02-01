@@ -1,4 +1,4 @@
-package com.BriteErp.tests.ImportFunctionality.Said.functional_tests;
+package com.BriteErp.tests.ImportFunctionality.Said.smoke_tests;
 
 import com.BriteErp.utilities.TestBase;
 import net.bytebuddy.asm.Advice;
@@ -50,6 +50,6 @@ public class BRIT_222_InputLineNegativeTest extends TestBase {
     extentLogger.info("Expected  Result: the file should not be uploaded and \"Map your columns to import\" should not be displayed");
     Assert.assertNotEquals(pages.importPage().mapYourColumnsToImport.getText(), MAP_YOUR_COULMS_TO_IMPORT);
 
-    extentLogger.pass("BRIT_222_InputLineNegative Test");
+    extentLogger.pass("BRIT_222_InputLineNegative Test PASS");
     }
 }

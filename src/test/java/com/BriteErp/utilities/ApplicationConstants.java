@@ -21,7 +21,8 @@ public interface ApplicationConstants {
     String IMPORT_ICON = "Import";
     String LOAD_FILE_INPUT_LINE = "No file chosen...";
     String MAP_YOUR_COULMS_TO_IMPORT = "Map your columns to import";
-
+    String IMPORTED_FILE_UTILITY = "Utility.xlsx";
+    String RELOAD_FILE_ICON = "Reload File";
 
 
 

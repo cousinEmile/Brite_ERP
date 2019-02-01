@@ -14,6 +14,9 @@ public class ImportPage {
     @FindBy(xpath = "//label[@class='btn btn-primary']/input")
     public WebElement loadFile;
 
+    @FindBy(xpath = "//span[@class='input-group-btn']/button")
+    public WebElement reloadFile;
+
     @FindBy(xpath = "(//input[@checked = 'checked'])[2]")
     public WebElement theFirstRowLabel;
 

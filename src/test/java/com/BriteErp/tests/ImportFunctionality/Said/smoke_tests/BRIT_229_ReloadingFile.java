@@ -1,15 +1,15 @@
-package com.BriteErp.tests.ImportFunctionality.Said.functional_tests;
+package com.BriteErp.tests.ImportFunctionality.Said.smoke_tests;
 
 import com.BriteErp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BRIT_226_LoadingFile extends TestBase {
+public class BRIT_229_ReloadingFile extends TestBase {
 
 
     @Test
-    public void BRIT_226(){
-        extentLogger = report.createTest("BRIT_222_LoadingFile Test");
+    public void BRIT_229(){
+        extentLogger = report.createTest("BRIT_229_ReloadingFileNotWorking");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
 
@@ -37,24 +37,22 @@ public class BRIT_226_LoadingFile extends TestBase {
         extentLogger.info("Expected  Result: Import page is displayed");
         pages.calendarListViewPage().import_button.click();
 
-        extentLogger.info("8. click Load File Button and input \"C:\\Users\\saidy\\Downloads\\Utility.xlsx\"");
-        extentLogger.info("Expected  Result: Load file should open C:\\Users\\saidy\\Downloads\\Utility.xlsx file");
-        extentLogger.info("9. click Open to import all information");
-        extentLogger.info("Expected  Result: all information on the Excel file should be dispayed under search File");
-
+        extentLogger.info("8. upload file \"Utility.xlsx\" ");
+        extentLogger.info("Expected  Result: \"Utility.xlsx\" is displayed ");
         String path = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
         pages.importPage().loadFile.sendKeys(path);
 
-        extentLogger.info("10. verify that \"Utility.xlsx\" displayed on the Input Line");
-        extentLogger.info("Expected  Result: \"Utility.xlsx\" is displayed on the Input Line");
-        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "Utility.xlsx");
-        wait(2);
+        extentLogger.info("9. verify that the \"Reload File\" on the right side of Load File button ");
+        extentLogger.info("Expected  Result: the Reload File is displayed ");
+        Assert.assertEquals(pages.importPage().reloadFile.getText(),RELOAD_FILE_ICON);
 
-        extentLogger.info("11. Verify \"Map your columns to import\" message");
-        extentLogger.info("Expected  Result: \"Map your columns to import\" should be displayed");
-        Assert.assertEquals(MAP_YOUR_COULMS_TO_IMPORT, pages.importPage().mapYourColumnsToImport.getText());
+        extentLogger.info("10. Click Reload File and verify that user as a Manager able to Reloaded new File");
+        extentLogger.info("Expected  Result: user as a Manager should be able to chose new file to upload it");
+        pages.importPage().reloadFile.click();
 
+        extentLogger.info("11. verify that the \"Utility.xlsx\" on the Input Line");
+        extentLogger.info("Expected  Result: \"Utility.xlsx\" displayed on the Input Line");
+        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), IMPORTED_FILE_UTILITY);
 
-        extentLogger.pass("BRIT_222_LoadingFile Test PASS");
     }
 }
