@@ -45,7 +45,7 @@ public class BRIT_314 extends TestBase {
         String separator = pages.importPage().separator.getText();
         Assert.assertTrue(separator.contains("Separator"));
 
-        extentLogger.info("9. Select 'Comma' ");
+        extentLogger.info("9. Select 'Comma' on the selective panel");
         pages.importPage().separatorField.click();
         WebElement search = pages.importPage().search;
         search.sendKeys("Comma" + Keys.ENTER);
