@@ -50,4 +50,12 @@ public class ImportPage {
     @FindBy(xpath = "(//a[@class='select2-choice'])[2]")
     public WebElement separatorField;
 
+    @FindBy(xpath = "//tr[@class='oe_import_grid-header']")
+    public WebElement fileNameTopDontImport;
+
+    @FindBy(xpath = "//label[@for='float_thousand_separator_export233']")
+    public WebElement thousandsSeparator;
+
+    @FindBy(xpath = "(//span[@class='select2-chosen'])[3]")
+    public WebElement thousandsSeparatorField;
 }

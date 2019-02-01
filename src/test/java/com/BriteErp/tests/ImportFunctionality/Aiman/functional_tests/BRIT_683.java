@@ -6,12 +6,14 @@ import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BRIT_239 extends TestBase {
+public class BRIT_683 extends TestBase {
+
     @Test
-    public void ImportByDefault() {
-        extentLogger = report.createTest("Import By Default");
+    public void FileName() {
+        extentLogger = report.createTest("File Name");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -22,8 +24,8 @@ public class BRIT_239 extends TestBase {
 
         extentLogger.info("3.Enter email and password for Inventory User 4 and click Log in");
         pages.login().userLogin();
-        waitForPageToLoad(3);
 
+        waitForPageToLoad(3);
         extentLogger.info("4.Click on Calendar tab on the top");
         pages.topNavigationBar().calendar_button.click();
 
@@ -39,18 +41,12 @@ public class BRIT_239 extends TestBase {
         chooseFile.sendKeys(file);
 
         wait(2);
-        extentLogger.info("8. Click 'Active' on the selective panel");
-        pages.importPage().dontImportField.click();
-        WebElement end = pages.importPage().search;
-        end.sendKeys("Active" + Keys.ENTER);
+        extentLogger.info("8. Verify the file name is shown at the top don't import");
+        String name = pages.importPage().fileNameTopDontImport.getText();
+        String nameFile = pages.importPage().loadFileInputLine.getAttribute("value");
+        Assert.assertTrue(nameFile.contains(name));
 
-        extentLogger.info("9. Click x button to delete");
-        pages.importPage().xButton.click();
-
-        extentLogger.pass("Import By Default");
-
-
-
+        extentLogger.pass("File Name");
 
 
     }
