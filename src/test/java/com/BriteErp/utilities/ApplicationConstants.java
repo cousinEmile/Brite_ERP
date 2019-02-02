@@ -25,8 +25,11 @@ public interface ApplicationConstants {
     String RELOAD_FILE_ICON = "Reload File";
     String HELP_ICON = "Help";
     String HELP_URL = "https://www.odoo.com/documentation/user/11.0/general/base_import/import_faq.html";
+    String LIST_URL = "http://52.39.162.23/web?#view_type=list&model=calendar.event&menu_id=120&action=136";
     String HELP_HOW_TO_IMPORT_DATA_INTO_ODOO_MESSAGE = "How to import data into Odoo";
     String TESTIMPORT_BUTTON = "Test Import";
+    String IMPORT_BUTTON ="Import";
+    String CANCEL_BUTTON ="Cancel";
     String YOU_MUST_CONFIGURE_FIELD_TO_IMPORT_MESSAGE ="You must configure at least one field to import";
 
 

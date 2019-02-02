@@ -62,6 +62,13 @@ public class ImportPage {
     @FindBy(xpath = "(//div[@class='o_cp_buttons']/button)[1]")
     public WebElement testImportButton;
 
+    @FindBy(xpath = "(//div[@class='o_cp_buttons']/button)[2]")
+    public WebElement importButton;
+
+    @FindBy(xpath = "(//div[@class='o_cp_buttons']/button)[3]")
+    public WebElement cancelButton;
+
     @FindBy(xpath = "(//div[@class='oe_import_error_report'])/ul/li/span")
     public WebElement youMustConfigureAtLeastOneFieldToImportErrorMessage;
+
 }
