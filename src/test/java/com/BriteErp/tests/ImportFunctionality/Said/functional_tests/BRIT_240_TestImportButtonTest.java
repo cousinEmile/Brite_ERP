@@ -4,12 +4,12 @@ import com.BriteErp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BRIT_226_LoadingFile extends TestBase {
-
+public class BRIT_240_TestImportButtonTest extends TestBase {
 
     @Test
-    public void BRIT_226(){
-        extentLogger = report.createTest("BRIT_222_LoadingFile Test");
+    public void Brit_240(){
+
+        extentLogger = report.createTest("BRIT_240_TestImport Button Test");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
 
@@ -37,24 +37,29 @@ public class BRIT_226_LoadingFile extends TestBase {
         extentLogger.info("Expected  Result: Import page is displayed");
         pages.calendarListViewPage().import_button.click();
 
-        extentLogger.info("8. click Load File Button and input \"C:\\Users\\saidy\\Downloads\\Utility.xlsx\"");
-        extentLogger.info("Expected  Result: Load file should open C:\\Users\\saidy\\Downloads\\Utility.xlsx file");
-        extentLogger.info("9. click Open to import all information");
-        extentLogger.info("Expected  Result: all information on the Excel file should be dispayed under search File");
-
+        extentLogger.info("8. upload file \"Utility.xlsx\" ");
+        extentLogger.info("Expected  Result: \"Utility.xlsx\" is displayed ");
         String path = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
         pages.importPage().loadFile.sendKeys(path);
-
-        extentLogger.info("10. verify that \"Utility.xlsx\" displayed on the Input Line");
-        extentLogger.info("Expected  Result: \"Utility.xlsx\" is displayed on the Input Line");
         Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "Utility.xlsx");
+
+        extentLogger.info("9. verify that \"Test Import\" on the left top corner side under Meetings / Import a File");
+        extentLogger.info("Expected  Result: Test Import is displayed");
+        Assert.assertEquals(pages.importPage().testImportButton.getText(),TESTIMPORT_BUTTON);
+
+
+        extentLogger.info("10. click \"Test import\" button");
+        extentLogger.info("Expected  Result: Test import Clicked and not pass (Negative test)");
         wait(2);
+        pages.importPage().testImportButton.click();
 
-        extentLogger.info("11. Verify \"Map your columns to import\" message");
-        extentLogger.info("Expected  Result: \"Map your columns to import\" should be displayed");
-        Assert.assertEquals(MAP_YOUR_COULMS_TO_IMPORT, pages.importPage().mapYourColumnsToImport.getText());
+        extentLogger.info("11. verify error message \"You must configure at least one field to import\"");
+        extentLogger.info("Expected  Result: error message \"You must configure at least one field to import\" is displayed");
+        wait(2);
+        Assert.assertEquals(pages.importPage().youMustConfigureAtLeastOneFieldToImportErrorMessage.getText(),YOU_MUST_CONFIGURE_FIELD_TO_IMPORT_MESSAGE);
 
+        extentLogger.pass("BRIT_240_TestImport Button Test PASS");
 
-        extentLogger.pass("BRIT_222_LoadingFile Test PASS");
     }
+
 }

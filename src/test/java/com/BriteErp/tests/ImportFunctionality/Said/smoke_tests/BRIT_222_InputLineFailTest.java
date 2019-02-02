@@ -2,14 +2,17 @@ package com.BriteErp.tests.ImportFunctionality.Said.smoke_tests;
 
 import com.BriteErp.utilities.TestBase;
 import net.bytebuddy.asm.Advice;
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.security.Key;
 
 public class BRIT_222_InputLineFailTest extends TestBase {
 
     @Test
     public void BRIT_222(){
-    extentLogger = report.createTest("BRIT_222_InputLineFail Test");
+    extentLogger = report.createTest("BRIT_222_Input Line Fail Test");
 
     extentLogger.info("1. Pre-Condition Environment is up and running.");
 
@@ -43,13 +46,13 @@ public class BRIT_222_InputLineFailTest extends TestBase {
 
     extentLogger.info("9. type \"C:\\Users\\saidy\\Downloads\\Utility.xlsx\" to a Input line near Load File");
     extentLogger.info("Expected  Result: the \"Utility.xlsx\" should be seen on Input Line near to Load File");
-    pages.importPage().loadFileInputLine.sendKeys("C:\\Users\\saidy\\Downloads\\Utility.xlsx" );
+    pages.importPage().loadFileInputLine.sendKeys("C:\\Users\\saidy\\Downloads\\Utility.xlsx" + Keys.ENTER);
     Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "C:\\Users\\saidy\\Downloads\\Utility.xlsx");
 
     extentLogger.info("10. verify that \"C:\\Users\\saidy\\Downloads\\Utility.xlsx\" file uploaded after typing  ");
     extentLogger.info("Expected  Result: the file does not uploaded. Fail");
     Assert.assertNotEquals(pages.importPage().mapYourColumnsToImport.getText(), MAP_YOUR_COULMS_TO_IMPORT);
 
-    extentLogger.pass("BRIT_222_InputLineFail Test FAIL");
+    extentLogger.pass("BRIT_222_Input Line Fail Test FAIL");
     }
 }

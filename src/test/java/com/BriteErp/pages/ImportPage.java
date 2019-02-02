@@ -58,4 +58,10 @@ public class ImportPage {
 
     @FindBy(xpath = "(//span[@class='select2-chosen'])[3]")
     public WebElement thousandsSeparatorField;
+
+    @FindBy(xpath = "(//div[@class='o_cp_buttons']/button)[1]")
+    public WebElement testImportButton;
+
+    @FindBy(xpath = "(//div[@class='oe_import_error_report'])/ul/li/span")
+    public WebElement youMustConfigureAtLeastOneFieldToImportErrorMessage;
 }

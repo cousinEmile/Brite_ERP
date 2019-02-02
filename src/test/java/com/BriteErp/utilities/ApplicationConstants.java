@@ -23,7 +23,11 @@ public interface ApplicationConstants {
     String MAP_YOUR_COULMS_TO_IMPORT = "Map your columns to import";
     String IMPORTED_FILE_UTILITY = "Utility.xlsx";
     String RELOAD_FILE_ICON = "Reload File";
-
+    String HELP_ICON = "Help";
+    String HELP_URL = "https://www.odoo.com/documentation/user/11.0/general/base_import/import_faq.html";
+    String HELP_HOW_TO_IMPORT_DATA_INTO_ODOO_MESSAGE = "How to import data into Odoo";
+    String TESTIMPORT_BUTTON = "Test Import";
+    String YOU_MUST_CONFIGURE_FIELD_TO_IMPORT_MESSAGE ="You must configure at least one field to import";
 
 
 
