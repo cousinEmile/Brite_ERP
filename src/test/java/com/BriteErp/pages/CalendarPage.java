@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class CalendarPage{
 
     public CalendarPage(){
@@ -77,18 +79,30 @@ public class CalendarPage{
     @FindBy(xpath = "//*[@id=\"modal_20\"]/div/div/div[3]/button[2]")
     public WebElement editButton;
 
-    @FindBy(xpath="//*[@id=\'o_field_input_157\']")
-    public WebElement attendeesBox;
-
-    @FindBy(xpath="//button[@class='btn btn-sm btn-primary']")
-    public WebElement saveButton;
-
-    @FindBy(xpath = "// div[@class='fc-view fc-month-view fc-basic-view']")
+    @FindBy(xpath = "//div[@class='fc-view fc-month-view fc-basic-view']")
     public WebElement monthView;
 
-    @FindBy(xpath = "(//span[@class='fc-day-number'])[18]")
+    @FindBy(xpath =  "(//li[@class='active'])[2]" )
+    public WebElement theCurrentMonthText;  // getAttribute
+
+    @FindBy(xpath = "//span[@class='fa fa-arrow-right']")
+    public WebElement nextMonth;
+
+    @FindBy(xpath = "((//div[@class='fc-content-skeleton'])[3]/table/tbody/tr/td)[5]")
     public WebElement may15th;
 
+    @FindBy(xpath = "(//div[@class='o_field_name o_field_type_char'])")
+    public List<WebElement> events;
+
+
+
+    public WebElement getEvent(String text){
+        for (WebElement event: events) {
+            if(event.getText().toLowerCase().contains(text.toLowerCase()))
+                return event;
+        }
+        return null;
+    }
 
 
 

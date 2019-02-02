@@ -2,8 +2,12 @@ package com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.smoke_tests;
 
 import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class BRIT_333_CreateAnEvent extends TestBase {
 
@@ -43,7 +47,7 @@ public class BRIT_333_CreateAnEvent extends TestBase {
          pages.calendar().popOutCreate_button.click();
          wait(4);
 
-        Assert.assertEquals(pages.calendar().getEvent(eventName).getText().trim(),eventName.trim());
+         Assert.assertEquals(pages.calendar().getEvent(eventName).getText().trim(),eventName.trim());
 
 
          extentLogger.pass("CreateAnEventTest");
@@ -69,10 +73,16 @@ public class BRIT_333_CreateAnEvent extends TestBase {
     }
 
 
+    @FindBy(xpath = "(//div[@class='o_field_name o_field_type_char'])")
+    public List<WebElement> events;
 
-
-
-
+    public WebElement getEvent(String text){
+        for (WebElement event: events) {
+            if(event.getText().toLowerCase().contains(text.toLowerCase()))
+                return event;
+        }
+        return null;
+    }
 
 
 
