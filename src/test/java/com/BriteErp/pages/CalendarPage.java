@@ -83,6 +83,13 @@ public class CalendarPage{
     @FindBy(xpath="//button[@class='btn btn-sm btn-primary']")
     public WebElement saveButton;
 
+    @FindBy(xpath = "// div[@class='fc-view fc-month-view fc-basic-view']")
+    public WebElement monthView;
+
+    @FindBy(xpath = "(//span[@class='fc-day-number'])[18]")
+    public WebElement may15th;
+
+
 
 
 
