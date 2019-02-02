@@ -56,8 +56,6 @@ public class UserTestCases extends TestBase {
         extentLogger.info("1.Precondition: Environment is ready.");
         driver.get(ConfigurationReader.getProperties("url"));
         driver.manage().window().maximize();
-        extentLogger = report.createTest("Create Event_BRIT_109 Test-User");
-        waitForPageToLoad(2);
 
         extentLogger.info("2.Go to landing page.");
         extentLogger.info("Expected Result: User is taken to landing page");
@@ -83,8 +81,16 @@ public class UserTestCases extends TestBase {
         extentLogger.info("Expected Result: User is presented with more options for ");
         pages.calendar().editButton.click();
 
-        extentLogger.info("8.User then ");
-        extentLogger.info("Expected Result: ");
+        extentLogger.info("8.User then clicks on attendee's box  ");
+        pages.calendar().attendeesBox.click();
+
+        extentLogger.info("9.User adds InventoryUser4 as an attendee for the event created");
+        extentLogger.info("Expected Result:User should now see InventoryUser4 as an attendee");
+        pages.calendar().attendeesBox.sendKeys("InventoryUser4");
+
+        extentLogger.info("10.User clicks on clicks on save");
+        extentLogger.info("Expected Result:User successfully added an event with attendee attached.");
+        pages.calendar().saveButton.click();
     }
 
 
