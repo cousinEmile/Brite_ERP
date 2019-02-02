@@ -41,16 +41,16 @@ public class BRIT_201 extends TestBase {
         extentLogger.info("Expected Result: User is presented with more options for ");
         pages.calendar().editButton.click();
 
-        extentLogger.info("8.User then clicks on attendee's box  ");
-        pages.calendar().attendeesBox.click();
-
-        extentLogger.info("9.User adds InventoryUser4 as an attendee for the event created");
-        extentLogger.info("Expected Result:User should now see InventoryUser4 as an attendee");
-        pages.calendar().attendeesBox.sendKeys("InventoryUser4");
-
-        extentLogger.info("10.User clicks on clicks on save");
-        extentLogger.info("Expected Result:User successfully added an event with attendee attached.");
-        pages.calendar().saveButton.click();
+//        extentLogger.info("8.User then clicks on attendee's box  ");
+//        pages.calendar().attendeesBox.click();
+//
+//        extentLogger.info("9.User adds InventoryUser4 as an attendee for the event created");
+//        extentLogger.info("Expected Result:User should now see InventoryUser4 as an attendee");
+//        pages.calendar().attendeesBox.sendKeys("InventoryUser4");
+//
+//        extentLogger.info("10.User clicks on clicks on save");
+//        extentLogger.info("Expected Result:User successfully added an event with attendee attached.");
+//        pages.calendar().saveButton.click();
     }
 
 

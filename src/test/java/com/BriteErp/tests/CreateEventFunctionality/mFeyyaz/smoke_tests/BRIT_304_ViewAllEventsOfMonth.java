@@ -24,6 +24,7 @@ public class BRIT_304_ViewAllEventsOfMonth extends TestBase {
         extentLogger.info("4. Enter username and password of Inventory User");
         extentLogger.info("Expected result: User's name displayed on the top right corner");
         pages.login().userLogin();
+        wait(2);
 
         extentLogger.info("5.Verify the Calendar button exists in the Top Navigator Bar");
         extentLogger.info("Expected Result: Calendar sign is displayed");
@@ -37,6 +38,7 @@ public class BRIT_304_ViewAllEventsOfMonth extends TestBase {
 
         extentLogger.info("8. Clicking on Month button");
         extentLogger.info("Expected Result:Weekly-based calendar should change to monthly-based.");
+        wait(2);
         pages.calendar().viewMonth_button.click();
         Assert.assertTrue( pages.calendar().monthView.isDisplayed() );
         extentLogger.pass("ViewAllEventsOfMonthTest PASS");
