@@ -6,12 +6,14 @@ import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BRIT_243 extends TestBase {
+public class BRIT_685 extends TestBase {
+
     @Test
-    public void RepeatUntil() {
-        extentLogger = report.createTest("Repeat Until");
+    public void ThousandsSeparator() {
+        extentLogger = report.createTest("Thousands Separator");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -22,8 +24,8 @@ public class BRIT_243 extends TestBase {
 
         extentLogger.info("3.Enter email and password for Inventory User 4 and click Log in");
         pages.login().userLogin();
-        waitForPageToLoad(3);
 
+        waitForPageToLoad(3);
         extentLogger.info("4.Click on Calendar tab on the top");
         pages.topNavigationBar().calendar_button.click();
 
@@ -39,16 +41,16 @@ public class BRIT_243 extends TestBase {
         chooseFile.sendKeys(file);
 
         wait(2);
-        extentLogger.info("8. Unselect 'Show fields of relation fields (advanced)'");
-        pages.importPage().showFields.click();
+        extentLogger.info("8. Verify 'Thousands Separator' is displayed");
+        String thousandsSeparator = pages.importPage().thousandsSeparator.getText();
+        Assert.assertTrue(thousandsSeparator.contains("Thousands Separator"));
 
-        extentLogger.info("9. Click on 'Repeat Until' ");
+        extentLogger.info("9. Select 'Comma' on the selective panel");
+        pages.importPage().thousandsSeparatorField.click();
+        WebElement search = pages.importPage().search;
+        search.sendKeys("Comma" + Keys.ENTER);
 
-        pages.importPage().dontImportField.click();
-        WebElement end = pages.importPage().search;
-        end.sendKeys("Repeat Until" + Keys.ENTER);
-
-        extentLogger.pass("Repeat Until");
+        extentLogger.pass("Thousands Separator");
 
     }
 }

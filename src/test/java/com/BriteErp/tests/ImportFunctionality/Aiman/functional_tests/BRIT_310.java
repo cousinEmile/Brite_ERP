@@ -45,7 +45,7 @@ public class BRIT_310 extends TestBase {
         String encoding = pages.importPage().encoding.getText();
         Assert.assertTrue(encoding.contains("Encoding"));
 
-        extentLogger.info("9. Select 'windows-1251' ");
+        extentLogger.info("9. Select 'windows-1251' on the selective panel");
         pages.importPage().encodingField.click();
         WebElement search = pages.importPage().search;
         search.sendKeys("windows-1251" + Keys.ENTER);

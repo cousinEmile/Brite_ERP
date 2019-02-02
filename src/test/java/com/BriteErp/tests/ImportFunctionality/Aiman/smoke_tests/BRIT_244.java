@@ -1,4 +1,4 @@
-package com.BriteErp.tests.ImportFunctionality.Aiman.functional_tests;
+package com.BriteErp.tests.ImportFunctionality.Aiman.smoke_tests;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.Driver;
@@ -42,7 +42,7 @@ public class BRIT_244 extends TestBase {
         extentLogger.info("8. Unselect 'Show fields of relation fields (advanced)'");
         pages.importPage().showFields.click();
 
-        extentLogger.info("9. Click on 'Start Date' ");
+        extentLogger.info("9. Click 'Start Date' on the selective panel ");
 
         pages.importPage().dontImportField.click();
         WebElement end = pages.importPage().search;

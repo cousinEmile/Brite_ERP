@@ -12,6 +12,7 @@ public class Pages {
     private TopNavigationBar topNavigationBar;
     private ImportPage importPage;
     private SearchPage searchPage;
+    private HelpPage helpPage;
 
     //-------------------------------------------------------
 
@@ -68,6 +69,13 @@ public SearchPage searchPage(){
             searchPage=new SearchPage();
         }
         return searchPage;
+}
+
+public HelpPage helpPage(){
+        if(helpPage==null){
+            helpPage=new HelpPage();
+        }
+        return helpPage;
 }
 
 }

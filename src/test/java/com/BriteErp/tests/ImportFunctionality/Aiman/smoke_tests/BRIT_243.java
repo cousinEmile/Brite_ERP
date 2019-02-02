@@ -1,4 +1,4 @@
-package com.BriteErp.tests.ImportFunctionality.Aiman.functional_tests;
+package com.BriteErp.tests.ImportFunctionality.Aiman.smoke_tests;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.Driver;
@@ -8,10 +8,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class BRIT_239 extends TestBase {
+public class BRIT_243 extends TestBase {
     @Test
-    public void ImportByDefault() {
-        extentLogger = report.createTest("Import By Default");
+    public void RepeatUntil() {
+        extentLogger = report.createTest("Repeat Until");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -39,19 +39,16 @@ public class BRIT_239 extends TestBase {
         chooseFile.sendKeys(file);
 
         wait(2);
-        extentLogger.info("8. Click 'Active' on the selective panel");
+        extentLogger.info("8. Unselect 'Show fields of relation fields (advanced)'");
+        pages.importPage().showFields.click();
+
+        extentLogger.info("9. Click 'Repeat Until' on the selective panel ");
+
         pages.importPage().dontImportField.click();
         WebElement end = pages.importPage().search;
-        end.sendKeys("Active" + Keys.ENTER);
+        end.sendKeys("Repeat Until" + Keys.ENTER);
 
-        extentLogger.info("9. Click x button to delete");
-        pages.importPage().xButton.click();
-
-        extentLogger.pass("Import By Default");
-
-
-
-
+        extentLogger.pass("Repeat Until");
 
     }
 }

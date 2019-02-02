@@ -9,7 +9,7 @@ public class BRIT_217_ImportIconTest extends TestBase {
 
     @Test
     public void BRIT_217(){
-    extentLogger = report.createTest("BRIT_217_ImportIcon Test");
+    extentLogger = report.createTest("BRIT_217_Import Icon Test");
 
     extentLogger.info("1. Pre-Condition Environment is up and running.");
 
@@ -41,7 +41,7 @@ public class BRIT_217_ImportIconTest extends TestBase {
     extentLogger.info("Expected  Result: Import page must be displayed");
     pages.calendarListViewPage().import_button.click();
 
-    extentLogger.pass("BRIT_217_ImportIcon Test PASS");
+    extentLogger.pass("BRIT_217_Import Icon Test PASS");
     }
 
 }

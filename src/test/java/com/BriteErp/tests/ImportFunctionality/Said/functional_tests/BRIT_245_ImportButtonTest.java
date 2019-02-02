@@ -1,15 +1,15 @@
-package com.BriteErp.tests.ImportFunctionality.Said.smoke_tests;
+package com.BriteErp.tests.ImportFunctionality.Said.functional_tests;
 
 import com.BriteErp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BRIT_229_ReloadingFile extends TestBase {
-
+public class BRIT_245_ImportButtonTest extends TestBase {
 
     @Test
-    public void BRIT_229(){
-        extentLogger = report.createTest("BRIT_229_Reloading File Test");
+    public void BRIT_245(){
+
+        extentLogger = report.createTest("BRIT_245_Import Button Test");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
 
@@ -43,19 +43,21 @@ public class BRIT_229_ReloadingFile extends TestBase {
         pages.importPage().loadFile.sendKeys(path);
         Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "Utility.xlsx");
 
+        extentLogger.info("9. verify that \"Import\" on the left top corner side under Meetings / Import a File");
+        extentLogger.info("Expected  Result: Import page is displayed");
+        Assert.assertEquals(pages.importPage().importButton.getText(),IMPORT_BUTTON);
 
-        extentLogger.info("9. verify that the \"Reload File\" on the right side of Load File button ");
-        extentLogger.info("Expected  Result: the Reload File is displayed ");
-        Assert.assertEquals(pages.importPage().reloadFile.getText(),RELOAD_FILE_ICON);
+        extentLogger.info("10. click \"Import\" ");
+        extentLogger.info("Expected  Result: Import Clicked and not pass");
+        wait(2);
+        pages.importPage().importButton.click();
 
-        extentLogger.info("10. Click Reload File and verify that user as a Manager able to Reloaded new File");
-        extentLogger.info("Expected  Result: user as a Manager should be able to chose new file to upload it");
-        pages.importPage().reloadFile.click();
+        extentLogger.info("11. verify error message \"You must configure at least one field to import\"");
+        extentLogger.info("Expected  Result: error message \"You must configure at least one field to import\" is displayed");
+        wait(2);
+        Assert.assertEquals(pages.importPage().youMustConfigureAtLeastOneFieldToImportErrorMessage.getText(),YOU_MUST_CONFIGURE_FIELD_TO_IMPORT_MESSAGE);
 
-        extentLogger.info("11. verify that the \"Utility.xlsx\" on the Input Line");
-        extentLogger.info("Expected  Result: \"Utility.xlsx\" displayed on the Input Line");
-        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), IMPORTED_FILE_UTILITY);
-
-        extentLogger.pass("BRIT_229_Reloading File Test FAIL");
+        extentLogger.pass("BRIT_245_Import Button Test PASS");
     }
+
 }
