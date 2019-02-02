@@ -8,10 +8,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class BRIT_244 extends TestBase {
+public class BRIT_243_RepeatUntil extends TestBase {
     @Test
-    public void StartDate() {
-        extentLogger = report.createTest("Start Date");
+    public void RepeatUntil() {
+        extentLogger = report.createTest("Repeat Until");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -42,14 +42,13 @@ public class BRIT_244 extends TestBase {
         extentLogger.info("8. Unselect 'Show fields of relation fields (advanced)'");
         pages.importPage().showFields.click();
 
-        extentLogger.info("9. Click 'Start Date' on the selective panel ");
+        extentLogger.info("9. Click 'Repeat Until' on the selective panel ");
 
         pages.importPage().dontImportField.click();
         WebElement end = pages.importPage().search;
-        end.sendKeys("Start Date" + Keys.ENTER);
+        end.sendKeys("Repeat Until" + Keys.ENTER);
 
-        extentLogger.pass("Start Date");
-
+        extentLogger.pass("Repeat Until");
 
     }
 }

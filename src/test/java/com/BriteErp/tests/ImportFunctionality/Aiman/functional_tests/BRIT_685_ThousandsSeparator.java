@@ -1,19 +1,19 @@
-package com.BriteErp.tests.ImportFunctionality.Aiman.smoke_tests;
+package com.BriteErp.tests.ImportFunctionality.Aiman.functional_tests;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
-import net.bytebuddy.asm.Advice;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BRIT_241 extends TestBase {
+public class BRIT_685_ThousandsSeparator extends TestBase {
+
     @Test
-    public void EndDate() {
-        extentLogger = report.createTest("End Date");
+    public void ThousandsSeparator() {
+        extentLogger = report.createTest("Thousands Separator");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -24,8 +24,8 @@ public class BRIT_241 extends TestBase {
 
         extentLogger.info("3.Enter email and password for Inventory User 4 and click Log in");
         pages.login().userLogin();
-        waitForPageToLoad(3);
 
+        waitForPageToLoad(3);
         extentLogger.info("4.Click on Calendar tab on the top");
         pages.topNavigationBar().calendar_button.click();
 
@@ -41,17 +41,16 @@ public class BRIT_241 extends TestBase {
         chooseFile.sendKeys(file);
 
         wait(2);
-        extentLogger.info("8. Unselect 'Show fields of relation fields (advanced)'");
-        pages.importPage().showFields.click();
+        extentLogger.info("8. Verify 'Thousands Separator' is displayed");
+        String thousandsSeparator = pages.importPage().thousandsSeparator.getText();
+        Assert.assertTrue(thousandsSeparator.contains("Thousands Separator"));
 
-        extentLogger.info("9. Click 'End Date' on the selective panel");
+        extentLogger.info("9. Select 'Comma' on the selective panel");
+        pages.importPage().thousandsSeparatorField.click();
+        WebElement search = pages.importPage().search;
+        search.sendKeys("Comma" + Keys.ENTER);
 
-        pages.importPage().dontImportField.click();
-        WebElement end = pages.importPage().search;
-        end.sendKeys("End Date" + Keys.ENTER);
-
-        extentLogger.pass("End Date");
-
+        extentLogger.pass("Thousands Separator");
 
     }
 }

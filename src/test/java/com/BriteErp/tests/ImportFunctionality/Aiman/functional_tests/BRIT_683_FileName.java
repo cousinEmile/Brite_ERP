@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BRIT_683 extends TestBase {
+public class BRIT_683_FileName extends TestBase {
 
     @Test
     public void FileName() {

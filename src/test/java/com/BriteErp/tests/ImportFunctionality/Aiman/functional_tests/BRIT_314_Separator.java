@@ -9,10 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BRIT_310 extends TestBase {
+public class BRIT_314_Separator extends TestBase {
     @Test
-    public void Encoding() {
-        extentLogger = report.createTest("Encoding");
+    public void Separator() {
+        extentLogger = report.createTest("Separator");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -41,16 +41,16 @@ public class BRIT_310 extends TestBase {
 
         wait(2);
 
-        extentLogger.info("8. Verify 'Encoding' is displayed");
-        String encoding = pages.importPage().encoding.getText();
-        Assert.assertTrue(encoding.contains("Encoding"));
+        extentLogger.info("8. Verify 'Separator' is displayed");
+        String separator = pages.importPage().separator.getText();
+        Assert.assertTrue(separator.contains("Separator"));
 
-        extentLogger.info("9. Select 'windows-1251' on the selective panel");
-        pages.importPage().encodingField.click();
+        extentLogger.info("9. Select 'Comma' on the selective panel");
+        pages.importPage().separatorField.click();
         WebElement search = pages.importPage().search;
-        search.sendKeys("windows-1251" + Keys.ENTER);
+        search.sendKeys("Comma" + Keys.ENTER);
 
-        extentLogger.pass("Encoding");
+        extentLogger.pass("Separator");
 
 
     }
