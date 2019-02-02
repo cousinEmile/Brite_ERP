@@ -1,4 +1,4 @@
-package com.BriteErp.tests.ImportFunctionality.Said.functional_tests;
+package com.BriteErp.tests.ImportFunctionality.Said.smoke_tests;
 
 import com.BriteErp.utilities.TestBase;
 import org.testng.Assert;
@@ -8,7 +8,7 @@ public class BRIT_214_ListIconTest extends TestBase {
 
     @Test
     public void BRIT_214(){
-        extentLogger = report.createTest("BRIT_214_ListIcon Test");
+        extentLogger = report.createTest("BRIT_214_List Icon Test");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
 
@@ -30,6 +30,7 @@ public class BRIT_214_ListIconTest extends TestBase {
 
         extentLogger.info("6. Clicking on Calendar on Top Navigation Bar on the left side");
         extentLogger.info("Expected  Result: clicked");
+        wait(2);
         pages.topNavigationBar().calendar_button.click();
 
         wait(2);
@@ -46,7 +47,13 @@ public class BRIT_214_ListIconTest extends TestBase {
         extentLogger.info("Expected  Result: list page should be opened ");
         pages.calendar().listView.click();
 
-        extentLogger.pass("BRIT_214_ListIcon Test PASS");
+        extentLogger.info("9. verify that user sent back to the List page");
+        extentLogger.info("Expected  Result: The user in the List page");
+        wait(2);
+        Assert.assertEquals(driver.getCurrentUrl(),LIST_URL);
+
+
+        extentLogger.pass("BRIT_214_List Icon Test PASS");
     }
 
 }

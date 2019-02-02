@@ -8,10 +8,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class BRIT_243 extends TestBase {
+public class BRIT_239 extends TestBase {
     @Test
-    public void RepeatUntil() {
-        extentLogger = report.createTest("Repeat Until");
+    public void ImportByDefault() {
+        extentLogger = report.createTest("Import By Default");
         driver.manage().window().maximize();
 
         extentLogger.info("1.Go to the URL");
@@ -22,7 +22,7 @@ public class BRIT_243 extends TestBase {
 
         extentLogger.info("3.Enter email and password for Inventory User 4 and click Log in");
         pages.login().userLogin();
-        waitForPageToLoad(2);
+        waitForPageToLoad(3);
 
         extentLogger.info("4.Click on Calendar tab on the top");
         pages.topNavigationBar().calendar_button.click();
@@ -39,16 +39,19 @@ public class BRIT_243 extends TestBase {
         chooseFile.sendKeys(file);
 
         wait(2);
-        extentLogger.info("8. Unselect 'Show fields of relation fields (advanced)'");
-        pages.importPage().showFields.click();
+        extentLogger.info("8. Click 'Active' on the selective panel");
+        pages.importPage().dontImportField.click();
+        WebElement end = pages.importPage().search;
+        end.sendKeys("Active" + Keys.ENTER);
 
-        extentLogger.info("9. Click on 'Repeat Until' ");
+        extentLogger.info("9. Click x button to delete");
+        pages.importPage().xButton.click();
 
-        Driver.getDriver().findElement(By.xpath("//div[@id='s2id_autogen7']")).click();
-        WebElement end = Driver.getDriver().findElement(By.xpath("(//div[@class='select2-search'])[5]/input"));
-        end.sendKeys("Repeat Until" + Keys.ENTER);
+        extentLogger.pass("Import By Default");
 
-        extentLogger.pass("Repeat Until");
+
+
+
 
     }
 }
