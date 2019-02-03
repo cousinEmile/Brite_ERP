@@ -55,6 +55,6 @@ public class BRIT_222_InputLineFailTest extends TestBase {
 
     extentLogger.pass("BRIT_222_Input Line Fail Test FAIL");
 
-
+//slava bogu
     }
 }
