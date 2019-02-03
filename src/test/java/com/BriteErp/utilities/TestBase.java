@@ -26,7 +26,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
     public void setupMethod() {
         driver = Driver.getDriver();
         pages = new Pages();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(13, TimeUnit.SECONDS);
 //        driver.get(ConfigurationReader.getProperties("url"));
     }
 
