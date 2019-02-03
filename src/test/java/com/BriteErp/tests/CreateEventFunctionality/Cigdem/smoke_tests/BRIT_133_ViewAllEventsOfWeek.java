@@ -2,13 +2,14 @@ package com.BriteErp.tests.CreateEventFunctionality.Cigdem.smoke_tests;
 import com.BriteErp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-public class BRIT_133 extends TestBase {
+public class BRIT_133_ViewAllEventsOfWeek extends TestBase {
 
     @Test
     public void BRIT_133() {
         extentLogger = report.createTest("BRIT_133_ListIcon Test");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
+
 
         extentLogger.info("2. Go to url");
         extentLogger.info("Expected  Result: Home page is displayed.");

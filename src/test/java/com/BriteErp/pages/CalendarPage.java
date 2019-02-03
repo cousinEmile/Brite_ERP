@@ -117,4 +117,10 @@ public class CalendarPage{
 
     @FindBy(xpath = "//div[@class='fc-slats']//tr[21]//td[2]")
     public WebElement click_table_weekly;
+
+    @FindBy(xpath = "//button[@class=\"o_calendar_button_prev btn btn-sm btn-primary\"]//span")
+    public WebElement back_week;
+
+    @FindBy(xpath = "//button[@class=\"o_calendar_button_next btn btn-sm btn-primary\"]//span")
+    public WebElement forth_week;
 }
