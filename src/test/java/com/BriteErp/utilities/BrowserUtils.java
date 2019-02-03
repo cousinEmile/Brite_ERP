@@ -24,7 +24,7 @@ public class BrowserUtils {
         } catch (InterruptedException e) {
         }
     }
-
+//s
     /**
      * Generates the String path to the screenshot taken.
      * Within the method, the screenshot is taken and is saved into FileUtils.
