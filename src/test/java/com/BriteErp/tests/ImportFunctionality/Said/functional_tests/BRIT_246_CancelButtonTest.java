@@ -1,13 +1,16 @@
 package com.BriteErp.tests.ImportFunctionality.Said.functional_tests;
 
+import com.BriteErp.utilities.BrowserUtils;
 import com.BriteErp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class BRIT_246_CancelButtonTest extends TestBase {
 
     @Test
-    public void BRIT_246() {
+    public void BRIT_246() throws IOException {
 
         extentLogger = report.createTest("BRIT_246_Import Button Test");
 
@@ -16,6 +19,7 @@ public class BRIT_246_CancelButtonTest extends TestBase {
         extentLogger.info("2. Go to url");
         extentLogger.info("Expected  Result: Home page is displayed.");
         pages.login().open();
+        extentLogger.addScreenCaptureFromPath("2. Go to Url");
 
         extentLogger.info("3. Click Brite Erp Demo");
         extentLogger.info("Expected  Result: Clicked");

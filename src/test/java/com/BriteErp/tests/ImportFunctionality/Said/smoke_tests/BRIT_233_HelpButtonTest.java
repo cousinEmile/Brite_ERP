@@ -1,4 +1,4 @@
-package com.BriteErp.tests.ImportFunctionality.Said.functional_tests;
+package com.BriteErp.tests.ImportFunctionality.Said.smoke_tests;
 
 import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
