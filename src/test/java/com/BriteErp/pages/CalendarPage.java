@@ -112,7 +112,9 @@ public class CalendarPage{
     public WebElement nextDayButton;
 
 
+    @FindBy(xpath = "//div[@class='fc-view fc-agendaWeek-view fc-agenda-view']")
+    public WebElement view_table_weekly;
 
-
-
+    @FindBy(xpath = "//div[@class='fc-slats']//tr[21]//td[2]")
+    public WebElement click_table_weekly;
 }

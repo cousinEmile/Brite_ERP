@@ -42,8 +42,6 @@ public class positive_login extends TestBase {
         extentLogger.info("Verifying login successful");
         /* NEED TO SYNCHRONIZE ASSERT */
         Assert.assertEquals(Driver.getDriver().getTitle(),DISCUSS_PAGE_TITLE);
-
-
     }
 
 /*
