@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class CalendarPage{
 
     public CalendarPage(){
@@ -62,7 +64,7 @@ public class CalendarPage{
     @FindBy(xpath = "(//table)[3]/tbody/tr/td[5]")
     public WebElement _011618_allDay;
 
-    @FindBy(xpath = "//td[@class='fc-day fc-widget-content fc-thu fc-today fc-state-highlight']")
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/div[1]/div[1]/div/div/table/tbody/tr/td/div[1]/div/div[1]/table/tbody/tr/td[2]")
     public WebElement allDayBox;
 
     @FindBy(xpath = "//div[@class='modal-content']/div/div/input")
@@ -77,11 +79,37 @@ public class CalendarPage{
     @FindBy(xpath = "//*[@id=\"modal_20\"]/div/div/div[3]/button[2]")
     public WebElement editButton;
 
+    @FindBy(xpath = "//div[@class='fc-view fc-month-view fc-basic-view']")
+    public WebElement monthView;
+
+    @FindBy(xpath =  "(//li[@class='active'])[2]" )
+    public WebElement theCurrentMonthText;  // getAttribute
+
+    @FindBy(xpath = "//span[@class='fa fa-arrow-right']")
+    public WebElement nextMonth;
+
+    @FindBy(xpath = "((//div[@class='fc-content-skeleton'])[3]/table/tbody/tr/td)[5]")
+    public WebElement may15th;
+
+    @FindBy(xpath = "(//div[@class='o_field_name o_field_type_char'])")
+    public List<WebElement> events;
+
     @FindBy(xpath="//*[@id=\'o_field_input_157\']")
     public WebElement attendeesBox;
 
     @FindBy(xpath="//button[@class='btn btn-sm btn-primary']")
     public WebElement saveButton;
+
+    public WebElement getEvent(String text){
+        for (WebElement event: events) {
+            if(event.getText().toLowerCase().contains(text.toLowerCase()))
+                return event;
+        }
+        return null;
+    }
+
+    @FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/button[3]")
+    public WebElement nextDayButton;
 
 
 

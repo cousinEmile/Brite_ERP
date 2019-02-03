@@ -1,4 +1,4 @@
-package com.BriteErp.tests.SearchFunctionality.Merry.functional_tests;
+package com.BriteErp.tests.SearchFunctionality.Merry.smoke_tests;
 
 import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.support.ui.Select;

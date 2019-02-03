@@ -7,7 +7,7 @@ public class BRIT_534_AddToDashBordFvaorite  extends TestBase {
 
 
     @Test
-    public void TestCase_529() {
+    public void TestCase_534() {
 
         extentLogger = report.createTest("User Should be able to Add to DashBoard from his favorite search" );
         extentLogger.info("Opening the website");
@@ -36,7 +36,7 @@ public class BRIT_534_AddToDashBordFvaorite  extends TestBase {
         extentLogger.info("Clearing the default text which is in the Add Dash board box");
         pages.searchPage().sendTextToSaveToDashBorad.clear();
 
-        extentLogger.info("Sending text tjhat user wants to add in to his dash borad");
+        extentLogger.info("Sending text that user wants to add in to his dash borad");
         pages.searchPage().sendTextToSaveToDashBorad.sendKeys("meetings");
 
         extentLogger.info("Clicking on Add Icone to save the Favorite to Dash Board");

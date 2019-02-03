@@ -25,6 +25,7 @@ public class BRIT_201 extends TestBase {
         extentLogger.info("Expected Result: User enters correct credentials and is taken to homepage");
         pages.login().userLogin();
 
+        wait(2);
         extentLogger.info("4.User then clicks on Calendar tab");
         extentLogger.info("Expected Result: User is taken to the Calendar page.");
         pages.topNavigationBar().calendar_button.click();
@@ -55,3 +56,4 @@ public class BRIT_201 extends TestBase {
 
 
     }
+//hey

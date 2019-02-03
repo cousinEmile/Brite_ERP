@@ -4,11 +4,11 @@ import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.TestBase;
 import org.testng.annotations.Test;
 
-public class BRIT_109 extends TestBase {
+public class BRIT_733 extends TestBase {
 
     @Test
-    public void Brit_109() {
-        extentLogger = report.createTest("Create Event_BRIT_109 Test-User");
+    public void Brit_733(){
+        extentLogger = report.createTest("User can change the current day BRIT_733 test");
         waitForPageToLoad(2);
 
         extentLogger.info("1.Precondition: Environment is ready.");
@@ -25,26 +25,16 @@ public class BRIT_109 extends TestBase {
 
         extentLogger.info("4.User then clicks on Calendar tab");
         extentLogger.info("Expected Result: User is taken to the Calendar page.");
-        wait(2);
         pages.topNavigationBar().calendar_button.click();
 
         extentLogger.info("5.User click on the Day button for main Calendar.");
         extentLogger.info("Expected Result: Calendar is refreshed to its Day format.");
         pages.calendar().viewDay_button.click();
 
-        extentLogger.info("6.User clicks on All-Day box");
-        extentLogger.info("Expected Result: User should be presented with a pop-up box");
-        wait(8);
-        pages.calendar().allDayBox.click();
+        extentLogger.info("6.User clicks on the right arrow");
+        extentLogger.info("Expected Result: The current day should be shifted to next day");
+        pages.calendar().nextDayButton.click();
 
-        extentLogger.info("7.User enters text to the summary input box");
-        pages.calendar().summaryInputBox.sendKeys("Testing Purposes");
 
-        extentLogger.info("8.User then clicks on create button");
-        extentLogger.info("Expected Result: User should have successfully created an event");
-        pages.calendar().popOutCreate_button.click();
-
-//hey
-        //verify that user has successfully created an event
     }
 }
