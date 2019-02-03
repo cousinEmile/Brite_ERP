@@ -123,8 +123,20 @@ public class SearchPage extends TestBase {
     @FindBy(xpath = "//li[@title='My Meetings']/a")
     public WebElement MyMeetings_filter;
 
+    @FindBy(css = "div.o_facet_values")
+    public WebElement MyMeetings_SearchBarIcon;
+
+    @FindBy(css = "div.o_facet_values>span")
+    public WebElement MyMeetings_Label_SearchBarIcon;
+
     @FindBy(xpath = "//li[@data-index='2']/a")
     public WebElement UnreadMessages_filter;
+
+    @FindBy(css = "div.o_facet_values>span")
+    public WebElement UnreadMessages_Label_SearchBarIcon;
+
+    @FindBy(css = "div.o_facet_values")
+    public WebElement UnreadMessages_SearchBarIcon;
 
     @FindBy(css = "li.o_add_filter.o_closed_menu>a")
     public WebElement RevealCustomFilter_button;
