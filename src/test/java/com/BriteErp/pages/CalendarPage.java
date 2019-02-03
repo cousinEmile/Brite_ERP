@@ -28,7 +28,7 @@ public class CalendarPage{
     @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button")
     public WebElement viewDay_button;
 
-    @FindBy(xpath = "//button[@class='o_calendar_button_day btn btn-sm btn-default active']")
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]")
     public WebElement dayButton;
 
     @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button[2]")
@@ -76,7 +76,7 @@ public class CalendarPage{
     @FindBy(xpath="//input[@class='o_input']")
     public WebElement summaryInputBox;
 
-    @FindBy(xpath = "//*[@id=\"modal_20\"]/div/div/div[3]/button[2]")
+    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[2]")
     public WebElement editButton;
 
     @FindBy(xpath = "//div[@class='fc-view fc-month-view fc-basic-view']")
@@ -94,10 +94,10 @@ public class CalendarPage{
     @FindBy(xpath = "(//div[@class='o_field_name o_field_type_char'])")
     public List<WebElement> events;
 
-    @FindBy(xpath="//*[@id=\'o_field_input_157\']")
+    @FindBy(xpath="/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/h2[1]/div[1]")
     public WebElement attendeesBox;
 
-    @FindBy(xpath="//button[@class='btn btn-sm btn-primary']")
+    @FindBy(xpath="/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[1]")
     public WebElement saveButton;
 
     public WebElement getEvent(String text){
