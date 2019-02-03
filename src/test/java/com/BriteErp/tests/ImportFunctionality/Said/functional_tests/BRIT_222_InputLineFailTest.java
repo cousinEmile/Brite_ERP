@@ -54,5 +54,7 @@ public class BRIT_222_InputLineFailTest extends TestBase {
     Assert.assertNotEquals(pages.importPage().mapYourColumnsToImport.getText(), MAP_YOUR_COULMS_TO_IMPORT);
 
     extentLogger.pass("BRIT_222_Input Line Fail Test FAIL");
+
+
     }
 }

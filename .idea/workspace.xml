@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29a65b12-50bd-4c6f-b958-2dbab582f555" name="Default Changelist" comment="TestCommit">
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/pages/InboxPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/pages/LandingPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/pages/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/pages/TopNavigationBar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/utilities/ApplicationConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/utilities/ConfigurationReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/utilities/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/utilities/Pages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,7 +17,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Aiman/functional_tests/BRIT_235_ShowFieldsOfRelationFields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-122">
+            <state relative-caret-position="-127">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
@@ -116,23 +109,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="BriteERP" type="58d84e3e:PackageViewProjectNode" />
-              <item name="BriteERP" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="BriteERP" type="58d84e3e:PackageViewProjectNode" />
-              <item name="BriteERP" type="616d4139:PackageViewModuleNode" />
-              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -296,10 +272,27 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BriteERP" type="58d84e3e:PackageViewProjectNode" />
+              <item name="BriteERP" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="BriteERP" type="58d84e3e:PackageViewProjectNode" />
+              <item name="BriteERP" type="616d4139:PackageViewModuleNode" />
+              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549164034014" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549164383950" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -316,7 +309,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BRIT_235_ShowFieldsOfRelationFields.ShowFieldsOfRelationFields">
+  <component name="RunManager" selected="TestNG.BRIT_222_InputLineFailTest.BRIT_222">
     <configuration name="BRIT_201.BRIT_201test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Brite_ERP" />
       <extension name="coverage">
@@ -409,9 +402,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BRIT_222_InputLineFailTest.BRIT_222" />
         <item itemvalue="TestNG.BRIT_235_ShowFieldsOfRelationFields.ShowFieldsOfRelationFields" />
         <item itemvalue="TestNG.BRIT_246_CancelButtonTest.BRIT_246" />
-        <item itemvalue="TestNG.BRIT_222_InputLineFailTest.BRIT_222" />
         <item itemvalue="TestNG.BRIT_323.BRIT_323_test" />
         <item itemvalue="TestNG.BRIT_201.BRIT_201test" />
       </list>
@@ -439,9 +432,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BRIT_246_CancelButtonTest_BRIT_246 - 2019.02.02 at 18h 04m 36s.xml">
-      <configuration name="BRIT_246_CancelButtonTest.BRIT_246" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="BRIT_246_CancelButtonTest_BRIT_246 - 2019.02.02 at 18h 15m 40s.xml">
       <configuration name="BRIT_246_CancelButtonTest.BRIT_246" configurationId="TestNG" />
     </history-entry>
@@ -469,11 +459,14 @@
     <history-entry file="BRIT_222_InputLineFailTest_BRIT_222 - 2019.02.02 at 21h 29m 27s.xml">
       <configuration name="BRIT_222_InputLineFailTest.BRIT_222" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="BRIT_235_ShowFieldsOfRelationFields_ShowFieldsOfRelationFields - 2019.02.02 at 22h 21m 02s.xml">
+      <configuration name="BRIT_235_ShowFieldsOfRelationFields.ShowFieldsOfRelationFields" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="793" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2167382" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21959943" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -482,12 +475,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31310943" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3120482" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.498779" weight="0.24918744" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.498779" visible="true" weight="0.2614458" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.501221" side_tool="true" weight="0.2642857" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.498779" weight="0.26218852" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.327551" />
@@ -534,7 +527,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="TestCommit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/SearchFunctionality/Merry/smoke_tests/fill.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/SingularFunctionalities/ActionFunctionality/Turkan/functional_tests/java.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -845,6 +837,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Aiman/functional_tests/BRIT_235_ShowFieldsOfRelationFields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
