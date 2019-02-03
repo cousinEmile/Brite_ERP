@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class BRIT_109 extends TestBase {
 
     @Test
-    public void BRIT_109() {
+    public void Brit_109() {
         extentLogger = report.createTest("Create Event_BRIT_109 Test-User");
         waitForPageToLoad(2);
 
@@ -33,6 +33,7 @@ public class BRIT_109 extends TestBase {
 
         extentLogger.info("6.User clicks on All-Day box");
         extentLogger.info("Expected Result: User should be presented with a pop-up box");
+        wait(8);
         pages.calendar().allDayBox.click();
 
         extentLogger.info("7.User enters text to the summary input box");

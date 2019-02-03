@@ -62,7 +62,7 @@ public class CalendarPage{
     @FindBy(xpath = "(//table)[3]/tbody/tr/td[5]")
     public WebElement _011618_allDay;
 
-    @FindBy(xpath = "//td[@class='fc-day fc-widget-content fc-thu fc-today fc-state-highlight']")
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/div[1]/div[1]/div/div/table/tbody/tr/td/div[1]/div/div[1]/table/tbody/tr/td[2]")
     public WebElement allDayBox;
 
     @FindBy(xpath = "//div[@class='modal-content']/div/div/input")
@@ -82,6 +82,9 @@ public class CalendarPage{
 
     @FindBy(xpath="//button[@class='btn btn-sm btn-primary']")
     public WebElement saveButton;
+
+    @FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/button[3]")
+    public WebElement nextDayButton;
 
 
 

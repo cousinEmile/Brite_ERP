@@ -1,19 +1,19 @@
-package com.BriteErp.tests.CreateEventFunctionality.Tremaine.functional_tests;
+package com.BriteErp.tests.CreateEventFunctionality.Tremaine.smoke_tests;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.TestBase;
 import org.testng.annotations.Test;
 
-public class BRIT_323 extends TestBase {
+public class BRIT_733 extends TestBase {
 
     @Test
-    public void BRIT_323_test(){
-         extentLogger = report.createTest("User can edit events BRIT_323 test");
+    public void Brit_733(){
+        extentLogger = report.createTest("User can change the current day BRIT_733 test");
         waitForPageToLoad(2);
 
-         extentLogger.info("1.Precondition: Environment is ready.");
-         driver.get(ConfigurationReader.getProperties("url"));
-         driver.manage().window().maximize();
+        extentLogger.info("1.Precondition: Environment is ready.");
+        driver.get(ConfigurationReader.getProperties("url"));
+        driver.manage().window().maximize();
 
         extentLogger.info("2.Go to landing page.");
         extentLogger.info("Expected Result: User is taken to landing page");
@@ -29,18 +29,12 @@ public class BRIT_323 extends TestBase {
 
         extentLogger.info("5.User click on the Day button for main Calendar.");
         extentLogger.info("Expected Result: Calendar is refreshed to its Day format.");
-        pages.calendar().dayButton.click();
+        pages.calendar().viewDay_button.click();
 
-        extentLogger.info("6.User clicks on All-Day box");
-        extentLogger.info("Expected Result: User should be presented with a pop-up box");
-        wait(10);
-        pages.calendar().allDayBox.click();
-
-        extentLogger.info("7.User clicks on edit button");
-        extentLogger.info("Expected Result: User should see more options for their event");
-        pages.calendar().editButton.click();
+        extentLogger.info("6.User clicks on the right arrow");
+        extentLogger.info("Expected Result: The current day should be shifted to next day");
+        pages.calendar().nextDayButton.click();
 
 
+    }
 }
-}
-//as
