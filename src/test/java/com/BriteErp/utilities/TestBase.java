@@ -46,6 +46,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
 //        Driver.closeDriver();
     }
 
+
     @BeforeTest
     public void setUpTest() {
         report = new ExtentReports();
