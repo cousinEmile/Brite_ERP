@@ -23,6 +23,8 @@ public class CalendarListViewPage{
     @FindBy(css = "button.fa.fa-chevron-right.btn.btn-icon.o_pager_next")
     public WebElement nextPage_button;
 
+    @FindBy(xpath ="//div[@class='col-sm-12']//a" )
+    public WebElement helpButton;
 
 
 
