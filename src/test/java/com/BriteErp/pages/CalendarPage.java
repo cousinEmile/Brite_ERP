@@ -94,7 +94,11 @@ public class CalendarPage{
     @FindBy(xpath = "(//div[@class='o_field_name o_field_type_char'])")
     public List<WebElement> events;
 
+    @FindBy(xpath="//*[@id=\'o_field_input_157\']")
+    public WebElement attendeesBox;
 
+    @FindBy(xpath="//button[@class='btn btn-sm btn-primary']")
+    public WebElement saveButton;
 
     public WebElement getEvent(String text){
         for (WebElement event: events) {
