@@ -55,6 +55,7 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
 
         extentLogger.info("11. verify error message \"Please use the copy button to report the error to your support service.\" in pop-up window");
         extentLogger.info("Expected  Result: error message \"Please use the copy button to report the error to your support service.\" is displayed in pop-up window");
+        Assert.assertEquals(pages.importPage().pleasuUseCopyButtonMessage.getText(),PLEASE_USE_COPY_BUTTON_TO_REPORT_MESSAGE );
 
         extentLogger.info("12. verify \"Copy the full error to clipboard\" button");
         extentLogger.info("Expected  Result: \"Copy the full error to clipboard\" button is displayed");
@@ -77,7 +78,7 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
         extentLogger.info("18. Click \"Ok\" button ");
         extentLogger.info("Expected  Result: \"Ok\" button clicked");
 
-        extentLogger.info("Verify User in import page URL http://52.39.162.23/web?#model=calendar.event&action=import");
+        extentLogger.info("19. Verify User in import page URL http://52.39.162.23/web?#model=calendar.event&action=import");
         extentLogger.info("Expected  Result: User in Import Page URL http://52.39.162.23/web?#model=calendar.event&action=import");
 
 
