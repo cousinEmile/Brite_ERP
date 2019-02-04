@@ -1,18 +1,15 @@
 package com.BriteErp.tests.ImportFunctionality.Said.functional_tests;
 
-import com.BriteErp.utilities.BrowserUtils;
 import com.BriteErp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
-public class BRIT_246_CancelButtonTest extends TestBase {
+public class BRIT_248_ErrorMessageTest extends TestBase {
 
     @Test
-    public void BRIT_246() throws IOException {
+    public void BRIT_248 (){
+        extentLogger = report.createTest("BRIT_248_Error Message Test");
 
-        extentLogger = report.createTest("BRIT_246_Import Button Test");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
 
@@ -47,19 +44,6 @@ public class BRIT_246_CancelButtonTest extends TestBase {
         pages.importPage().loadFile.sendKeys(path);
         Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "Utility.xlsx");
 
-        extentLogger.info("9. verify that \"Cancel\" on the left top corner side under Meetings / Import a File");
-        extentLogger.info("Expected  Result: Cancel is displayed");
-        Assert.assertEquals(pages.importPage().cancelButton.getText(),CANCEL_BUTTON);
-
-        extentLogger.info("10. click \"Cancel\" ");
-        extentLogger.info("Expected  Result: Cancel Clicked ");
-        pages.importPage().cancelButton.click();
-
-        extentLogger.info("11. verify that user sent back to the List page");
-        extentLogger.info("Expected  Result: The user in the List page");
-        wait(2);
-        Assert.assertEquals(driver.getCurrentUrl(),LIST_URL);
-
-        extentLogger.pass("BRIT_246_Import Button Test PASS");
     }
+
 }

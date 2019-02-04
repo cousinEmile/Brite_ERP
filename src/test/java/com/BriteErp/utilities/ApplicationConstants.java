@@ -3,6 +3,7 @@ package com.BriteErp.utilities;
 import org.openqa.selenium.support.ui.Select;
 
 public interface ApplicationConstants {
+
     String DISCUSS_PAGE_TITLE = "#Inbox - Odoo";
     String CALENDAR_PAGE_TITLE = "Meetings - Odoo";
     String NOTES_PAGE_TITLE = "Notes - Odoo";
