@@ -139,7 +139,17 @@ public class CalendarPage{
     @FindBy(xpath = "//button[@class='btn btn-sm btn-primary']")
     public WebElement saveEditEvent;
 
+    @FindBy(xpath = "//a[.='Options']")
+    public WebElement optionsEditButton;
 
+    @FindBy (id = "o_field_input_83")
+    public WebElement selectClass;
+
+    @FindBy(xpath = "//*[@class='o_notification_manager']")
+    public WebElement errorMessage;
+
+    @FindBy (id = "o_field_input_79")
+    public  WebElement selectClassManager;
 
 
 }
