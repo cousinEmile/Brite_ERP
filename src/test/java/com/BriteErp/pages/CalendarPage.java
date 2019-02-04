@@ -65,6 +65,17 @@ public class CalendarPage{
     @FindBy(xpath = "//div[@class='modal-footer']/button")
     public WebElement popOutCreate_button;
 
+    @FindBy(xpath = "//div[@class='o_calendar_sidebar_container hidden-xs']/i")
+    public WebElement close_mini_calendar;
+
+    @FindBy(xpath = "//div[@class='o_calendar_sidebar_container hidden-xs o_sidebar_hidden']/i")
+    public WebElement openMiniCalendar;
+
+    @FindBy(xpath = "//div[@class='o_calendar_filter']/div/div[5]/span[2]")
+    public WebElement removingFilter;
+
+    @FindBy(xpath = "(//div[@class='o_calendar_filter_item'])[4]")
+    public WebElement removingFilter2;
 
 
 
