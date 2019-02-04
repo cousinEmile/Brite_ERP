@@ -123,4 +123,23 @@ public class CalendarPage{
 
     @FindBy(xpath = "//button[@class=\"o_calendar_button_next btn btn-sm btn-primary\"]//span")
     public WebElement forth_week;
+
+    @FindBy(xpath = "( //span[@class='o_dropdown_button']   ) [2] ")
+    public WebElement editDropDown;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[1]")
+    public WebElement editEventButton;
+
+    @FindBy(xpath = "//input[@id='o_field_input_49']")
+    public WebElement meetingSubject;
+
+    @FindBy(xpath = "(//button[@class='btn btn-sm btn-default'])[1]")
+    public WebElement deleteEvent;
+
+    @FindBy(xpath = "//button[@class='btn btn-sm btn-primary']")
+    public WebElement saveEditEvent;
+
+
+
+
 }

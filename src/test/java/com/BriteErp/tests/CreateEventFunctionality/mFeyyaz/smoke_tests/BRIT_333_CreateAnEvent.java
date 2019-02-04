@@ -13,17 +13,19 @@ public class BRIT_333_CreateAnEvent extends TestBase {
     @Test
     public void CreateAnEventTest() {
 
-        pages.login().open();
+//        pages.login().open();
+//
+//        pages.landing().BriteErpDemo_button.click();
+//
+//        pages.login().userLogin();
+//        wait(2);
+//
+//        pages.topNavigationBar().calendar_button.click();
+//
+//        wait(2);
+//        pages.calendar().viewMonth_button.click();
 
-        pages.landing().BriteErpDemo_button.click();
-
-        pages.login().userLogin();
-        wait(2);
-
-        pages.topNavigationBar().calendar_button.click();
-
-        wait(2);
-        pages.calendar().viewMonth_button.click();
+        goToMontlyView();
 
         extentLogger = report.createTest("BRIT_333_CreateAnEvent Test");
 
@@ -62,8 +64,6 @@ public class BRIT_333_CreateAnEvent extends TestBase {
 
     public String goToThatMonth( String targetMonth){
 
-        String CurrentMonth;
-
         while (true) {
             wait(2);
 
@@ -81,12 +81,42 @@ public class BRIT_333_CreateAnEvent extends TestBase {
     public List<WebElement> events;
 
     public WebElement getEvent(String text){
+
         for (WebElement event: events) {
             if(event.getText().toLowerCase().contains(text.toLowerCase()))
                 return event;
         }
         return null;
     }
+
+
+    public void goToMontlyView() {
+
+        pages.login().open();
+
+        pages.landing().BriteErpDemo_button.click();
+
+        pages.login().userLogin();
+        wait(2);
+
+        pages.topNavigationBar().calendar_button.click();
+
+        wait(2);
+        pages.calendar().viewMonth_button.click();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
