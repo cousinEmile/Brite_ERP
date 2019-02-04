@@ -1,4 +1,4 @@
-package com.BriteErp.tests.SearchFunctionality.Albert.functional_tests;
+package com.BriteErp.tests.SearchFunctionality.Albert.smoke_tests;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.Driver;
@@ -76,23 +76,24 @@ public class BRIT_225 extends TestBase {
         extentLogger.info("select 'UnreadMessages' from the Filters drop down menu.");
         extentLogger.info("Expected Results: User should observe a new tag in the Search Bar labeled 'UnreadMessages'. ");
         pages.searchPage().UnreadMessages_filter.click();
-      //  Assert.assertTrue(pages.searchPage().UnreadMessages_SearchBarIcon.isDisplayed());
-      //  Assert.assertEquals(pages.searchPage().UnreadMessages_Label_SearchBarIcon.getAttribute("innerText").trim(),UNREADMESSAGES_SEARCHBARICON_LABEL);
 
         extentLogger.info("select 'My Meetings' from the Filters drop down menu.");
         extentLogger.info("Expected Results: User should observe a new tag in the Search Bar labeled 'My Meetings'. ");
         pages.searchPage().MyMeetings_filter.click();
-      //  Assert.assertTrue(pages.searchPage().MyMeetings_SearchBarIcon.isDisplayed());
-      //  Assert.assertEquals(pages.searchPage().MyMeetings_Label_SearchBarIcon.getAttribute("innerText").trim(),MYMEETINGS_SEARCHBARICON_LABEL);
 
         extentLogger.info("select 'My Events' from the Filters drop down menu.");
         extentLogger.info("Expected Results: User should observe a new tag in the Search Bar labeled 'My Events'. ");
         pages.searchPage().MyEvents_filter.click();
-     //   Assert.assertTrue(pages.searchPage().MyEvents_SearchBarIcon.isDisplayed());
-     //   Assert.assertEquals(pages.searchPage().MyEvents_Label_SearchBarIcon.getAttribute("innerText").trim(),MYEVENTS_SEARCHBARICON_LABEL);
 
+        Assert.assertTrue(pages.searchPage().UnreadMessages_SearchBarIcon.getAttribute("innerText").trim().contains(UNREADMESSAGES_SEARCHBARICON_LABEL+" or "+MYMEETINGS_SEARCHBARICON_LABEL+" or "+MYEVENTS_SEARCHBARICON_LABEL));
         extentLogger.pass("BRIT_112_AdvancedSearchFilter_UnreadMessages Test PASS");
     }
 
 
      }
+//  Assert.assertTrue(pages.searchPage().UnreadMessages_SearchBarIcon.isDisplayed());
+//  Assert.assertEquals(pages.searchPage().UnreadMessages_Label_SearchBarIcon.getAttribute("innerText").trim(),UNREADMESSAGES_SEARCHBARICON_LABEL);
+//  Assert.assertTrue(pages.searchPage().MyMeetings_SearchBarIcon.isDisplayed());
+//  Assert.assertEquals(pages.searchPage().MyMeetings_Label_SearchBarIcon.getAttribute("innerText").trim(),MYMEETINGS_SEARCHBARICON_LABEL);
+//   Assert.assertTrue(pages.searchPage().MyEvents_SearchBarIcon.isDisplayed());
+//   Assert.assertEquals(pages.searchPage().MyEvents_Label_SearchBarIcon.getAttribute("innerText").trim(),MYEVENTS_SEARCHBARICON_LABEL);
