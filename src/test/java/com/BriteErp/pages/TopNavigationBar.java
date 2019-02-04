@@ -13,7 +13,7 @@ public class TopNavigationBar {
     @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li/a")
     public WebElement discuss_button;
 
-    @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[2]/a")
+    @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[2]/a/span")
     public WebElement calendar_button;
 
     @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[3]/a")
@@ -48,6 +48,8 @@ public class TopNavigationBar {
 
     @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[13]/a")
     public WebElement dashboards_button;
+
+
 
 
 }

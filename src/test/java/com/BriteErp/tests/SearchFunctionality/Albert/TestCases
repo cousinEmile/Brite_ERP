@@ -1,0 +1,309 @@
+UserStory:
+http://jira.cybertekschool.com/browse/BRIT-87
+"
+
+As an Inventory User, I should be able to search
+the content of the Calendar for meetings, events,
+notices, or other issues pertinent to my position or
+general work flow.
+"
+
+TestPlan:
+http://jira.cybertekschool.com/browse/BRIT-89
+
+*User Story .   As a user i should be able to search the content of the calendar
+
+***Acceptance Criteria
+
+1.user should be able to input text in the search box and receive relevant results
+
+2.user should be able to make an advanced search
+
+3.user should be able to filter advanced search results
+
+4.user should be able to group advanced search results
+
+5.user should be able to save advanced search results
+
+
+Pre-Condition:
+http://jira.cybertekschool.com/browse/BRIT-103
+
+User should go to the EventBriteDemo URL.
+User should be logged in as either general, or manager level, user.
+
+
+TestCases:
+
+http://jira.cybertekschool.com/browse/BRIT-112
+-Verify that selected Advanced Search filter, "My Events" registers in Search Bar as tag labeled as such.
+
+STEPS:
+Step One: User should click on the Calendar tab in the header, on the left side of the screen.
+
+Step Two: User should click on the Magnifying Glass icon in the Search Bar, on the far right side.
+
+Step Three: User should click on the Advanced Search icon titled 'Filters.'
+
+Step Four: User should select 'My Events' from the Filters drop down menu.
+
+EXPECTED RESULTS:
+Step Two: The user should see the icon in the Magnifying Glass change from a plus-sign ('+') to a minus-sign ('-'), also, three new icons should be revealed below the Search Bar, 'Filters', 'Group By', and 'Favorites'
+
+Step Three: User's click should reveal a drop down menu extending from the 'Filters' icon.
+
+Step Four: User should observe a new tag in the Search Bar labeled 'My Events'
+---------------------------
+http://jira.cybertekschool.com/browse/BRIT-93
+-Verify that User can refine Advanced Search queries of Calendar events/meetings by meetings they have created through filter titled 'My Meetings'
+
+STEPS:
+Step One: User should click on the Calendar tab in the header, on the left side of the screen.
+
+Step Two: User should click on the Magnifying Glass icon in the Search Bar, on the far right side.
+
+Step Three: User should click on the Advanced Search icon titled 'Filters.'
+
+Step Four: User should select 'My Meetings' from the Filters drop down menu.
+
+
+EXPECTED RESULTS:
+Step Two: The user should see the icon in the Magnifying Glass change from a plus-sign ('+') to a minus-sign ('-'), also, three new icons should be revealed below the Search Bar, 'Filters', 'Group By', and 'Favorites'
+
+Step Three: User's click should reveal a drop down menu extending from the 'Filters' icon.
+
+Step Four: User should observe a new tag in the Search Bar labeled 'My Meetings'
+
+
+
+
+
+
+http://jira.cybertekschool.com/browse/BRIT-224
+-Verify that User is able to filter Advanced Search results by messages user has not previously accessed by enabling the 'Unread Message' filter.
+
+STEPS:
+Step One: User should click on the Calendar tab in the header, on the left side of the screen.
+
+Step Two: User should click on the Magnifying Glass icon in the Search Bar, on the far right side.
+
+Step Three: User should click on the Advanced Search icon titled 'Filters.'
+
+Step Four: User should select 'Unread Messages' from the Filters drop down menu.
+
+
+EXPECTED RESULTS:
+Step Two: The user should see the icon in the Magnifying Glass change from a plus-sign ('+') to a minus-sign ('-'), also, three new icons should be revealed below the Search Bar, 'Filters', 'Group By', and 'Favorites'
+
+Step Three: User's click should reveal a drop down menu extending from the 'Filters' icon.
+
+Step Four: User should observe a new tag in the Search Bar labeled 'Unread Messages'
+
+
+
+
+
+http://jira.cybertekschool.com/browse/BRIT-225
+-Verify that User is able to apply all, or few, or none of the specified filters together.
+
+
+
+
+
+STEPS:
+Step One: User should click on the Calendar tab in the header, on the left side of the screen.
+
+Step Two: User should click on the Magnifying Glass icon in the Search Bar, on the far right side.
+
+Step Three: User should click on the Advanced Search icon titled 'Filters.'
+
+Step Four: User should select 'My Events', 'My Meetings', and/or 'Unread Messages' from the Filters drop down menu.
+
+
+EXPECTED RESULTS:
+Step Two: The user should see the icon in the Magnifying Glass change from a plus-sign ('+') to a minus-sign ('-'), also, three new icons should be revealed below the Search Bar, 'Filters', 'Group By', and 'Favorites'
+
+Step Three: User's click should reveal a drop down menu extending from the 'Filters' icon.
+
+Step Four: User should observe a tag(s) in the Search Bar labeled for their respective, enabled Filter(s).
+
+
+
+
+
+
+
+http://jira.cybertekschool.com/browse/BRIT-237
+-Verify that User can specify that Advanced Search queries return only results for which the User is directly responsible.
+
+
+
+
+STEPS:
+Step One: User should click on the Calendar tab in the header, on the left side of the screen.
+
+Step Two: User should click on the Magnifying Glass icon in the Search Bar, on the far right side.
+
+Step Three: User should click on the Advanced Search icon titled 'Group By.'
+
+Step Four: User should select 'Responsible' from the 'My Group' drop down menu.
+
+EXPECTED RESULTS:
+Step Two: The user should see the icon in the Magnifying Glass change from a plus-sign ('+') to a minus-sign ('-'), also, three new icons should be revealed below the Search Bar, 'Filters', 'Group By', and 'Favorites'
+
+Step Three: User's click should reveal a drop down menu extending from the 'Group By' icon.
+
+Step Four: User should observe a new tag in the Search Bar labeled 'Responsible'
+
+
+
+
+
+
+
+http://jira.cybertekschool.com/browse/BRIT-253
+-Verify that User can specify that Advanced Search queries return only results for which the User is scheduled to be Available.
+
+
+
+
+
+STEPS:
+Step One: User should click on the Calendar tab in the header, on the left side of the screen.
+
+Step Two: User should click on the Magnifying Glass icon in the Search Bar, on the far right side.
+
+Step Three: User should click on the Advanced Search icon titled 'Group By.'
+
+Step Four: User should select 'Available' from the 'My Group' drop down menu.
+
+
+EXPECTED RESULTS:
+Step Two: The user should see the icon in the Magnifying Glass change from a plus-sign ('+') to a minus-sign ('-'), also, three new icons should be revealed below the Search Bar, 'Filters', 'Group By', and 'Favorites'
+
+Step Three: User's click should reveal a drop down menu extending from the 'Group By' icon.
+
+Step Four: User should observe a new tag in the Search Bar labeled 'Available'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://jira.cybertekschool.com/browse/BRIT-254
+-Verify that User can specify that Advanced Search queries return only results for which User is granted access to.
+
+
+
+STEPS:
+Step One: User should click on the Calendar tab in the header, on the left side of the screen.
+
+Step Two: User should click on the Magnifying Glass icon in the Search Bar, on the far right side.
+
+Step Three: User should click on the Advanced Search icon titled 'Group By.'
+
+Step Four: User should select 'Privacy' from the 'My Group' drop down menu.
+
+EXPECTED RESULTS:
+Step Two: The user should see the icon in the Magnifying Glass change from a plus-sign ('+') to a minus-sign ('-'), also, three new icons should be revealed below the Search Bar, 'Filters', 'Group By', and 'Favorites'
+
+Step Three: User's click should reveal a drop down menu extending from the 'Group By' icon.
+
+Step Four: User should observe a new tag in the Search Bar labeled 'Privacy'
+
+
+
+
+
+
+http://jira.cybertekschool.com/browse/BRIT-255
+-Verify that User can save selected Advanced Searches by accessing the 'Favorites' drop down.
+
+
+
+STEPS:
+Step One: User should click on the Calendar tab in the header, on the left side of the screen.
+
+Step Two: User should click on the Magnifying Glass icon in the Search Bar, on the far right side.
+
+Step Three: User should click on the Advanced Search icon titled 'Favorites
+
+Step Four: User should select 'Save current search' from the 'Favorites' drop down menu.
+
+Step Five: User should enter a name for the given Advanced Search settings.
+
+Step Six: If desired, User can choose to make the current search parameters their Default search, and/or Share the Search with all users.
+
+Step Seven: User should click on the 'Save' button.
+
+EXPECTED RESULTS:
+Step Two: The user should see the icon in the Magnifying Glass change from a plus-sign ('+') to a minus-sign ('-'), also, three new icons should be revealed below the Search Bar, 'Filters', 'Group By', and 'Favorites'
+
+Step Three: User's click should reveal a drop down menu extending from the 'Favorites' icon.
+
+Step Four: User should observe new options extending from 'Save current search' ; a text box in which to type the desired name for the current search, a check box labeled 'Use by default' , and a final check box labeled 'Share with all users.'
+
+Step Five: User should observe the title, as input to label current search.
+
+Step Six(optional): User can choose to check either box, though both options are not allowed to be selected, together.
+
+Step Seven: User will see the name of their search  at the top of the 'Favorites' drop down menu, in bold script with a check-mark to its left. Also a tag bearing the name of the search will be present in the left side of the Search Bar.
+
+
+
+http://jira.cybertekschool.com/browse/BRIT-114
+-Verify that Advanced Search features can be enabled by User through the Search Bar located in the Calendar module.
+
+
+
+STEPS:
+Step One: User should click on the Calendar tab in the header, on the left side of the screen.
+
+Step Two: User should click on the Magnifying Glass icon on the far right side of the Search Bar.
+
+EXPECTED RESULTS:
+The Advanced Search icons, 'Filters', 'Group By', and 'Favorites' should appear below the Search Bar.
+
+http://jira.cybertekschool.com/browse/BRIT-297
+
+--Verify that users' search results are limited to the configuration of the calendar at the time of search.
+  Verify that users' search results react dynamically to any reconfiguration of the calendar without user
+  having to resubmit the search.
+
+  STEPS:
+  Step One: User should click on the Calendar tab in the header, on the left side of the screen.
+
+  Step Two: User should click on the Magnifying Glass icon in the Search Bar, on the far right side.
+
+  Step Three: User should enter a relevant search parameter into the Search Bar.
+
+  Step Four: User should select the 'Day' view of the three selections on the top right of the Calendar.
+
+  Step Five: User should then proceed to select the 'Week' view by selecting the button of the same name immediately to the right of the 'Day'.
+
+  Step Six: User should then select the final Calendar configuration of the three by clicking the 'Month' button.
+
+
+  EXPECTED RESULTS:
+  Step Two: The user should see the icon in the Magnifying Glass change from a plus-sign ('+') to a minus-sign ('-'), also, three new icons should be revealed below the Search Bar, 'Filters', 'Group By', and 'Favorites'
+
+  Step Three: User should see their input reflected as a tab in the far left side of the Search Bar, with the term entered in bold type in the center and an 'x' on the right side.
+
+  Step Four: User's Calendar view, if it were not already so, should become that of a single detailed day, with any matching results appearing within their designated time blocks.
+
+  Step Five: User should be met upon the selection of 'Week' with an expanded Calendar view that includes not on the 'Day' they came from, but also the seven days following it. Also, in addition to the initial results of the previous step, there should now be any additional results for the newly revealed days, provided automatically with out User needing, or being prompted to, resubmit the terms of the search or refresh the page.
+
+  Step Six: With the transition to the full 'Month's View User should now be afforded all results that match their given parameters over the course of not only the Month in question, but also any days that spill over from the pre-, and proceeding Months.

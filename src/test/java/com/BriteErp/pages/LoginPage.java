@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage extends TestBase{
 
     public LoginPage(){
         PageFactory.initElements(Driver.getDriver(), this);
@@ -25,9 +25,9 @@ public class LoginPage {
 
 
     public void userLogin(){
-        this.emailBox.sendKeys(ConfigurationReader.getProperties("user"));
-        this.passwordBox.sendKeys(ConfigurationReader.getProperties("userpass"));
-        this.login_button.click();
+        emailBox.sendKeys(ConfigurationReader.getProperties("user"));
+        passwordBox.sendKeys(ConfigurationReader.getProperties("userpass"));
+        login_button.click();
     }
 
 
@@ -39,7 +39,9 @@ public class LoginPage {
     }
 
     public void open(){
-        Driver.getDriver().get("http://52.39.162.23/");
+        Driver.getDriver().manage().window().maximize();
+        Driver.getDriver().get(ConfigurationReader.getProperties("url"));
+        waitForPageToLoad(5);
     }
 
 }
