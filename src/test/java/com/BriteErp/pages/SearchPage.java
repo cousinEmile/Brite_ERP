@@ -2,6 +2,7 @@ package com.BriteErp.pages;
 
 import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
+//import com.github.javafaker.Faker;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
