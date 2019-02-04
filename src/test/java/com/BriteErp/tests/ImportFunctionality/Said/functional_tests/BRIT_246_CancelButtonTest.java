@@ -10,7 +10,7 @@ import java.io.IOException;
 public class BRIT_246_CancelButtonTest extends TestBase {
 
     @Test
-    public void BRIT_246() throws IOException {
+    public void BRIT_246() {
 
         extentLogger = report.createTest("BRIT_246_Import Button Test");
 

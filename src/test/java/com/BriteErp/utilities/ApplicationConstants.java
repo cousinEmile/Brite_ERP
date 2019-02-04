@@ -32,12 +32,13 @@ public interface ApplicationConstants {
     String LIST_URL = "http://52.39.162.23/web?#view_type=list&model=calendar.event&menu_id=120&action=136";
     String HELP_HOW_TO_IMPORT_DATA_INTO_ODOO_MESSAGE = "How to import data into Odoo";
     String TESTIMPORT_BUTTON = "Test Import";
-    String IMPORT_BUTTON ="Import";
-    String CANCEL_BUTTON ="Cancel";
-    String YOU_MUST_CONFIGURE_FIELD_TO_IMPORT_MESSAGE ="You must configure at least one field to import";
+    String IMPORT_BUTTON = "Import";
+    String CANCEL_BUTTON = "Cancel";
+    String YOU_MUST_CONFIGURE_FIELD_TO_IMPORT_MESSAGE = "You must configure at least one field to import";
     String MYMEETINGS_SEARCHBARICON_LABEL = "My Meetings";
     String UNREADMESSAGES_SEARCHBARICON_LABEL = "Unread Messages";
     String RESPONSIBLE_SEARCHBARICON_LABEL = "Responsible";
     String AVAILABILITY_SEARCHBARICON_LABEL = "Availability";
     String PRIVACY_SEARCHBARICON_LABEL = "Privacy";
+    String ODOO_CLIENT_ERROR = "Odoo Client Error";
 }

@@ -10,7 +10,7 @@ import java.io.IOException;
 public class BRIT_214_ListIconTest extends TestBase {
 
     @Test
-    public void BRIT_214() throws IOException {
+    public void BRIT_214() {
         extentLogger = report.createTest("BRIT_214_List Icon Test");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
@@ -18,7 +18,6 @@ public class BRIT_214_ListIconTest extends TestBase {
         extentLogger.info("2. Go to url");
         extentLogger.info("Expected  Result: Home page is displayed.");
         pages.login().open();
-        extentLogger.addScreenCaptureFromPath("2. Go to Url");
 
         extentLogger.info("3. Click Brite Erp Demo");
         extentLogger.info("Expected  Result: Clicked");

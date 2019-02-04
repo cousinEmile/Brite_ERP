@@ -71,4 +71,9 @@ public class ImportPage {
     @FindBy(xpath = "(//div[@class='oe_import_error_report'])/ul/li/span")
     public WebElement youMustConfigureAtLeastOneFieldToImportErrorMessage;
 
+    @FindBy(xpath = "(//div[@class='oe_import_with_file oe_padding col-sm-12'])/label[1]")
+    public WebElement firstRow;
+
+    @FindBy(xpath = "(//div[@class='modal-dialog modal-lg']//div//div)[5]//button")
+    public WebElement errorMessageOkButton;
 }

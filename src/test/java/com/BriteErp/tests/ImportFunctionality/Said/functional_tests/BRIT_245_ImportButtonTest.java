@@ -4,10 +4,12 @@ import com.BriteErp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class BRIT_245_ImportButtonTest extends TestBase {
 
     @Test
-    public void BRIT_245(){
+    public void BRIT_245() {
 
         extentLogger = report.createTest("BRIT_245_Import Button Test");
 

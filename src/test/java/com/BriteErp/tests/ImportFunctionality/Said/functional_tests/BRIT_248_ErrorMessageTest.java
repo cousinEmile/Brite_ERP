@@ -1,6 +1,7 @@
 package com.BriteErp.tests.ImportFunctionality.Said.functional_tests;
 
 import com.BriteErp.utilities.TestBase;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -43,6 +44,56 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
         String path = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
         pages.importPage().loadFile.sendKeys(path);
         Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "Utility.xlsx");
+
+        extentLogger.info("9. click  \"The first row contains the label of the column\"");
+        extentLogger.info("Expected  Result: clicked");
+        pages.importPage().theFirstRowLabel.click();
+
+        extentLogger.info("10. verify pop-up window with \"Odoo Client Error\" error message");
+        extentLogger.info("Expected  Result: \"Odoo Client Error\" error message window pop-uped");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+        extentLogger.info("");
+        extentLogger.info("Expected  Result:");
+
+
+
+
+        pages.importPage().errorMessageOkButton.click();
+
+
 
     }
 
