@@ -1,4 +1,4 @@
-package com.BriteErp.tests.SingularFunctionalities.Attendees_SmallCalendarFunctionality.Kosim.functional_tests;
+package com.BriteErp.tests.SingularFunctionalities.Attendees_SmallCalendarFunctionality.Kosim.smoke_tests;
 
 import com.BriteErp.utilities.BrowserUtils;
 import com.BriteErp.utilities.ConfigurationReader;
