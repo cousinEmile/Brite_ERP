@@ -64,18 +64,20 @@ public class Pages {
         }
         return importPage;
     }
-public SearchPage searchPage(){
+
+    public SearchPage searchPage(){
         if(searchPage==null){
             searchPage=new SearchPage();
         }
         return searchPage;
 }
 
-public HelpPage helpPage(){
+    public HelpPage helpPage(){
         if(helpPage==null){
             helpPage=new HelpPage();
         }
         return helpPage;
 }
-//a
+
+
 }

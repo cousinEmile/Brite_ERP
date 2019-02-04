@@ -4,6 +4,8 @@ import com.BriteErp.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import javax.sql.rowset.BaseRowSet;
+
 public class BRIT_214_ListIconTest extends TestBase {
 
     @Test
@@ -50,8 +52,8 @@ public class BRIT_214_ListIconTest extends TestBase {
         extentLogger.info("9. verify that user sent back to the List page");
         extentLogger.info("Expected  Result: The user in the List page");
         wait(2);
-        Assert.assertEquals(driver.getCurrentUrl(),LIST_URL);
 
+        Assert.assertEquals(driver.getCurrentUrl(),LIST_URL);
 
         extentLogger.pass("BRIT_214_List Icon Test PASS");
     }
