@@ -51,47 +51,37 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
 
         extentLogger.info("10. verify pop-up window with \"Odoo Client Error\" error message");
         extentLogger.info("Expected  Result: \"Odoo Client Error\" error message window pop-uped");
+        Assert.assertEquals(pages.importPage().errorMessageOddo.getText(),ODOO_CLIENT_ERROR);
 
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
+        extentLogger.info("11. verify error message \"Please use the copy button to report the error to your support service.\" in pop-up window");
+        extentLogger.info("Expected  Result: error message \"Please use the copy button to report the error to your support service.\" is displayed in pop-up window");
 
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
+        extentLogger.info("12. verify \"Copy the full error to clipboard\" button");
+        extentLogger.info("Expected  Result: \"Copy the full error to clipboard\" button is displayed");
 
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
+        extentLogger.info("13. click \"Copy the full error to clipboard\" ");
+        extentLogger.info("Expected  Result: \"Copy the full error to clipboard\" button clicked");
 
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
+        extentLogger.info("14. verify \"see details\" button");
+        extentLogger.info("Expected  Result: \"see details\" button is displayed");
 
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
+        extentLogger.info("15. click \"see details\" button ");
+        extentLogger.info("Expected  Result: \"see details\" button clicked");
 
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
+        extentLogger.info("16. verify \"Uncaught event settings_changed inappropriate in current state previewing\n\" message");
+        extentLogger.info("Expected  Result: \"Uncaught event settings_changed inappropriate in current state previewing\ng\" message is displayed");
 
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
+        extentLogger.info("17. verify \"Ok\" button");
+        extentLogger.info("Expected  Result: \"Ok\" button is displayed");
 
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
+        extentLogger.info("18. Click \"Ok\" button ");
+        extentLogger.info("Expected  Result: \"Ok\" button clicked");
 
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
-
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
-
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
-
-        extentLogger.info("");
-        extentLogger.info("Expected  Result:");
+        extentLogger.info("Verify User in import page URL http://52.39.162.23/web?#model=calendar.event&action=import");
+        extentLogger.info("Expected  Result: User in Import Page URL http://52.39.162.23/web?#model=calendar.event&action=import");
 
 
 
-
-        pages.importPage().errorMessageOkButton.click();
 
 
 

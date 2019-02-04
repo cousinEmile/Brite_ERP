@@ -30,6 +30,7 @@ public interface ApplicationConstants {
     String HELP_ICON = "Help";
     String HELP_URL = "https://www.odoo.com/documentation/user/11.0/general/base_import/import_faq.html";
     String LIST_URL = "http://52.39.162.23/web?#view_type=list&model=calendar.event&menu_id=120&action=136";
+    String IMPORT_URL = "http://52.39.162.23/web?#model=calendar.event&action=import";
     String HELP_HOW_TO_IMPORT_DATA_INTO_ODOO_MESSAGE = "How to import data into Odoo";
     String TESTIMPORT_BUTTON = "Test Import";
     String IMPORT_BUTTON = "Import";
@@ -41,4 +42,12 @@ public interface ApplicationConstants {
     String AVAILABILITY_SEARCHBARICON_LABEL = "Availability";
     String PRIVACY_SEARCHBARICON_LABEL = "Privacy";
     String ODOO_CLIENT_ERROR = "Odoo Client Error";
+    String PLEASE_USE_COPY_BUTTON_TO_REPORT_MESSAGE = "Please use the copy button to report the error to your support service.";
+    String COPY_THE_FULL_ERROR_TO_CLIPBOARD_BUTTON = "Copy the full error to clipboard";
+    String SEE_DETAILS_BUTTON = "see details";
+    String UNCAUGHT_EVENT_SETTINGS_CHANGED_MESSAGE = "Uncaught event settings_changed inappropriate in current state previewing\n";
+    String OK_BUTTON = "Ok";
+
+
+
 }
