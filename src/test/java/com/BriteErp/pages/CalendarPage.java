@@ -77,7 +77,17 @@ public class CalendarPage{
     @FindBy(xpath = "(//div[@class='o_calendar_filter_item'])[4]")
     public WebElement removingFilter2;
 
+    @FindBy(xpath = "//a[.='Options']")
+    public WebElement optionsEditButton;
 
+    @FindBy (id = "o_field_input_83")
+    public WebElement selectClass;
+
+    @FindBy(xpath = "//*[@class='o_notification_manager']")
+    public WebElement errorMessage;
+
+    @FindBy (id = "o_field_input_79")
+    public  WebElement selectClassManager;
 
 
 }

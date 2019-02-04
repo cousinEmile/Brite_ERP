@@ -77,6 +77,9 @@ public class ImportPage {
     @FindBy(xpath = "(//div[@class='modal-dialog modal-lg']//div//div)[5]//button")
     public WebElement errorMessageOkButton;
 
+    @FindBy(xpath = "//div[@class='o_dialog_error modal-body']/div/p[2]")
+    public WebElement pleasuUseCopyButtonMessage;
+
 
 
 }
