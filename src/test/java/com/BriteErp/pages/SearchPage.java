@@ -2,6 +2,7 @@ package com.BriteErp.pages;
 
 import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -59,7 +60,7 @@ public class SearchPage extends TestBase {
     public WebElement ClickOnFavoritesDropDown;
     @FindBy(xpath = "//li[@class='o_save_search o_closed_menu']")
     public WebElement clickOnSaveCurrentSearch;
-    @FindBy(xpath = "//li[@class='o_save_name']")
+    @FindBy(xpath = "//li[@class='o_save_name']/input")
     public WebElement SendTextOnSaveCurrentSearchBox;
     @FindBy(xpath = "//button[@class='btn btn-primary btn-sm']")
     public WebElement SaveButtonOnFavorites;
@@ -69,7 +70,6 @@ public class SearchPage extends TestBase {
     public WebElement sendTextToSaveToDashBorad;
     @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_add_to_dashboard_button']")
     public WebElement AddButtonUnderADDToMyDash;
-
 
 
 
@@ -174,17 +174,48 @@ public class SearchPage extends TestBase {
     @FindBy(xpath = "//ul[@class='dropdown-menu o_group_by_menu']/li[1]/a")
     public WebElement groupResponsible_button;
 
+    @FindBy(css = "div.o_facet_values")
+    public WebElement Responsible_SearchBarIcon;
+
+    @FindBy(css = "div.o_facet_values>span")
+    public WebElement Responsible_Label_SearchBarIcon;
+
     @FindBy(xpath = "//ul[@class='dropdown-menu o_group_by_menu']/li[2]/a")
     public WebElement groupAvailability_button;
 
+    @FindBy(css = "div.o_facet_values")
+    public WebElement Availability_SearchBarIcon;
+
+    @FindBy(css = "div.o_facet_values>span")
+    public WebElement Availability_Label_SearchBarIcon;
+
     @FindBy(xpath = "//ul[@class='dropdown-menu o_group_by_menu']/li[3]/a")
     public WebElement groupPrivacy_button;
+
+    @FindBy(css = "div.o_facet_values")
+    public WebElement Privacy_SearchBarIcon;
+
+    @FindBy(css = "div.o_facet_values>span")
+    public WebElement Privacy_Label_SearchBarIcon;
 
     @FindBy(css = "li.o_add_custom_group.o_closed_menu")
     public WebElement AdditionalCustomGroup_button;
 
     @FindBy(css = "select.o_input.o_add_group.o_group_selector")
     public WebElement CustomGroupSelectElement;
+
+    @FindBy(css = "li.o-searchview-custom-private.selected")
+    public  WebElement CustomSavedSearch_button;
+
+    @FindBy(css = "li.o_save_name>button")
+    public WebElement CustomSavedSearch_SavedButton;
+
+    public String CustomSearchName(){
+        Faker faker = new Faker();
+        return faker.artist().name();
+    }
+
+
 
     /**Just the bones, add meat and season as required
      * note : Static list. **/

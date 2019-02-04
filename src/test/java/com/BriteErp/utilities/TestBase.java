@@ -27,6 +27,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
         driver = Driver.getDriver();
         pages = new Pages();
         driver.manage().timeouts().implicitlyWait(13, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
 //        driver.get(ConfigurationReader.getProperties("url"));
     }
 
@@ -43,7 +44,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
             extentLogger.skip("Test Case Skipped: " + result.getName());
         }
 
-//        Driver.closeDriver();
+//       Driver.closeDriver();
     }
 
 

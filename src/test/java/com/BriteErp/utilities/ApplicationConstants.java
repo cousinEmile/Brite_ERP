@@ -36,5 +36,7 @@ public interface ApplicationConstants {
     String YOU_MUST_CONFIGURE_FIELD_TO_IMPORT_MESSAGE ="You must configure at least one field to import";
     String MYMEETINGS_SEARCHBARICON_LABEL = "My Meetings";
     String UNREADMESSAGES_SEARCHBARICON_LABEL = "Unread Messages";
-
+    String RESPONSIBLE_SEARCHBARICON_LABEL = "Responsible";
+    String AVAILABILITY_SEARCHBARICON_LABEL = "Availability";
+    String PRIVACY_SEARCHBARICON_LABEL = "Privacy";
 }
