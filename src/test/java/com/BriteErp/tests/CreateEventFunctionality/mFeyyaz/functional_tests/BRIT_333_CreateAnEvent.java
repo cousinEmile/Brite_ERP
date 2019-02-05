@@ -1,4 +1,4 @@
-package com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.smoke_tests;
+package com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests;
 
 import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.WebElement;

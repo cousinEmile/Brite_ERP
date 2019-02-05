@@ -1,7 +1,5 @@
 package com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests;
 
-import com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.smoke_tests.BRIT_333_CreateAnEvent;
-import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;

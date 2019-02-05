@@ -206,4 +206,10 @@ public class CalendarPage{
     @FindBy(xpath = "(//a[.='Meetings'])[1]")
     public WebElement meetingButton;
 
+    @FindBy(xpath = "//div[@data-value='all']/div/input")
+    public WebElement everybodysCalendarButton;
+
+    @FindBy(xpath = "//div[@class='fc-row fc-widget-header']/table/thead/tr/th")
+    public WebElement daysOfWeek;
+
 }
