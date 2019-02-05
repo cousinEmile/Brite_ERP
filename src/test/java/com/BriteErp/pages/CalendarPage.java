@@ -164,5 +164,26 @@ public class CalendarPage{
     @FindBy (id = "o_field_input_79")
     public  WebElement selectClassManager;
 
+    @FindBy(xpath = "//div[@class='table-responsive']/table/tbody/tr")
+    public List<WebElement> allMeetings;
+
+    @FindBy (xpath ="(//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle'])[3]")
+    public WebElement actionDropdownButton;
+
+    @FindBy(xpath = "((//ul[@class='dropdown-menu'])[5]/li)[3]")
+    public WebElement sendSMSbutton;
+
+    @FindBy(id = "o_field_input_358")
+    public WebElement phoneNumber;
+
+    @FindBy(xpath = "//button[@class='btn btn-sm oe_highlight']" )
+    public WebElement  sendButton;
+
+    @FindBy(id = "o_field_input_359")
+    public WebElement enterText;
+
+    @FindBy(xpath = "//div[@class='o_dialog_warning modal-body']")
+    public WebElement phoneNumberError;
+
 
 }
