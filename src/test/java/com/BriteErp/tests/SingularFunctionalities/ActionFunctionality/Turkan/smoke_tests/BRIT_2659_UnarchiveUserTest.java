@@ -45,9 +45,6 @@ public class BRIT_2659_UnarchiveUserTest extends TestBase {
         pages.calendarListViewPage().warning.click();
 
 
-
-
-
 }
 
 

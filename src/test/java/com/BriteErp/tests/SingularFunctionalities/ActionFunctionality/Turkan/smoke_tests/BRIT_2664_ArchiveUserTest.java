@@ -41,9 +41,6 @@ public class BRIT_2664_ArchiveUserTest extends TestBase {
         pages.calendarListViewPage().warning.click();
 
 
-
-
-
 }
 
 
