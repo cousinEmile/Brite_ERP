@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BRIT_368_AddAttachments extends TestBase {
+public class BRIT_368_DuplicateMeeting extends TestBase {
 
     @Test
     public void AddAttachmentsTest() {
