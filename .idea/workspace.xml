@@ -402,7 +402,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="CONSOLE&#9;PSI&#9;JAVA://java.io.Console" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549396371406" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549398146399" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bookitacceptancetestsMINE" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -429,7 +429,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BRIT_001_ViewDaysOfWeek.ViewDaysOfWeekTest">
+  <component name="RunManager" selected="TestNG.BRIT_248_ErrorMessageTest.BRIT_248">
     <configuration name="BRIT_000_ViewEveryonesCalendar.ViewAllEventsOfMonthTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Brite_ERP" />
       <extension name="coverage">
@@ -466,6 +466,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BRIT_248_ErrorMessageTest.BRIT_248" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Brite_ERP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BriteErp.tests.ImportFunctionality.Said.functional_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.BriteErp.tests.ImportFunctionality.Said.functional_tests" />
+      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.ImportFunctionality.Said.functional_tests.BRIT_248_ErrorMessageTest" />
+      <option name="METHOD_NAME" value="BRIT_248" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BRIT_304_ViewAllEventsOfMonth.ViewAllEventsOfMonthTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Brite_ERP" />
       <extension name="coverage">
@@ -477,24 +495,6 @@
       <option name="PACKAGE_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.smoke_tests" />
       <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.smoke_tests.BRIT_304_ViewAllEventsOfMonth" />
       <option name="METHOD_NAME" value="ViewAllEventsOfMonthTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BRIT_367_SMSInvalidNumber.SMSInvalidNumberTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Brite_ERP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests.BRIT_367_SMSInvalidNumber" />
-      <option name="METHOD_NAME" value="SMSInvalidNumberTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -521,19 +521,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.BRIT_367_SMSInvalidNumber.SMSInvalidNumberTest" />
       <item itemvalue="TestNG.BRIT_368_DuplicateMeeting.AddAttachmentsTest" />
       <item itemvalue="TestNG.BRIT_304_ViewAllEventsOfMonth.ViewAllEventsOfMonthTest" />
       <item itemvalue="TestNG.BRIT_000_ViewEveryonesCalendar.ViewAllEventsOfMonthTest" />
       <item itemvalue="TestNG.BRIT_001_ViewDaysOfWeek.ViewDaysOfWeekTest" />
+      <item itemvalue="TestNG.BRIT_248_ErrorMessageTest.BRIT_248" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BRIT_248_ErrorMessageTest.BRIT_248" />
         <item itemvalue="TestNG.BRIT_001_ViewDaysOfWeek.ViewDaysOfWeekTest" />
         <item itemvalue="TestNG.BRIT_000_ViewEveryonesCalendar.ViewAllEventsOfMonthTest" />
         <item itemvalue="TestNG.BRIT_304_ViewAllEventsOfMonth.ViewAllEventsOfMonthTest" />
         <item itemvalue="TestNG.BRIT_368_DuplicateMeeting.AddAttachmentsTest" />
-        <item itemvalue="TestNG.BRIT_367_SMSInvalidNumber.SMSInvalidNumberTest" />
       </list>
     </recent_temporary>
   </component>

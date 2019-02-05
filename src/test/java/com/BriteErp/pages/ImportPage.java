@@ -74,7 +74,7 @@ public class ImportPage {
     @FindBy(xpath = "(//div[@class='modal-dialog modal-lg']//div//div)[1]//h4")
     public WebElement errorMessageOddo;
 
-    @FindBy(xpath = "(//div[@class='modal-dialog modal-lg']//div//div)[5]//button")
+    @FindBy(xpath = "(//div[@class='modal-dialog modal-lg']//div//div)[5]//button//span")
     public WebElement errorMessageOkButton;
 
     @FindBy(xpath = "//div[@class='o_dialog_error modal-body']/div/p[2]")
@@ -86,7 +86,7 @@ public class ImportPage {
     @FindBy(xpath = "(//div[@class='modal-content']/div/button)[2]")
     public WebElement seeDetailsButton;
 
-    @FindBy(css = "div#o_error_detail300>pre:first-of-type")
+    @FindBy(css = "div#o_error_detail282>pre:first-of-type")
     public WebElement uncaughtEventSettingsChanged;
 
   //  (//div[@class='modal-content']/div)[2]/div/pre[1]
