@@ -47,6 +47,7 @@ public class BRIT_367_SMSInvalidNumber extends TestBase {
         extentLogger.info("8. Click on Action dropdown menu");
         wait(2);
         pages.calendar().actionDropdownButton.click();
+        wait(2);
 
         extentLogger.info("9. Click on send SMS button");
         pages.calendar().sendSMSbutton.click();

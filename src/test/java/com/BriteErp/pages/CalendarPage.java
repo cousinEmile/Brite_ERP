@@ -191,4 +191,19 @@ public class CalendarPage{
     @FindBy(xpath = "//input[@class='o_input_file']")
     public WebElement addAttachmentButton;
 
+    @FindBy(xpath = "((//ul[@class='dropdown-menu'])[5]/li)[2]")
+    public WebElement duplicateButton;
+
+    @FindBy(xpath = "//input[@class='o_field_char o_field_widget o_input o_required_modifier']")
+    public WebElement duplicateInput;
+
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
+    public WebElement saveDuplicateButton;
+
+    @FindBy(xpath = "//span[@class='o_field_char o_field_widget o_required_modifier']")
+    public WebElement duplicatedMeetingName;
+
+    @FindBy(xpath = "(//a[.='Meetings'])[1]")
+    public WebElement meetingButton;
+
 }

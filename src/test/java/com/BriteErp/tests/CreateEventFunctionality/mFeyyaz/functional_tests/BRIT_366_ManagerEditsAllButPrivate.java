@@ -48,6 +48,8 @@ public class BRIT_366_ManagerEditsAllButPrivate extends TestBase {
         extentLogger.info("12. Edit the privacy of the event as Everyone");
         Select select = new Select(pages.calendar().selectClassManager);
         select.selectByIndex(1);
+
+        extentLogger.pass("BRIT_366_ManagerEditsAllButPrivate Pass ");
     }
 
 
