@@ -80,6 +80,18 @@ public class ImportPage {
     @FindBy(xpath = "//div[@class='o_dialog_error modal-body']/div/p[2]")
     public WebElement pleasuUseCopyButtonMessage;
 
+    @FindBy(xpath = "//div[@class='modal-content']/div/div/button")
+    public WebElement copyTheFullErrorToClipboardButton;
+
+    @FindBy(xpath = "(//div[@class='modal-content']/div/button)[2]")
+    public WebElement seeDetailsButton;
+
+    @FindBy(css = "div#o_error_detail300>pre:first-of-type")
+    public WebElement uncaughtEventSettingsChanged;
+
+  //  (//div[@class='modal-content']/div)[2]/div/pre[1]
+
+
 
 
 }

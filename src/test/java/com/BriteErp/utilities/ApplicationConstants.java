@@ -44,8 +44,8 @@ public interface ApplicationConstants {
     String ODOO_CLIENT_ERROR = "Odoo Client Error";
     String PLEASE_USE_COPY_BUTTON_TO_REPORT_MESSAGE = "Please use the copy button to report the error to your support service.";
     String COPY_THE_FULL_ERROR_TO_CLIPBOARD_BUTTON = "Copy the full error to clipboard";
-    String SEE_DETAILS_BUTTON = "see details";
-    String UNCAUGHT_EVENT_SETTINGS_CHANGED_MESSAGE = "Uncaught event settings_changed inappropriate in current state previewing\n";
+    String SEE_DETAILS_BUTTON = "See details";
+    String UNCAUGHT_EVENT_SETTINGS_CHANGED_MESSAGE = "Uncaught event settings_changed inappropriate in current state previewing";
     String OK_BUTTON = "Ok";
 
 

@@ -18,7 +18,6 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
         extentLogger.info("Expected  Result: Home page is displayed.");
         pages.login().open();
 
-
         extentLogger.info("3. Click Brite Erp Demo");
         extentLogger.info("Expected  Result: Clicked");
         pages.landing().BriteErpDemo_button.click();
@@ -59,28 +58,35 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
 
         extentLogger.info("12. verify \"Copy the full error to clipboard\" button");
         extentLogger.info("Expected  Result: \"Copy the full error to clipboard\" button is displayed");
+        Assert.assertEquals(pages.importPage().copyTheFullErrorToClipboardButton.getText(),COPY_THE_FULL_ERROR_TO_CLIPBOARD_BUTTON);
 
         extentLogger.info("13. click \"Copy the full error to clipboard\" ");
         extentLogger.info("Expected  Result: \"Copy the full error to clipboard\" button clicked");
+        pages.importPage().copyTheFullErrorToClipboardButton.click();
 
         extentLogger.info("14. verify \"see details\" button");
         extentLogger.info("Expected  Result: \"see details\" button is displayed");
+        Assert.assertEquals(pages.importPage().seeDetailsButton.getText(),SEE_DETAILS_BUTTON);
 
         extentLogger.info("15. click \"see details\" button ");
         extentLogger.info("Expected  Result: \"see details\" button clicked");
+        pages.importPage().seeDetailsButton.click();
 
         extentLogger.info("16. verify \"Uncaught event settings_changed inappropriate in current state previewing\n\" message");
         extentLogger.info("Expected  Result: \"Uncaught event settings_changed inappropriate in current state previewing\ng\" message is displayed");
+        Assert.assertEquals(pages.importPage().uncaughtEventSettingsChanged.getText(), UNCAUGHT_EVENT_SETTINGS_CHANGED_MESSAGE);
 
         extentLogger.info("17. verify \"Ok\" button");
         extentLogger.info("Expected  Result: \"Ok\" button is displayed");
+        Assert.assertEquals(pages.importPage().errorMessageOkButton.getText(),OK_BUTTON);
 
         extentLogger.info("18. Click \"Ok\" button ");
         extentLogger.info("Expected  Result: \"Ok\" button clicked");
+        pages.importPage().errorMessageOkButton.click();
 
         extentLogger.info("19. Verify User in import page URL http://52.39.162.23/web?#model=calendar.event&action=import");
         extentLogger.info("Expected  Result: User in Import Page URL http://52.39.162.23/web?#model=calendar.event&action=import");
-
+        Assert.assertEquals(driver.getCurrentUrl(),IMPORT_URL);
 
 
 
