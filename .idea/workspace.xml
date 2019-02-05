@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29a65b12-50bd-4c6f-b958-2dbab582f555" name="Default Changelist" comment="TestCommit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_366_SMSInvalidNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/pages/CalendarListViewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/pages/CalendarPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/pages/ImportPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/tests/CreateEventFunctionality/Cigdem/regression_tests/nameMeSomething.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/tests/CreateEventFunctionality/Tremaine/regression_tests/MyMine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/tests/CreateEventFunctionality/Tremaine/smoke_tests/MyMineMine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/regression_tests/nameMeSomethingGood.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/tests/ImportFunctionality/Said/regression_tests/D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/tests/SearchFunctionality/Albert/functional_tests/positive_login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/tests/SingularFunctionalities/ActionFunctionality/Turkan/regression_tests/hava.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/utilities/BrowserUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/utilities/BrowserUtils$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/utilities/BrowserUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteErp/utilities/TestBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_367_SMSInvalidNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_367_SMSInvalidNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,122 +16,147 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Said/functional_tests/BRIT_248_ErrorMessageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_367_SMSInvalidNumber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_366_ManagerEditsAllButPrivate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_365_EditPrivateEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_338_EditEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-185">
-              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/smoke_tests/BRIT_304_ViewAllEventsOfMonth.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/smoke_tests/BRIT_333_CreateAnEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="53" column="39" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/smoke_tests/BRIT_364_GetBackToToday.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="35" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/ImportPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/utilities/ApplicationConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="127" selection-start-line="47" selection-start-column="127" selection-end-line="47" selection-end-column="127" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Said/functional_tests/BRIT_248_ErrorMessageTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="508">
+                  <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_368_AddAttachments.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="705">
+                  <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/utilities/ApplicationConstants.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="401">
+                  <caret line="47" column="127" selection-start-line="47" selection-start-column="127" selection-end-line="47" selection-end-column="127" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="516">
+                  <caret line="191" column="42" selection-start-line="191" selection-start-column="42" selection-end-line="191" selection-end-column="42" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#275#276#0" expanded="true" />
+                    <element signature="e#340#341#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_366_ManagerEditsAllButPrivate.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="386">
+                  <caret line="57" selection-start-line="57" selection-end-line="57" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_365_EditPrivateEvent.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_338_EditEvent.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="550">
+                  <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/smoke_tests/BRIT_304_ViewAllEventsOfMonth.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="660">
+                  <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/smoke_tests/BRIT_333_CreateAnEvent.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="53" column="39" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="39" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/smoke_tests/BRIT_364_GetBackToToday.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="35" selection-end-column="61" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_367_SMSInvalidNumber.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="38" column="56" lean-forward="true" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -164,6 +176,7 @@
         <option value="Albert Richard &lt;albertbayatlantic@gmail.com&gt;" />
       </list>
     </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -206,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/funtional_tests/BRIT_366_ManagerEditsAllButPrivate.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/funtional_tests/BRIT_366_SMSInvalidNumber.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/smoke_tests/BRIT_364_GetBackToToday.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/funtional_tests/BRIT_338_EditEvent.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Said/smoke_tests/BRIT_233_HelpButtonTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarListViewPage.java" />
@@ -219,6 +231,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Said/functional_tests/BRIT_248_ErrorMessageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_366_SMSInvalidNumber.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_367_SMSInvalidNumber.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_368_AddAttachments.java" />
       </list>
     </option>
   </component>
@@ -240,7 +254,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -379,7 +393,19 @@
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="ImportFunctionality" type="462c0819:PsiDirectoryNode" />
               <item name="Said" type="462c0819:PsiDirectoryNode" />
-              <item name="smoke_tests" type="462c0819:PsiDirectoryNode" />
+              <item name="functional_tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Brite_ERP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Brite_ERP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="BriteErp" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="ImportFunctionality" type="462c0819:PsiDirectoryNode" />
+              <item name="Said" type="462c0819:PsiDirectoryNode" />
+              <item name="regression_tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Brite_ERP" type="b2602c69:ProjectViewProjectNode" />
@@ -415,9 +441,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="CONSOLE&#9;PSI&#9;JAVA://java.io.Console" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549343520922" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549381927341" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bookitacceptancetestsMINE" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
@@ -438,7 +464,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BRIT_248_ErrorMessageTest.BRIT_248">
+  <component name="RunManager" selected="TestNG.BRIT_368_AddAttachments.AddAttachmentsTest">
     <configuration name="BRIT_214_ListIconTest.BRIT_214" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Brite_ERP" />
       <extension name="coverage">
@@ -450,24 +476,6 @@
       <option name="PACKAGE_NAME" value="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests" />
       <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests.BRIT_214_ListIconTest" />
       <option name="METHOD_NAME" value="BRIT_214" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BRIT_233_HelpButtonTest.BRIT_233" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Brite_ERP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests.BRIT_233_HelpButtonTest" />
-      <option name="METHOD_NAME" value="BRIT_233" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -493,25 +501,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BRIT_2653_ExportUserTest.BRIT_2659" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Brite_ERP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.BriteErp.tests.SingularFunctionalities.ActionFunctionality.Turkan.smoke_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.BriteErp.tests.SingularFunctionalities.ActionFunctionality.Turkan.smoke_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.SingularFunctionalities.ActionFunctionality.Turkan.smoke_tests.BRIT_2653_ExportUserTest" />
-      <option name="METHOD_NAME" value="BRIT_2659" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BRIT_366_SMSInvalidNumber.SMSInvalidNumberTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BRIT_367_SMSInvalidNumber" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Brite_ERP" />
       <extension name="coverage">
         <pattern>
@@ -519,9 +509,43 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.funtional_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests.BRIT_366_SMSInvalidNumber" />
+      <option name="PACKAGE_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests" />
+      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests.BRIT_367_SMSInvalidNumber" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BRIT_367_SMSInvalidNumber.SMSInvalidNumberTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Brite_ERP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests" />
+      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests.BRIT_367_SMSInvalidNumber" />
       <option name="METHOD_NAME" value="SMSInvalidNumberTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BRIT_368_AddAttachments.AddAttachmentsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Brite_ERP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests" />
+      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests.BRIT_368_AddAttachments" />
+      <option name="METHOD_NAME" value="AddAttachmentsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -531,18 +555,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.BRIT_248_ErrorMessageTest.BRIT_248" />
-      <item itemvalue="TestNG.BRIT_366_SMSInvalidNumber.SMSInvalidNumberTest" />
-      <item itemvalue="TestNG.BRIT_2653_ExportUserTest.BRIT_2659" />
-      <item itemvalue="TestNG.BRIT_233_HelpButtonTest.BRIT_233" />
       <item itemvalue="TestNG.BRIT_214_ListIconTest.BRIT_214" />
+      <item itemvalue="TestNG.BRIT_367_SMSInvalidNumber.SMSInvalidNumberTest" />
+      <item itemvalue="TestNG.BRIT_367_SMSInvalidNumber" />
+      <item itemvalue="TestNG.BRIT_368_AddAttachments.AddAttachmentsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BRIT_368_AddAttachments.AddAttachmentsTest" />
+        <item itemvalue="TestNG.BRIT_367_SMSInvalidNumber" />
+        <item itemvalue="TestNG.BRIT_367_SMSInvalidNumber.SMSInvalidNumberTest" />
         <item itemvalue="TestNG.BRIT_248_ErrorMessageTest.BRIT_248" />
         <item itemvalue="TestNG.BRIT_214_ListIconTest.BRIT_214" />
-        <item itemvalue="TestNG.BRIT_2653_ExportUserTest.BRIT_2659" />
-        <item itemvalue="TestNG.BRIT_233_HelpButtonTest.BRIT_233" />
-        <item itemvalue="TestNG.BRIT_366_SMSInvalidNumber.SMSInvalidNumberTest" />
       </list>
     </recent_temporary>
   </component>
@@ -564,19 +588,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548793279644</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TestCommit">
+      <created>1549343576040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549343576040</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BRIT_248_ErrorMessageTest_BRIT_248 - 2019.02.04 at 20h 45m 14s.xml">
-      <configuration name="BRIT_248_ErrorMessageTest.BRIT_248" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BRIT_248_ErrorMessageTest_BRIT_248 - 2019.02.04 at 20h 46m 39s.xml">
-      <configuration name="BRIT_248_ErrorMessageTest.BRIT_248" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BRIT_248_ErrorMessageTest_BRIT_248 - 2019.02.04 at 20h 47m 58s.xml">
-      <configuration name="BRIT_248_ErrorMessageTest.BRIT_248" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="BRIT_248_ErrorMessageTest_BRIT_248 - 2019.02.04 at 21h 03m 46s.xml">
       <configuration name="BRIT_248_ErrorMessageTest.BRIT_248" configurationId="TestNG" />
     </history-entry>
@@ -598,12 +620,20 @@
     <history-entry file="BRIT_248_ErrorMessageTest_BRIT_248 - 2019.02.04 at 23h 46m 19s.xml">
       <configuration name="BRIT_248_ErrorMessageTest.BRIT_248" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="BRIT_248_ErrorMessageTest_BRIT_248 - 2019.02.05 at 00h 14m 14s.xml">
+      <configuration name="BRIT_248_ErrorMessageTest.BRIT_248" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BRIT_367_SMSInvalidNumber - 2019.02.05 at 10h 36m 38s.xml">
+      <configuration name="BRIT_367_SMSInvalidNumber" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BRIT_368_AddAttachments_AddAttachmentsTest - 2019.02.05 at 10h 42m 59s.xml">
+      <configuration name="BRIT_368_AddAttachments.AddAttachmentsTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.46065807" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32403433" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -612,15 +642,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30985916" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.377943" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4980494" weight="0.25135428" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4980494" visible="true" weight="0.20446096" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50159746" side_tool="true" weight="0.24822696" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.498779" weight="0.24924012" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32719395" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32624114" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -664,16 +694,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="TestCommit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/functional_tests/BRIT_201.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/functional_tests/BRIT_323.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -835,18 +855,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/SingularFunctionalities/Attendees_SmallCalendarFunctionality/Kosim/smoke_tests/BRIT2180.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="140" selection-start-line="140" selection-end-line="140" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Said/smoke_tests/BRIT_233_HelpButtonTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -944,43 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/utilities/ApplicationConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="127" selection-start-line="47" selection-start-column="127" selection-end-line="47" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_366_ManagerEditsAllButPrivate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_365_EditPrivateEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_338_EditEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-185">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/smoke_tests/BRIT_304_ViewAllEventsOfMonth.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -1004,7 +975,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/smoke_tests/BRIT_364_GetBackToToday.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="35" selection-end-column="61" />
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="35" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1018,10 +989,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Said/functional_tests/BRIT_248_ErrorMessageTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_366_ManagerEditsAllButPrivate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="386">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_365_EditPrivateEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_338_EditEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1030,11 +1021,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_367_SMSInvalidNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="195">
+          <caret line="38" column="56" lean-forward="true" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="191" column="42" selection-start-line="191" selection-start-column="42" selection-end-line="191" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_368_AddAttachments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Said/functional_tests/BRIT_248_ErrorMessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/utilities/ApplicationConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="47" column="127" selection-start-line="47" selection-start-column="127" selection-end-line="47" selection-end-column="127" />
         </state>
       </provider>
     </entry>
@@ -1078,7 +1108,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.8.0_201</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

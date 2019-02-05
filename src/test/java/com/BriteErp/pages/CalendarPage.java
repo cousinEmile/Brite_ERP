@@ -185,5 +185,10 @@ public class CalendarPage{
     @FindBy(xpath = "//div[@class='o_dialog_warning modal-body']")
     public WebElement phoneNumberError;
 
+    @FindBy(xpath = "(//div[@class='btn-group o_dropdown'])[2]")
+    public WebElement attachmentButton;
+
+    @FindBy(xpath = "//input[@class='o_input_file']")
+    public WebElement addAttachmentButton;
 
 }

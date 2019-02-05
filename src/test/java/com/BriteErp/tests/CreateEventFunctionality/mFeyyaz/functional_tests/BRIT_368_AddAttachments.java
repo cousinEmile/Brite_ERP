@@ -1,17 +1,13 @@
 package com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests;
 
 import com.BriteErp.utilities.TestBase;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
-public class BRIT_367_SMSInvalidNumber extends TestBase {
+public class BRIT_368_AddAttachments extends TestBase {
 
     @Test
-    public void SMSInvalidNumberTest() {
+    public void AddAttachmentsTest () {
 
         extentLogger = report.createTest("SMSInvalidNumberTest Test");
 
@@ -44,36 +40,16 @@ public class BRIT_367_SMSInvalidNumber extends TestBase {
             }
         }
 
-        extentLogger.info("8. Click on Action dropdown menu");
+        extentLogger.info("8. Click on attachments dropdown button");
         wait(2);
-        pages.calendar().actionDropdownButton.click();
+        pages.calendar().attachmentButton.click();
 
-        extentLogger.info("9. Click on send SMS button");
-        pages.calendar().sendSMSbutton.click();
-
-        extentLogger.info("10. Enter a valid phone number in the U.S but not in a format expected");
-        pages.calendar().phoneNumber.sendKeys("9152329932");
-
-        extentLogger.info("11. Enter a message");
-        pages.calendar().enterText.sendKeys("Hello dear employee");
-
-        extentLogger.info("12. Click on send button");
-        pages.calendar().sendButton.click();
-
-        extentLogger.info("13. Verify the error message displayed");
-        Assert.assertTrue(pages.calendar().phoneNumberError.isDisplayed());
-
+        extentLogger.info("9. Click on Add button");
+        pages.calendar().addAttachmentButton.click();
 
 
     }
 
 
 
-
-
-
-
-
 }
-
-
