@@ -29,11 +29,11 @@ public class BRIT_364_GetBackToToday extends TestBase {
         System.out.println(currentMonth);
         extentLogger.info("Click on right arrow to go to next month");
 
-        pages.calendar().nextMonth.click();
-        wait(2);
-        String nextMonthName = pages.calendar().theCurrentMonthText.getText();
-        System.out.println(nextMonthName);
-        Assert.assertNotEquals(currentMonth,nextMonthName);
+//        pages.calendar().nextMonth.click();
+//        wait(2);
+//        String nextMonthName = pages.calendar().theCurrentMonthText.getText();
+//        System.out.println(nextMonthName);
+//        Assert.assertNotEquals(currentMonth,nextMonthName);
 
         extentLogger.info("Click on the today button");
         pages.calendar().today_button.click();
