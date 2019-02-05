@@ -89,9 +89,6 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
         Assert.assertEquals(driver.getCurrentUrl(),IMPORT_URL);
 
 
-
-
-
     }
 
 }
