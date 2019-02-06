@@ -40,6 +40,9 @@ public class CalendarPage{
     @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button[3]")
     public WebElement viewMonth_button;
 
+    @FindBy(xpath = "//div[@class='modal-footer']/button")
+    public WebElement popOutCreate_button;
+
     @FindBy(xpath = "//div[@class='o_calendar_sidebar_container hidden-xs']/i")
     public WebElement miniCalendarClose;
 
@@ -124,10 +127,10 @@ public class CalendarPage{
     @FindBy(xpath = "//div[@class='fc-slats']//tr[21]//td[2]")
     public WebElement click_table_weekly;
 
-    @FindBy(xpath = "//button[@class=\"o_calendar_button_prev btn btn-sm btn-primary\"]//span")
+    @FindBy(xpath = "//button[@class='o_calendar_button_prev btn btn-sm btn-primary']//span")
     public WebElement back_week;
 
-    @FindBy(xpath = "//button[@class=\"o_calendar_button_next btn btn-sm btn-primary\"]//span")
+    @FindBy(xpath = "//button[@class='o_calendar_button_next btn btn-sm btn-primary']//span")
     public WebElement forth_week;
 
     @FindBy(xpath = "( //span[@class='o_dropdown_button']   ) [2] ")
