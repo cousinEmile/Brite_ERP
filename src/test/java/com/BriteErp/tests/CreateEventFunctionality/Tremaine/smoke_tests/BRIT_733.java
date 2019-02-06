@@ -25,11 +25,11 @@ public class BRIT_733 extends TestBase {
 
         extentLogger.info("4.User then clicks on Calendar tab");
         extentLogger.info("Expected Result: User is taken to the Calendar page.");
-        pages.topNavigationBar().calendar_button.click();
+        pages.topNavigationBar().ab_calendar_button.click();
 
         extentLogger.info("5.User click on the Day button for main Calendar.");
         extentLogger.info("Expected Result: Calendar is refreshed to its Day format.");
-        pages.calendar().viewDay_button.click();
+        pages.calendar().dayButton.click();
 
         extentLogger.info("6.User clicks on the right arrow");
         extentLogger.info("Expected Result: The current day should be shifted to next day");

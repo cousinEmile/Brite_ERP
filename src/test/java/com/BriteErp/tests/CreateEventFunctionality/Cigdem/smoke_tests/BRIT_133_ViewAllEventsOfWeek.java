@@ -41,5 +41,7 @@ public class BRIT_133_ViewAllEventsOfWeek extends TestBase {
         pages.calendar().click_table_weekly.click();
         Assert.assertTrue(pages.calendar().popOutCreate_button.isDisplayed());
 
+        extentLogger.pass("ViewAllEventsOfWeekTest PASS");
+
     }
 }
