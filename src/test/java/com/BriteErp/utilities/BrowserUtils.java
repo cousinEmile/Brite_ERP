@@ -7,11 +7,14 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.*;
+import java.util.List;
 import java.util.function.Function;
 
 import static com.BriteErp.utilities.ApplicationConstants.*;
@@ -303,13 +306,61 @@ public class BrowserUtils {
     }
 
 
+    public static int getRundomNumInRange(int low, int high) {
+        Random random = new Random();
+        return random.nextInt(high - low) + low;
+    }
 
 
 
+    public void waitForPresenceOfElementByCss(String css) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),
+                Long.parseLong(ConfigurationReader.getProperties("timeout")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(css)));
+    }
 
 
+    public void hitEnterUsingRobot() {
+        Robot rb;
+        try {
+            rb = new Robot();
+            rb.keyPress(KeyEvent.VK_ENTER);
+            rb.keyRelease(KeyEvent.VK_ENTER);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
 
+    public void InitilizaButton() {
+        Button createAccountbutton = new Button("createAccount");
+        Button validationButton = new Button("validationBtn");
+
+        validationButton.setEnabled(false);
+    }
+
+
+    public boolean verifyAlertPresent() {
+        try {
+            Driver.getDriver().switchTo().alert();
+            return true;
+        } catch (NoAlertPresentException Ex) {
+            System.out.println("Alert is not presenet");
+        }
+        return false;
+    }
+
+    public boolean isElementVisible(By arg0) {
+        boolean elementVisible = false;
+        try {
+            (new WebDriverWait(Driver.getDriver(), 60)).until(ExpectedConditions.visibilityOfElementLocated(arg0));
+            elementVisible = true;
+
+        } catch (TimeoutException ex) {
+            elementVisible = false;
+        }
+        return elementVisible;
+    }
 
 
 

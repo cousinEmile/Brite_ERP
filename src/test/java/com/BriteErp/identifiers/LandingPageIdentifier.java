@@ -1,4 +1,6 @@
 package com.BriteErp.identifiers;
 
-public class LandingPageIdentifier {
+public interface LandingPageIdentifier {
+
+    String LandingBriteERPDemo_ButtonXpath="//div[@class='list-group']/a[2]";
 }
