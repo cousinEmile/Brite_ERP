@@ -68,6 +68,9 @@ public class CalendarPage{
     @FindBy(xpath = CalendarPageIdentifier.CalendarAllDayBoxXpath)
     public WebElement allDayBox;
 
+    @FindBy(xpath=CalendarPageIdentifier.CalendarAllDayCheckBox)
+    public WebElement allDayCheckBox;
+
     @FindBy(xpath = CalendarPageIdentifier.CalendarAddMeetingBox_PopOutXpath)
     public WebElement addMeetingBox_popOut;
 
@@ -100,6 +103,9 @@ public class CalendarPage{
 
     @FindBy(xpath= CalendarPageIdentifier.CalendarSaveButtonXpath)
     public WebElement saveButton;
+
+    @FindBy(xpath="//input[@placeholder='e.g. Business Lunch']")
+    public WebElement meetingSubjectBox;
 
     public WebElement getEvent(String text){
         for (WebElement event: events) {

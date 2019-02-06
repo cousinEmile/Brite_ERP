@@ -5,12 +5,13 @@ import org.openqa.selenium.support.FindBy;
 
 public interface CalendarPageIdentifier {
 
+    String CalendarAllDayCheckBox               = "//div[@name='allday']";
     String CalendarChatCloseXpath               ="//div[@class='o_chat_header']/span/a[2]";
     String CalendarLastWeekButtonXpath          ="//div[@class='o_calendar_buttons']/button";
     String CalendarToday_ButtonXpath            ="//div[@class='o_calendar_buttons']/button[2]";
     String CalendarNextWeek_ButtonXpath         ="//div[@class='o_calendar_buttons']/button[3]";
     String CalendarViewDay_ButtonXpath          ="//div[@class='btn-group btn-group-sm']/button";
-    String CalendarDayButtonXpath               ="/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]";
+    String CalendarDayButtonXpath               ="//button[contains(text(),'Day')]";
     String CalendarViewWeek_ButtonXpath         ="//div[@class='btn-group btn-group-sm']/button[2]";
     String CalendarViewMonth_ButtonXpath        ="//div[@class='btn-group btn-group-sm']/button[3]";
     String CalendarMiniCalendarCloseXpath       ="//div[@class='o_calendar_sidebar_container hidden-xs']/i";
@@ -22,7 +23,7 @@ public interface CalendarPageIdentifier {
     String CalendarSearchBoxXpath               ="//div[@class='o_cp_searchview']/div/input";
     String CalendarAdvancedSearch_ButtonXpath   ="//div[@class='o_searchview']/span";
     String Calendar_011618_AllDayXpath          ="(//table)[3]/tbody/tr/td[5]";
-    String CalendarAllDayBoxXpath               ="/html/body/div[1]/div[2]/div[2]/div/div/div/div[1]/div[1]/div/div/table/tbody/tr/td/div[1]/div/div[1]/table/tbody/tr/td[2]";
+    String CalendarAllDayBoxXpath               ="//div[@class='fc-row fc-week fc-widget-content']//td[@class='fc-day fc-widget-content fc-fri fc-past']";
     String CalendarAddMeetingBox_PopOutXpath    ="//div[@class='modal-content']/div/div/input";
     String CalendarPopOutCreate_ButtonXpath     ="//div[@class='modal-footer']/button";
     String CalendarSummaryInputBoxXpath         ="//input[@class='o_input']";
@@ -32,7 +33,7 @@ public interface CalendarPageIdentifier {
     String CalendarNextMonthXpath               ="//span[@class='fa fa-arrow-right']";
     String CalendarMAy15thXpath                 ="((//div[@class='fc-content-skeleton'])[3]/table/tbody/tr/td)[5]";
     String CalendarEventsXpath                  ="(//div[@class='o_field_name o_field_type_char'])";
-    String CalendarAttendeesBox                 ="/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/h2[1]/div[1]";
+    String CalendarAttendeesBox                 ="//input[@placeholder='Select attendees...']";
     String CalendarSaveButtonXpath              ="/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[1]";
     String CalendarNextDayButtonXpath           ="/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/button[3]";
     String CalendarView_Table_WeeklyXpath       ="//div[@class='fc-view fc-agendaWeek-view fc-agenda-view']";

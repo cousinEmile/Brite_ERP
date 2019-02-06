@@ -2,13 +2,14 @@ package com.BriteErp.tests.CreateEventFunctionality.Tremaine.functional_tests;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BRIT_748 extends TestBase {
 
     @Test
     public void Brit_748() {
-        extentLogger = report.createTest("Create Event_BRIT_109 Test-User");
+        extentLogger = report.createTest("User is able to click on all day box-Brit_748 Test-User");
         waitForPageToLoad(2);
 
         extentLogger.info("1.Precondition: Environment is ready.");
@@ -41,8 +42,12 @@ public class BRIT_748 extends TestBase {
         extentLogger.info("Expected Result: User should be taken to another pop-up box with more options");
         pages.calendar().editButton.click();
 
-//        extentLogger.info("8.User clicks on the box adjacent to the meeting detail All-day.");
-//        extentLogger.info("Expected Result: User should see ");
+        extentLogger.info("8.User clicks on the box adjacent to the meeting detail All-day.");
+       extentLogger.info("Expected Result: User should see ");
+       pages.calendar().allDayCheckBox.click();
+        Assert.assertTrue( pages.calendar().allDayCheckBox.isSelected());
+
+
     }
 
 }
