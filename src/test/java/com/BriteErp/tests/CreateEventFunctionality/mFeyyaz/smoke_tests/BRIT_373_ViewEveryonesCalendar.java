@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class BRIT_000_ViewEveryonesCalendar extends TestBase {
+public class BRIT_373_ViewEveryonesCalendar extends TestBase {
 
     @Test
     public void ViewAllEventsOfMonthTest() {
@@ -45,6 +45,7 @@ public class BRIT_000_ViewEveryonesCalendar extends TestBase {
         pages.calendar().everybodysCalendarButton.click();
 
 
+        extentLogger.info("10. Verify that InventoryManager's event and meetings are displayed on the calendar");
         wait(2);
         List<WebElement> responsibles = driver.findElements(By.xpath("(//div[@class='o_calendar_filter_items'])[2]/div"));
 

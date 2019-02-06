@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class BRIT_001_ViewDaysOfWeek extends TestBase {
+public class BRIT_372_ViewDaysOfWeek extends TestBase {
 
     @Test
     public void ViewDaysOfWeekTest() {
@@ -41,13 +41,15 @@ public class BRIT_001_ViewDaysOfWeek extends TestBase {
         extentLogger.info("8. Verify monthly view displayed");
         Assert.assertTrue(pages.calendar().monthView.isDisplayed());
 
+        extentLogger.info("9. Verify that days of the week is on display Sunday through Saturday as entire month");
         wait(1);
         List<WebElement> daysOfWeek = driver.findElements(By.xpath("//div[@class='fc-row fc-widget-header']/table/thead/tr/th"));
 
         for(int i=1; i<daysOfWeek.size(); i++){
-            System.out.println(daysOfWeek.get(i).getText());
+
             Assert.assertEquals(daysOfWeek.get(1).getText(), "Sun");
-            Assert.assertEquals(daysOfWeek.get(daysOfWeek.size()).getText(), "Sat");
+
+            Assert.assertEquals(daysOfWeek.get(daysOfWeek.size()-1).getText(), "Sat");
         }
 
 
