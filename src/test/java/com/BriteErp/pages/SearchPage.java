@@ -1,5 +1,6 @@
 package com.BriteErp.pages;
 
+import com.BriteErp.identifiers.SearchPageIdentifier;
 import com.BriteErp.utilities.Driver;
 import com.BriteErp.utilities.TestBase;
 //import com.github.javafaker.Faker;
@@ -10,223 +11,193 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class SearchPage extends TestBase {
-    public SearchPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public SearchPage ( ) {
+        PageFactory.initElements ( Driver.getDriver ( ) , this );
     }
-@FindBy(xpath = "//span[@class='o_searchview_more fa fa-search-plus']")
+
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchMgniffierIconeXpath )
     public WebElement MgniffierIcone;
-    @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[2]")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchCalanderModuleXpath )
     public WebElement CalanderModule;
 
-    //=======Filter button==========
 
-    @FindBy(xpath = "(//div[@class='btn-group o_dropdown'])[1]")
+    @FindBy ( xpath = SearchPageIdentifier.SearchFilterButtonXpath )
     public WebElement FilterButton;
-    @FindBy(xpath = "(//span[@class='caret'])[1]")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchFilterDropDownXpath )
     public WebElement FilterDropDown;
-    @FindBy(xpath = "//li[@class='o_add_filter o_closed_menu']")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchAddCustomFilterXpath )
     public WebElement AddCustomFilter;
 
-    @FindBy(xpath = "//input[@class='o_searchview_input']")
+    @FindBy ( xpath = SearchPageIdentifier.SearchSearchBoxXpath )
     public WebElement SearchBox;
-    @FindBy(xpath = "//select[@class='o_input o_searchview_extended_prop_field']")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchSelectFromActionNeededButtonXpath )
     public WebElement SelectFromActionNeededButton;
 
-    public void Select_List(int index){
-        Select list=new Select(SelectFromActionNeededButton);
-     list.selectByIndex(index);
+    public void Select_List ( int index ) {
+        Select list = new Select ( SelectFromActionNeededButton );
+        list.selectByIndex ( index );
 
     }
 
-
- @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_apply_filter']")
+    @FindBy ( xpath = SearchPageIdentifier.SearchApplyButtonXpath )
     public WebElement ApplyButton;
 
-    //========Group By==================
-
-
-    @FindBy(xpath = "(//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle'])[2]")
+    @FindBy ( xpath = SearchPageIdentifier.SearchClickOnGroupByDropDownXpath )
     public WebElement ClickOnGroupByDropDown;
-   @FindBy(xpath = "//li[@class='o_add_custom_group o_closed_menu']")
-   public WebElement AddCustomDropDownGroup;
-   @FindBy(xpath = "//select[@class='o_input o_add_group o_group_selector']")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchAddCustomDropDownGroupXpath )
+    public WebElement AddCustomDropDownGroup;
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchDroupDownListUnderGroupByXpath )
     public WebElement DroupDownListUnderGroupBy;
-   @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_add_group o_select_group']")
-   public WebElement applyButtonInGroup;
 
+    @FindBy ( xpath = SearchPageIdentifier.SearchApplyButtonInGroupXpath )
+    public WebElement applyButtonInGroup;
 
-//========Favorites================
-
-    @FindBy(xpath = "(//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle'])[3]")
+    @FindBy ( xpath = SearchPageIdentifier.SearchClickOnFavoritesDropDownXpath )
     public WebElement ClickOnFavoritesDropDown;
-    @FindBy(xpath = "//li[@class='o_save_search o_closed_menu']")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchClickOnSaveCurrentSearchXpath )
     public WebElement clickOnSaveCurrentSearch;
-    @FindBy(xpath = "//li[@class='o_save_name']/input")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchSendTextToSaveOnCurrentSearchBoxXpath )
     public WebElement SendTextOnSaveCurrentSearchBox;
-    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm']")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchSaveButtonOnFavoritesXpath )
     public WebElement SaveButtonOnFavorites;
-    @FindBy(xpath = "//li[@class='o_add_to_dashboard_link o_closed_menu']")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchClickToDashBoradIconeXpath )
     public WebElement ClickToDashBoradIcone;
-    @FindBy(xpath = "//input[@class='o_add_to_dashboard_input']")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchSendTextToSaveToDashBoradXpath )
     public WebElement sendTextToSaveToDashBorad;
-    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_add_to_dashboard_button']")
+
+    @FindBy ( xpath = SearchPageIdentifier.SearchAddButtonUnderADDToMyDashXpath )
     public WebElement AddButtonUnderADDToMyDash;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//===============Added By Albert 02//01/19=============
-
-
-    @FindBy(xpath = "(//div[@class='o_cp_right']/div/div/button)[1]")
+    @FindBy ( xpath = SearchPageIdentifier.SearchFiltersButtonXpath )
     public WebElement filters_button;
 
-    @FindBy(xpath = "//li[@title='My Events']/a" )
+    @FindBy ( xpath = SearchPageIdentifier.SearchMyEvents_FilterXpath )
     public WebElement MyEvents_filter;
 
-    @FindBy(css = "div.o_searchview_facet")
+    @FindBy ( css = SearchPageIdentifier.SearchMyEvents_SearchBarIconCSS )
     public WebElement MyEvents_SearchBarIcon;
 
-   @FindBy(css ="div.o_searchview_facet>div>span")
-   public WebElement MyEvents_Label_SearchBarIcon;
+    @FindBy ( css = SearchPageIdentifier.SearchMyEvents_Label_SearchBarIconCSS )
+    public WebElement MyEvents_Label_SearchBarIcon;
 
-
-    @FindBy(xpath = "//li[@title='My Meetings']/a")
+    @FindBy ( xpath = SearchPageIdentifier.SearchMyMeetings_FilterXpath )
     public WebElement MyMeetings_filter;
 
-    @FindBy(css = "div.o_facet_values")
+    @FindBy ( css = SearchPageIdentifier.SearchMyMeetings_SearchBarIconCSS )
     public WebElement MyMeetings_SearchBarIcon;
 
-    @FindBy(css = "div.o_facet_values>span")
+    @FindBy ( css = SearchPageIdentifier.SearchMyMeetings_Label_SearchBarIconCSS )
     public WebElement MyMeetings_Label_SearchBarIcon;
 
-    @FindBy(xpath = "//li[@data-index='2']/a")
+    @FindBy ( xpath = SearchPageIdentifier.SearchUnreadMessages_FilterXpath )
     public WebElement UnreadMessages_filter;
 
-    @FindBy(css = "div.o_facet_values>span")
+    @FindBy ( css = SearchPageIdentifier.SearchUnreadMessages_Label_SearchBarIconCSS )
     public WebElement UnreadMessages_Label_SearchBarIcon;
 
-    @FindBy(css = "div.o_facet_values")
+    @FindBy ( css = SearchPageIdentifier.SearchUnreadMessages_SearchBarIconCSS )
     public WebElement UnreadMessages_SearchBarIcon;
 
-    @FindBy(css = "li.o_add_filter.o_closed_menu>a")
+    @FindBy ( css = SearchPageIdentifier.SearchRevealCustomFilter_ButtonCSS )
     public WebElement RevealCustomFilter_button;
 
-    @FindBy(css= "select.o_input.o_searchview_extended_prop_field")
+    @FindBy ( css = SearchPageIdentifier.SearchCustomFilter_SelectElementCSS )
     public WebElement CustomFilter_SelectElement;
 
-    @FindBy(css = "select.o_input.o_searchview_extended_prop_op")
+    @FindBy ( css = SearchPageIdentifier.SearchCustomFilterBoolean_SelectElementCSS )
     public WebElement CustomFilterBoolean_SelectElement;
 
-    /** This is just the frame of a select method. Keep in mind that which ever you choose will effect the boolean dropdown
+    /**
+     * This is just the frame of a select method. Keep in mind that which ever you choose will effect the boolean dropdown
      * Also note that when you add an additional custom filter, it duplicates an li node above
      * the filter menu buttons -- these are not dynamic enough selector paths to withstand that.
-     * You must refactor selectors for both dropdowns before adding custom filters**/
-    public void CustomFilter_DropDownMenu(){
-        Select select = new Select(CustomFilter_SelectElement);
+     * You must refactor selectors for both dropdowns before adding custom filters
+     **/
+    public void CustomFilter_DropDownMenu ( ) {
+        Select select = new Select ( CustomFilter_SelectElement );
     }
+
     /**
      * Remember that the choice of the above custom filter will determine the boolean Options
-     *      Needs be tailored to suit       **/
-    public void CustomFilterDynamicBoolean_DropDown(){
-        Select select = new Select(CustomFilterBoolean_SelectElement);
+     * Needs be tailored to suit
+     **/
+    public void CustomFilterDynamicBoolean_DropDown ( ) {
+        Select select = new Select ( CustomFilterBoolean_SelectElement );
     }
 
-    @FindBy(css = "button.btn.btn-primary.btn-sm.o_apply_filter")
+    @FindBy ( css = SearchPageIdentifier.SearchApplyCustomFilter_ButtonCSS )
     public WebElement ApplyCustomFilter_Button;
 
-    @FindBy(css = "button.btn.btn-default.btn-sm.o_add_condition" )
+    @FindBy ( css = SearchPageIdentifier.SearchAdditionalCustomFeature_ButtonCSS )
     public WebElement AdditionalCustomFeature_button;
 
-
-    @FindBy(xpath = "(//div[@class='o_cp_right']/div/div/button)[2]")
+    @FindBy ( xpath = SearchPageIdentifier.SearchGroupBy_ButtonXpath )
     public WebElement GroupBy_button;
 
-    @FindBy(xpath = "//ul[@class='dropdown-menu o_group_by_menu']/li[1]/a")
+    @FindBy ( xpath = SearchPageIdentifier.SearchGroupResponsible_ButtonXpath )
     public WebElement groupResponsible_button;
 
-    @FindBy(css = "div.o_facet_values")
+    @FindBy ( css = SearchPageIdentifier.SearchResponsible_SearchBarIconCSS )
     public WebElement Responsible_SearchBarIcon;
 
-    @FindBy(css = "div.o_facet_values>span")
+    @FindBy ( css = SearchPageIdentifier.SearchResponsible_Label_SearchBarIconCSS )
     public WebElement Responsible_Label_SearchBarIcon;
 
-    @FindBy(xpath = "//ul[@class='dropdown-menu o_group_by_menu']/li[2]/a")
+    @FindBy ( xpath = SearchPageIdentifier.SearchGroupAvailability_ButtonXpath )
     public WebElement groupAvailability_button;
 
-    @FindBy(css = "div.o_facet_values")
+    @FindBy ( css = SearchPageIdentifier.SearchAvailability_SearchBarIconCSS )
     public WebElement Availability_SearchBarIcon;
 
-    @FindBy(css = "div.o_facet_values>span")
+    @FindBy ( css = SearchPageIdentifier.SearchAvailability_label_SearchBarIconCSS )
     public WebElement Availability_Label_SearchBarIcon;
 
-    @FindBy(xpath = "//ul[@class='dropdown-menu o_group_by_menu']/li[3]/a")
+    @FindBy ( xpath = SearchPageIdentifier.SearchGroupPrivacy_ButtonXpath )
     public WebElement groupPrivacy_button;
 
-    @FindBy(css = "div.o_facet_values")
+    @FindBy ( css = SearchPageIdentifier.SearchPrivacy_SearchBarIconCSS )
     public WebElement Privacy_SearchBarIcon;
 
-    @FindBy(css = "div.o_facet_values>span")
+    @FindBy ( css = SearchPageIdentifier.SearchPrivacy_Label_SearchBarIconCSS )
     public WebElement Privacy_Label_SearchBarIcon;
 
-    @FindBy(css = "li.o_add_custom_group.o_closed_menu")
+    @FindBy ( css = SearchPageIdentifier.SearchAdditionalCustomGroup_ButtonCSS )
     public WebElement AdditionalCustomGroup_button;
 
-    @FindBy(css = "select.o_input.o_add_group.o_group_selector")
+    @FindBy ( css = SearchPageIdentifier.SearchCustomGroupSelectElementCSS )
     public WebElement CustomGroupSelectElement;
 
-    @FindBy(css = "li.o-searchview-custom-private.selected")
-    public  WebElement CustomSavedSearch_button;
+    @FindBy ( css = SearchPageIdentifier.SearchCustomSavedSearch_ButtonCSS )
+    public WebElement CustomSavedSearch_button;
 
-    @FindBy(css = "li.o_save_name>button")
+    @FindBy ( css = SearchPageIdentifier.SearchCustomSavedSearch_SavedButtonCSS )
     public WebElement CustomSavedSearch_SavedButton;
 
-    public String CustomSearchName(){
-        Faker faker = new Faker();
-        return faker.artist().name();
+    public String CustomSearchName ( ) {
+        Faker faker = new Faker ( );
+        return faker.artist ( ).name ( );
     }
 
 
-
-    /**Just the bones, add meat and season as required
-     * note : Static list. **/
-    public void CustomGroup_DropDown(){
-        Select select = new Select(CustomGroupSelectElement);
+    /**
+     * Just the bones, add meat and season as required
+     * note : Static list.
+     **/
+    public void CustomGroup_DropDown ( ) {
+        Select select = new Select ( CustomGroupSelectElement );
     }
-
-
-
-
 
 
 }

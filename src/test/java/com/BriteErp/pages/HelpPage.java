@@ -1,5 +1,6 @@
 package com.BriteErp.pages;
 
+import com.BriteErp.identifiers.HelpPageIdentifier;
 import com.BriteErp.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +11,7 @@ public class HelpPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//div[@class='container text-center']//h1")
+    @FindBy(xpath = HelpPageIdentifier.HelpHowToImportDataToOdoMessageXpath )
     public WebElement howToImportDataToOdoMessage;
 
 

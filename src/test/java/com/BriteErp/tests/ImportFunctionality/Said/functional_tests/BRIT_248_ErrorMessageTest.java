@@ -80,6 +80,7 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
         extentLogger.info("Expected  Result: \"Ok\" button is displayed");
         Assert.assertEquals(pages.importPage().errorMessageOkButton.getText(),OK_BUTTON);
 
+        wait(2);
         extentLogger.info("18. Click \"Ok\" button ");
         extentLogger.info("Expected  Result: \"Ok\" button clicked");
         pages.importPage().errorMessageOkButton.click();

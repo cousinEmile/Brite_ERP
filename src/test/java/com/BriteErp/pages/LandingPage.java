@@ -1,5 +1,6 @@
 package com.BriteErp.pages;
 
+import com.BriteErp.identifiers.LandingPageIdentifier;
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.Driver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +14,7 @@ public class LandingPage {
     }
 
 
-    @FindBy(xpath = "//div[@class='list-group']/a[2]")      //.click()
+    @FindBy(xpath = LandingPageIdentifier.LandingBriteERPDemo_ButtonXpath )      //.click()
     public WebElement BriteErpDemo_button;
 
 

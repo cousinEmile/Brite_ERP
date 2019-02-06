@@ -1,5 +1,6 @@
 package com.BriteErp.pages;
 
+import com.BriteErp.identifiers.CalendarListViewPageIdentifier;
 import com.BriteErp.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,43 +15,43 @@ public class CalendarListViewPage{
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(css = "button.btn.btn-primary.btn-sm.o_list_button_add")
+    @FindBy(css = CalendarListViewPageIdentifier.CalendarListViewCreate_ButtonXpath)
     public WebElement create_button;
 
-    @FindBy(css = "button.btn.btn-sm.btn-default.o_button_import")
+    @FindBy(css = CalendarListViewPageIdentifier.CalendarListViewImport_ButtonCSS)
     public WebElement import_button;
 
-    @FindBy(css = "button.fa.fa-chevron-left.btn.btn-icon.o_pager_previous")
+    @FindBy(css = CalendarListViewPageIdentifier.CalendarListViewPreviousPage_ButtonCSS)
     public WebElement previousPage_button;
 
-    @FindBy(css = "button.fa.fa-chevron-right.btn.btn-icon.o_pager_next")
+    @FindBy(css = CalendarListViewPageIdentifier.CalendarListViewNextPage_ButtonCSS)
     public WebElement nextPage_button;
 
-    @FindBy(xpath ="//div[@class='col-sm-12']//a" )
+    @FindBy(xpath =CalendarListViewPageIdentifier.CalendarListViewHelpButtonXpath )
     public WebElement helpButton;
 
-    @FindBy(xpath ="//button[@data-original-title='List']" )
+    @FindBy(xpath =CalendarListViewPageIdentifier.CalendarListViewListXpath )
     public WebElement list;
 
-    @FindBy(xpath ="/html/body/div[1]/div[2]/div[2]/div/div/div/table/thead/tr/th[1]/div/input")
+    @FindBy(xpath =CalendarListViewPageIdentifier.CalendarListViewSubjectCheckBoxXpath)
     public WebElement subjectCheckbox;
 
-    @FindBy(xpath ="(//button[@data-toggle='dropdown'])[2]")
+    @FindBy(xpath =CalendarListViewPageIdentifier.CalendarListViewArchiveXpath)
     public WebElement action;
 
-    @FindBy(xpath ="//a[@data-index='2']")
+    @FindBy(xpath =CalendarListViewPageIdentifier.CalendarListViewUnarchiveXpath)
     public WebElement unarchive;
 
-    @FindBy(xpath ="//a[@data-index='0']")
+    @FindBy(xpath =CalendarListViewPageIdentifier.CalendarListViewExportXpath)
     public WebElement export;
 
-    @FindBy(xpath ="//a[@data-index='1']")
+    @FindBy(xpath =CalendarListViewPageIdentifier.CalendarListViewArchiveXpath)
     public WebElement archive;
 
-    @FindBy(xpath ="//button[@class='btn btn-sm btn-primary']")
+    @FindBy(xpath =CalendarListViewPageIdentifier.CalendarListViewWarningXpath)
     public WebElement warning;
 
-    @FindBy(xpath ="//button[@class='btn btn-sm btn-default']")
+    @FindBy(xpath =CalendarListViewPageIdentifier.CalendarListViewCloseXpath)
     public WebElement close;
 
 

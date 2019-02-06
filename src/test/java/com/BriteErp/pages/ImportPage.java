@@ -1,5 +1,6 @@
 package com.BriteErp.pages;
 
+import com.BriteErp.identifiers.ImportPageIdentifier;
 import com.BriteErp.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,82 +12,82 @@ public class ImportPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//label[@class='btn btn-primary']/input")
+    @FindBy(xpath = ImportPageIdentifier.ImportLoadFileXpath )
     public WebElement loadFile;
 
-    @FindBy(xpath = "//span[@class='input-group-btn']/button")
+    @FindBy(xpath = ImportPageIdentifier.ImportReloadFileXpath)
     public WebElement reloadFile;
 
-    @FindBy(xpath = "(//input[@checked = 'checked'])[2]")
+    @FindBy(xpath = ImportPageIdentifier.ImportTheFirstRowLabelXpath)
     public WebElement theFirstRowLabel;
 
-    @FindBy(id = "oe_import_advanced_mode")
+    @FindBy(id = ImportPageIdentifier.ImportShowFieldsID)
     public WebElement showFields;
 
-    @FindBy(xpath = "//input[@class='oe_import_file_show form-control']")
+    @FindBy(xpath = ImportPageIdentifier.ImportLoadFileImputLineXpath)
     public WebElement loadFileInputLine;
 
-    @FindBy(xpath = "//div[@class='oe_import_with_file oe_padding col-sm-12']/h2")
+    @FindBy(xpath = ImportPageIdentifier.ImportMapYourColumnsToImportXpath)
     public WebElement mapYourColumnsToImport;
 
-    @FindBy(xpath = "//div[@id='s2id_autogen5']/a")
+    @FindBy(xpath = ImportPageIdentifier.ImportDontImportFieldXpath)
     public WebElement dontImportField;
 
-    @FindBy(xpath = "(//div[@class='select2-search'])[5]/input")
+    @FindBy(xpath = ImportPageIdentifier.ImportSearchXpath)
     public WebElement search;
 
-    @FindBy(xpath = "(//a[@class='select2-choice'])[5]/abbr")
+    @FindBy(xpath = ImportPageIdentifier.ImportXBUTTONXpath)
     public WebElement xButton;
 
-    @FindBy(xpath = "//label[@for='encoding_export233']")
+    @FindBy(xpath = ImportPageIdentifier.ImportEncodingXpath)
     public WebElement encoding;
 
-    @FindBy(xpath = "(//a[@class='select2-choice'])[1]")
+    @FindBy(xpath = ImportPageIdentifier.ImportEncodingFieldXpath)
     public WebElement encodingField;
 
-    @FindBy(xpath = "//label[@for='separator_export233']")
+    @FindBy(xpath = ImportPageIdentifier.ImportSeperatorXpath)
     public WebElement separator;
 
-    @FindBy(xpath = "(//a[@class='select2-choice'])[2]")
+    @FindBy(xpath = ImportPageIdentifier.ImportSeperatorFieldXpath)
     public WebElement separatorField;
 
-    @FindBy(xpath = "//tr[@class='oe_import_grid-header']")
+    @FindBy(xpath = ImportPageIdentifier.ImportFileNameTopDontImportXpath)
     public WebElement fileNameTopDontImport;
 
-    @FindBy(xpath = "//label[@for='float_thousand_separator_export233']")
+    @FindBy(xpath = ImportPageIdentifier.ImportThousandsSeperatorXpath)
     public WebElement thousandsSeparator;
 
-    @FindBy(xpath = "(//span[@class='select2-chosen'])[3]")
+    @FindBy(xpath = ImportPageIdentifier.ImportThousandsSeperatorsFieldXpath)
     public WebElement thousandsSeparatorField;
 
-    @FindBy(xpath = "(//div[@class='o_cp_buttons']/button)[1]")
+    @FindBy(xpath = ImportPageIdentifier.ImportTestImportButtonXpath)
     public WebElement testImportButton;
 
-    @FindBy(xpath = "(//div[@class='o_cp_buttons']/button)[2]")
+    @FindBy(xpath = ImportPageIdentifier.ImportImportButtonXpath)
     public WebElement importButton;
 
-    @FindBy(xpath = "(//div[@class='o_cp_buttons']/button)[3]")
+    @FindBy(xpath = ImportPageIdentifier.ImportCancelButtonXpath)
     public WebElement cancelButton;
 
-    @FindBy(xpath = "(//div[@class='oe_import_error_report'])/ul/li/span")
+    @FindBy(xpath = ImportPageIdentifier.ImportYouMustConfigureAtLeastOneFieldToImportErrorMessageXpath)
     public WebElement youMustConfigureAtLeastOneFieldToImportErrorMessage;
 
-    @FindBy(xpath = "(//div[@class='modal-dialog modal-lg']//div//div)[1]//h4")
+    @FindBy(xpath = ImportPageIdentifier.ImportErrorMessageOddoXpath)
     public WebElement errorMessageOddo;
 
-    @FindBy(xpath = "(//div[@class='modal-dialog modal-lg']//div//div)[5]//button")
+    @FindBy(xpath = ImportPageIdentifier.ImportErrorMessageOKButtonXpath)
     public WebElement errorMessageOkButton;
 
-    @FindBy(xpath = "//div[@class='o_dialog_error modal-body']/div/p[2]")
+    @FindBy(xpath = ImportPageIdentifier.ImportPleaseUseCopyButtonMessageXpath)
     public WebElement pleasuUseCopyButtonMessage;
 
-    @FindBy(xpath = "//div[@class='modal-content']/div/div/button")
+    @FindBy(xpath = ImportPageIdentifier.ImportCopyTheFullErrorToClipboardButtonXpath)
     public WebElement copyTheFullErrorToClipboardButton;
 
-    @FindBy(xpath = "(//div[@class='modal-content']/div/button)[2]")
+    @FindBy(xpath = ImportPageIdentifier.ImportSeeDetailsButtonXpath)
     public WebElement seeDetailsButton;
 
-    @FindBy(css = "div#o_error_detail300>pre:first-of-type")
+    @FindBy(css = ImportPageIdentifier.ImportUncaughtEventSettingsChangedCSS)
     public WebElement uncaughtEventSettingsChanged;
 
   //  (//div[@class='modal-content']/div)[2]/div/pre[1]
