@@ -13,6 +13,9 @@ public class CalendarPage{
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[1]")
+    public WebElement editEventButton;
+
     @FindBy(xpath = "//div[@class='o_chat_header']/span/a[2]")
     public WebElement chatClose;
 
@@ -28,7 +31,7 @@ public class CalendarPage{
     @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button")
     public WebElement viewDay_button;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]")
+    @FindBy(xpath = "//button[contains(text(),'Day')]")
     public WebElement dayButton;
 
     @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button[2]")
@@ -64,19 +67,19 @@ public class CalendarPage{
     @FindBy(xpath = "(//table)[3]/tbody/tr/td[5]")
     public WebElement _011618_allDay;
 
-    @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/div[1]/div[1]/div/div/table/tbody/tr/td/div[1]/div/div[1]/table/tbody/tr/td[2]")
+    @FindBy(xpath = "//div[@class='fc-row fc-week fc-widget-content']//td[@class='fc-day fc-widget-content fc-fri fc-past']")
     public WebElement allDayBox;
 
     @FindBy(xpath = "//div[@class='modal-content']/div/div/input")
     public WebElement addMeetingBox_popOut;
 
     @FindBy(xpath = "//div[@class='modal-footer']/button")
-    public WebElement popOutCreate_button;
+    public WebElement createEvent_button;
 
     @FindBy(xpath="//input[@class='o_input']")
     public WebElement summaryInputBox;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[2]")
+    @FindBy(xpath = "//div[@class='modal-content']/div[3]/button[2]")
     public WebElement editButton;
 
     @FindBy(xpath = "//div[@class='fc-view fc-month-view fc-basic-view']")
@@ -94,10 +97,13 @@ public class CalendarPage{
     @FindBy(xpath = "(//div[@class='o_field_name o_field_type_char'])")
     public List<WebElement> events;
 
-    @FindBy(xpath="/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/h2[1]/div[1]")
+    @FindBy(xpath="//input[@placeholder='Select attendees...']")
     public WebElement attendeesBox;
 
-    @FindBy(xpath="/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[1]")
+    @FindBy(xpath="//div[@name='allday']")
+    public WebElement allDayCheckBox;
+
+    @FindBy(xpath="//div[@class='modal-footer']//button[1]")
     public WebElement saveButton;
 
     public WebElement getEvent(String text){
@@ -108,7 +114,7 @@ public class CalendarPage{
         return null;
     }
 
-    @FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/button[3]")
+    @FindBy(xpath="//button[@class='o_calendar_button_next btn btn-sm btn-primary']")
     public WebElement nextDayButton;
 
 
@@ -126,9 +132,6 @@ public class CalendarPage{
 
     @FindBy(xpath = "( //span[@class='o_dropdown_button']   ) [2] ")
     public WebElement editDropDown;
-
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[1]")
-    public WebElement editEventButton;
 
     @FindBy(xpath = "//input[@id='o_field_input_49']")
     public WebElement meetingSubject;

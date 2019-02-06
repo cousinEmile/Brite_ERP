@@ -16,6 +16,9 @@ public class TopNavigationBar {
     @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[2]/a/span")
     public WebElement calendar_button;
 
+    @FindBy(xpath="/html[1]/body[1]/nav[1]/div[2]/ul[1]/li[2]/a[1]")
+    public WebElement ab_calendar_button;
+
     @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[3]/a")
     public WebElement notes_button;
 

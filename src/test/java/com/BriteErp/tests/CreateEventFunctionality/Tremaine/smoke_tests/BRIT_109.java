@@ -30,7 +30,7 @@ public class BRIT_109 extends TestBase {
 
         extentLogger.info("5.User click on the Day button for main Calendar.");
         extentLogger.info("Expected Result: Calendar is refreshed to its Day format.");
-        pages.calendar().viewDay_button.click();
+        pages.calendar().dayButton.click();
 
         extentLogger.info("6.User clicks on All-Day box");
         extentLogger.info("Expected Result: User should be presented with a pop-up box");
@@ -42,7 +42,7 @@ public class BRIT_109 extends TestBase {
 
         extentLogger.info("8.User then clicks on create button");
         extentLogger.info("Expected Result: User should have successfully created an event");
-        pages.calendar().popOutCreate_button.click();
+        pages.calendar().createEvent_button.click();
 
 
     }
