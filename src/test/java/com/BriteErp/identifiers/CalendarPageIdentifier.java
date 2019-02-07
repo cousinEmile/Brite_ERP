@@ -34,7 +34,7 @@ public interface CalendarPageIdentifier {
     String CalendarMAy15thXpath                 ="((//div[@class='fc-content-skeleton'])[3]/table/tbody/tr/td)[5]";
     String CalendarEventsXpath                  ="(//div[@class='o_field_name o_field_type_char'])";
     String CalendarAttendeesBox                 ="//input[@placeholder='Select attendees...']";
-    String CalendarSaveButtonXpath              ="/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[1]";
+    String CalendarSaveButtonXpath              ="//div[@class='modal-footer']//button[1]/span";
     String CalendarNextDayButtonXpath           ="/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/button[3]";
     String CalendarView_Table_WeeklyXpath       ="//div[@class='fc-view fc-agendaWeek-view fc-agenda-view']";
     String CalendarBack_WeekXpath               ="//button[@class='o_calendar_button_prev btn btn-sm btn-primary']//span";

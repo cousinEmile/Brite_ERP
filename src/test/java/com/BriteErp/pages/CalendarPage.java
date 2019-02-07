@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.security.cert.X509Certificate;
 import java.util.List;
 
 public class CalendarPage{
@@ -218,5 +219,19 @@ public class CalendarPage{
 
     @FindBy(xpath = CalendarPageIdentifier.CalendarDaysOfWeekXpath)
     public WebElement daysOfWeek;
+
+    @FindBy(xpath = "//div[@class='fc-slats']//tr[17]/td[2]")
+    public WebElement createEventbyhour;
+
+    @FindBy(xpath = "//div[@class='modal-content']")
+    public WebElement createDetailPage;
+
+    @FindBy(xpath = "//div[@class='oe_title']//h1//input")
+    public WebElement inputMeeting;
+
+    @FindBy(xpath = "//div[@class='modal-footer']//button[2]/span")
+    public WebElement editButtonEvent;
+
+
 
 }
