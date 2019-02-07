@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class BRIT_214_ListIconTest extends TestBase {
 
-    @Test
+    @Test(groups = "smoke")
     public void BRIT_214() {
         extentLogger = report.createTest("BRIT_214_List Icon Test");
 

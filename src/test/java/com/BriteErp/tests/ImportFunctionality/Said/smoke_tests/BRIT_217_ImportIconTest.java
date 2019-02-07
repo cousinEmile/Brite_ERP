@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class BRIT_217_ImportIconTest extends TestBase {
 
 
-    @Test
+    @Test(groups = "smoke")
     public void BRIT_217(){
     extentLogger = report.createTest("BRIT_217_Import Icon Test");
 
@@ -25,6 +25,7 @@ public class BRIT_217_ImportIconTest extends TestBase {
     extentLogger.info("Expected  Result: Login successful");
     pages.login().managerLogin();
 
+    wait(2);
     extentLogger.info("5. Click Calendar ");
     extentLogger.info("Expected Result: Calendar page is displayed");
     pages.topNavigationBar().calendar_button.click();

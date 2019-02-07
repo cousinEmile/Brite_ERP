@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Brit_ERP Smoke Tests">
+    <test name="Smoke">
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+        <classes>
+
+            <class name="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests.BRIT_214_ListIconTest"/>
+            <class name="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests.BRIT_217_ImportIconTest"/>
+            <class name="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests.BRIT_233_HelpButtonTest"/>
+
+
+        </classes>
+
+    </test>
+</suite>

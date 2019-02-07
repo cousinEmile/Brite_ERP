@@ -9,7 +9,7 @@ public interface ImportPageIdentifier {
     String ImportReloadFileXpath = "//span[@class='input-group-btn']/button";
     String ImportTheFirstRowLabelXpath = "(//input[@checked = 'checked'])[2]";
     String ImportShowFieldsID = "oe_import_advanced_mode";
-    String ImportUncaughtEventSettingsChangedCSS = "div.alert.alert-danger.o_error_detail.collapse.in";
+    String ImportUncaughtEventSettingsChangedCSS = "div.alert.alert-danger.o_error_detail.collapse.in>pre:first-of-type";
     String ImportLoadFileImputLineXpath = "//input[@class='oe_import_file_show form-control']";
     String ImportMapYourColumnsToImportXpath = "//div[@class='oe_import_with_file oe_padding col-sm-12']/h2";
     String ImportDontImportFieldXpath = "//div[@id='s2id_autogen5']/a";

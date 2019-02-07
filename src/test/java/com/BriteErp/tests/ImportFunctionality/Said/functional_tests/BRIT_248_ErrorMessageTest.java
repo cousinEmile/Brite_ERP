@@ -26,6 +26,7 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
         extentLogger.info("Expected  Result: Login successful");
         pages.login().managerLogin();
 
+        wait(2);
         extentLogger.info("5. Click Calendar ");
         extentLogger.info("Expected Result: Calendar page is displayed");
         pages.topNavigationBar().calendar_button.click();
@@ -80,11 +81,12 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
         extentLogger.info("Expected  Result: \"Ok\" button is displayed");
         Assert.assertEquals(pages.importPage().errorMessageOkButton.getText(),OK_BUTTON);
 
-        wait(2);
+        wait(3);
         extentLogger.info("18. Click \"Ok\" button ");
         extentLogger.info("Expected  Result: \"Ok\" button clicked");
         pages.importPage().errorMessageOkButton.click();
 
+        wait(2);
         extentLogger.info("19. Verify User in import page URL http://52.39.162.23/web?#model=calendar.event&action=import");
         extentLogger.info("Expected  Result: User in Import Page URL http://52.39.162.23/web?#model=calendar.event&action=import");
         Assert.assertEquals(driver.getCurrentUrl(),IMPORT_URL);

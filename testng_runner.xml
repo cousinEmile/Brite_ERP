@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Brite_ERP" verbose="1">
+
+    <test name="Brite_ERP Automated Tests">
+        <packages>
+            <package name="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests"></package>
+        </packages>
+
+    </test>
+
+
+</suite>
