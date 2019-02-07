@@ -8,6 +8,8 @@ public interface CalendarPageIdentifier {
 
     String CalendarMeetingSubjectBox            = "//input[@placeholder='e.g. Business Lunch']";
     String CalendarTestingPurposes              = "//h4[@class='modal-title']";
+    String CalendarOptionsBoxEvents             = "//a[contains(text(),'Options')]";
+    String CalendarRecurrentCheckBox             ="//div[@name='recurrency']//input[@type='checkbox']";
     String Calendar8AMBoxXpath                  ="//tr[@data-time='08:00:00']//td[@class='fc-widget-content']";
     String Calendar7AMBoxXpath                  ="//tr[@data-time='07:00:00']//td[@class='fc-widget-content']";
     String Calendar6AMBoxXpath                  = "//tr[@data-time='06:00:00']//td[@class='fc-widget-content']";

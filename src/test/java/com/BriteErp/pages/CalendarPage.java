@@ -67,6 +67,9 @@ public class CalendarPage{
     @FindBy(xpath = CalendarPageIdentifier.Calendar_011618_AllDayXpath)
     public WebElement _011618_allDay;
 
+    @FindBy(xpath=CalendarPageIdentifier.CalendarRecurrentCheckBox)
+    public WebElement recurrentCheckBox;
+
     @FindBy(xpath=CalendarPageIdentifier.Calendar8AMBoxXpath)
     public WebElement eightAmBox;
 
