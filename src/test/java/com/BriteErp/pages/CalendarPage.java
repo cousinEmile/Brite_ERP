@@ -33,6 +33,7 @@ public class CalendarPage{
     @FindBy(xpath = CalendarPageIdentifier.CalendarDayButtonXpath)
     public WebElement dayButton;
 
+
     @FindBy(xpath = CalendarPageIdentifier.CalendarViewWeek_ButtonXpath)
     public WebElement viewWeek_button;
 
@@ -66,11 +67,26 @@ public class CalendarPage{
     @FindBy(xpath = CalendarPageIdentifier.Calendar_011618_AllDayXpath)
     public WebElement _011618_allDay;
 
+    @FindBy(xpath=CalendarPageIdentifier.Calendar8AMBoxXpath)
+    public WebElement eightAmBox;
+
+    @FindBy(xpath = CalendarPageIdentifier.Calendar7AMBoxXpath)
+    public WebElement sevenAmBox;
+
+    @FindBy(xpath = CalendarPageIdentifier.Calendar6AMBoxXpath)
+    public WebElement sixAmBox;
+
+    @FindBy(xpath=CalendarPageIdentifier.CalendarTestingPurposes)
+    public WebElement testingPurposes;
+
     @FindBy(xpath = CalendarPageIdentifier.CalendarAllDayBoxXpath)
     public WebElement allDayBox;
 
     @FindBy(xpath=CalendarPageIdentifier.CalendarAllDayCheckBox)
     public WebElement allDayCheckBox;
+
+    @FindBy(xpath=CalendarPageIdentifier.CalendarCreateEvent_buttonXpath)
+    public WebElement createEvent_button;
 
     @FindBy(xpath = CalendarPageIdentifier.CalendarAddMeetingBox_PopOutXpath)
     public WebElement addMeetingBox_popOut;

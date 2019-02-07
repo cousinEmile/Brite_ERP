@@ -2,6 +2,7 @@ package com.BriteErp.tests.CreateEventFunctionality.Tremaine.smoke_tests;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BRIT_762 extends TestBase {
@@ -33,12 +34,17 @@ public class BRIT_762 extends TestBase {
         extentLogger.info("Expected Result: Calendar is refreshed to its Day format.");
         pages.calendar().dayButton.click();
 
-        extentLogger.info("6.Manager clicks on All-Day box");
+        extentLogger.info("6.Manager clicks on the 6am box");
         extentLogger.info("Expected Result: Manager should be presented with a pop-up box");
         wait(8);
-        pages.calendar().allDayBox.click();
+        pages.calendar().sevenAmBox.click();
+        pages.calendar().summaryInputBox.sendKeys("testing purposes");
+        pages.calendar().popOutCreate_button.click();
 
-        extentLogger.info("7.");
+        extentLogger.info("7. Verify testing purposes is displayed ");
+        String expected= "testing purposes";
+        String actual=pages.calendar().testingPurposes.getText();
+        Assert.assertEquals(actual,expected);
     }
 
 }

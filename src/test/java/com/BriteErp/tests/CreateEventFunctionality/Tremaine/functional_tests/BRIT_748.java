@@ -36,18 +36,17 @@ public class BRIT_748 extends TestBase {
         extentLogger.info("6.User clicks on All-Day box");
         extentLogger.info("Expected Result: User should be presented with a pop-up box");
         wait(8);
-        pages.calendar().allDayBox.click();
+        pages.calendar().sixAmBox.click();
 
         extentLogger.info("7.User clicks on edit button");
         extentLogger.info("Expected Result: User should be taken to another pop-up box with more options");
         pages.calendar().editButton.click();
+        Assert.assertTrue(pages.calendar().editButton.isEnabled());
 
         extentLogger.info("8.User clicks on the box adjacent to the meeting detail All-day.");
-       extentLogger.info("Expected Result: User should see ");
-       pages.calendar().allDayCheckBox.click();
+        extentLogger.info("Expected Result: User should see ");
+        pages.calendar().allDayCheckBox.click();
         Assert.assertTrue( pages.calendar().allDayCheckBox.isSelected());
-
-
     }
 
 }

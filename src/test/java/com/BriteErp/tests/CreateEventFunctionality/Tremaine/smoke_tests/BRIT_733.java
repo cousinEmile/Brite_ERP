@@ -2,6 +2,7 @@ package com.BriteErp.tests.CreateEventFunctionality.Tremaine.smoke_tests;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BRIT_733 extends TestBase {
@@ -31,10 +32,12 @@ public class BRIT_733 extends TestBase {
         extentLogger.info("Expected Result: Calendar is refreshed to its Day format.");
         pages.calendar().dayButton.click();
 
+        extentLogger.info("Verify Day button was selected");
+        Assert.assertTrue(pages.calendar().dayButton.isEnabled());
+
         extentLogger.info("6.User clicks on the right arrow");
         extentLogger.info("Expected Result: The current day should be shifted to next day");
         pages.calendar().nextDayButton.click();
-
 
     }
 }

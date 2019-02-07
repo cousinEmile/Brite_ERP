@@ -5,6 +5,13 @@ import org.openqa.selenium.support.FindBy;
 
 public interface CalendarPageIdentifier {
 
+
+    String CalendarMeetingSubjectBox            = "//input[@placeholder='e.g. Business Lunch']";
+    String CalendarTestingPurposes              = "//h4[@class='modal-title']";
+    String Calendar8AMBoxXpath                  ="//tr[@data-time='08:00:00']//td[@class='fc-widget-content']";
+    String Calendar7AMBoxXpath                  ="//tr[@data-time='07:00:00']//td[@class='fc-widget-content']";
+    String Calendar6AMBoxXpath                  = "//tr[@data-time='06:00:00']//td[@class='fc-widget-content']";
+    String CalendarCreateEvent_buttonXpath      = "//div[@class='modal-footer']/button";
     String CalendarAllDayCheckBox               = "//div[@name='allday']";
     String CalendarChatCloseXpath               ="//div[@class='o_chat_header']/span/a[2]";
     String CalendarLastWeekButtonXpath          ="//div[@class='o_calendar_buttons']/button";

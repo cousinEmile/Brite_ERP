@@ -35,7 +35,7 @@ public class LoginPage extends TestBase {
 
         emailBox.sendKeys ( ConfigurationReader.getProperties ( "manager" ) );
         passwordBox.sendKeys ( ConfigurationReader.getProperties ( "managerpass" ) );
-        login_button.click ( );
+        login_button.click ();
     }
 
     public void open ( ) {
@@ -43,5 +43,7 @@ public class LoginPage extends TestBase {
         Driver.getDriver ( ).get ( ConfigurationReader.getProperties ( "url" ) );
         waitForPageToLoad ( 5 );
     }
+
+
 
 }
