@@ -3,7 +3,7 @@
 
     <test name="Brite_ERP Automated Tests">
         <packages>
-            <package name="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests"></package>
+            <package name="com.BriteErp.tests.ImportFunctionality.Said.functional_tests"></package>
         </packages>
 
     </test>
