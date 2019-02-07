@@ -22,7 +22,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
     protected static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setupMethod() {
         driver = Driver.getDriver();
         pages = new Pages();
@@ -31,7 +31,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
 //        driver.get(ConfigurationReader.getProperties("url"));
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDownMethod(ITestResult result) throws IOException {
         /* if any test fails, it can detect it, take a screen shot at that point and attach a report */
         if (result.getStatus() == ITestResult.FAILURE) {
@@ -48,7 +48,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
     }
 
 
-    @BeforeTest
+    @BeforeTest(alwaysRun = true)
     public void setUpTest() {
         report = new ExtentReports();
         String filePath = System.getProperty("user.dir") + "/test-output/report.html";
@@ -65,7 +65,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
 
     }
 
-    @AfterTest
+    @AfterTest(alwaysRun = true)
     public void tearDownTest() {
         report.flush();
     }
