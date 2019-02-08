@@ -251,6 +251,8 @@ public class CalendarPage{
     @FindBy(xpath = "//div[@class='modal-footer']//button[2]/span")
     public WebElement editButtonEvent;
 
+    @FindBy(xpath = "//div[@class='modal-footer']//button[3]//span")
+    public WebElement cancelEventButton;
 
 
 }
