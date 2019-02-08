@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29a65b12-50bd-4c6f-b958-2dbab582f555" name="Default Changelist" comment="TestCommit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_137_CancelEvent.java" afterDir="false" />
+    <list default="true" id="29a65b12-50bd-4c6f-b958-2dbab582f555" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_139.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_137_CancelEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_137_CancelEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,42 +19,101 @@
     <session id="1738759712">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="10" />
+          <entry key="java" value="17" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="10" />
+          <entry key="JAVA" value="17" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="101" />
+          <entry key="java" value="339" />
+          <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="101" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="JAVA" value="339" />
+          <entry key="PLAIN_TEXT" value="29" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_137_CancelEvent.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_139_InternalMeetingEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_143_AddALocation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/functional_tests/BRIT_322.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/functional_tests/BRIT_323.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/functional_tests/BRIT_748.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/functional_tests/BRIT_927.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="254" column="39" selection-start-line="254" selection-start-column="22" selection-end-line="254" selection-end-column="39" />
+            <state relative-caret-position="323">
+              <caret line="260" column="34" selection-start-line="260" selection-start-column="34" selection-end-line="260" selection-end-column="34" />
               <folding>
                 <element signature="e#374#375#0" expanded="true" />
                 <element signature="e#439#440#0" expanded="true" />
@@ -65,76 +123,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarListViewPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_138_Edit_Event.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="45" column="78" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="45" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_333_CreateAnEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/functional_tests/BRIT_338_EditEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Said/functional_tests/BRIT_222_InputLineFailTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Said/functional_tests/BRIT_240_TestImportButtonTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/ImportFunctionality/Said/functional_tests/BRIT_246_CancelButtonTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/SingularFunctionalities/ActionFunctionality/Turkan/smoke_tests/BRIT_2659_UnarchiveUserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/SingularFunctionalities/ActionFunctionality/Turkan/smoke_tests/BRIT_2664_ArchiveUserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="323">
+              <caret line="60" column="76" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="60" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -171,8 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/smoke_tests/BRIT_133.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/smoke_tests/BRIT_139_ViewAllEventsOfWeek.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/smoke_tests/BRIT_136_Click_BackAndForth_OfWeek.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/funtional_tests/BRIT_365_EditPrivateEvent.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/mFeyyaz/funtional_tests/BRIT_366_ManagerEditsAllButPrivate.java" />
@@ -220,8 +219,10 @@
         <option value="$PROJECT_DIR$/Said_smoke_tests_runner.xml" />
         <option value="$PROJECT_DIR$/testng_runner.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_137_cancelEvent.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_137_CancelEvent.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_139_InternalMeetingEvent.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_143_AddALocation.java" />
       </list>
     </option>
   </component>
@@ -369,6 +370,29 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="BriteErp" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateEventFunctionality" type="462c0819:PsiDirectoryNode" />
+              <item name="mFeyyaz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brite_erp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brite_erp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="BriteErp" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateEventFunctionality" type="462c0819:PsiDirectoryNode" />
+              <item name="mFeyyaz" type="462c0819:PsiDirectoryNode" />
+              <item name="functional_tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="brite_erp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brite_erp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="BriteErp" type="462c0819:PsiDirectoryNode" />
               <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -401,7 +425,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="CONSOLE&#9;PSI&#9;JAVA://java.io.Console" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549598438792" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549600816142" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bookitacceptancetestsMINE" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -409,6 +433,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.BriteErp.tests.CreateEventFunctionality.Cigdem.functional_tests" />
       <recent name="com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.smoke_tests" />
       <recent name="com.BriteErp.tests.CreateEventFunctionality.Cigdem.smoke_tests" />
     </key>
@@ -550,25 +575,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BRIT_137_CancelEvent.BRIT_137">
-    <configuration name="BRIT_133_ViewAllEventsOfWeek.BRIT_133" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Brite_ERP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.BriteErp.tests.CreateEventFunctionality.Cigdem.smoke_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.BriteErp.tests.CreateEventFunctionality.Cigdem.smoke_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.CreateEventFunctionality.Cigdem.smoke_tests.BRIT_133_ViewAllEventsOfWeek" />
-      <option name="METHOD_NAME" value="BRIT_133" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.BRIT_143_AddALocation">
     <configuration name="BRIT_137_CancelEvent.BRIT_137" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="brite_erp" />
       <extension name="coverage">
@@ -587,18 +594,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BRIT_241_EndDate.EndDate" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Brite_ERP" />
+    <configuration name="BRIT_139_InternalMeetingEvent.BRIT_139" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="brite_erp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.BriteErp.tests.ImportFunctionality.Aiman.smoke_tests.*" />
+          <option name="PATTERN" value="com.BriteErp.tests.CreateEventFunctionality.Cigdem.functional_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.BriteErp.tests.ImportFunctionality.Aiman.smoke_tests" />
-      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.ImportFunctionality.Aiman.smoke_tests.BRIT_241_EndDate" />
-      <option name="METHOD_NAME" value="EndDate" />
+      <option name="PACKAGE_NAME" value="com.BriteErp.tests.CreateEventFunctionality.Cigdem.functional_tests" />
+      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.CreateEventFunctionality.Cigdem.functional_tests.BRIT_139_InternalMeetingEvent" />
+      <option name="METHOD_NAME" value="BRIT_139" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BRIT_143_AddALocation" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="brite_erp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BriteErp.tests.CreateEventFunctionality.Cigdem.functional_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.BriteErp.tests.CreateEventFunctionality.Cigdem.functional_tests" />
+      <option name="MAIN_CLASS_NAME" value="com.BriteErp.tests.CreateEventFunctionality.Cigdem.functional_tests.BRIT_143_AddALocation" />
       <properties />
       <listeners />
       <method v="2">
@@ -626,19 +649,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.BRIT_133_ViewAllEventsOfWeek.BRIT_133" />
-      <item itemvalue="TestNG.BRIT_241_EndDate.EndDate" />
       <item itemvalue="TestNG.C:/Users/saidy/IdeaProjects/Brite_ERP/Said_smoke_tests_runner.xml" />
       <item itemvalue="TestNG.C:/Users/saidy/IdeaProjects/Brite_ERP/testng_runner.xml" />
       <item itemvalue="TestNG.BRIT_137_CancelEvent.BRIT_137" />
+      <item itemvalue="TestNG.BRIT_139_InternalMeetingEvent.BRIT_139" />
+      <item itemvalue="TestNG.BRIT_143_AddALocation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BRIT_143_AddALocation" />
+        <item itemvalue="TestNG.BRIT_139_InternalMeetingEvent.BRIT_139" />
         <item itemvalue="TestNG.BRIT_137_CancelEvent.BRIT_137" />
         <item itemvalue="TestNG.C:/Users/saidy/IdeaProjects/Brite_ERP/Said_smoke_tests_runner.xml" />
         <item itemvalue="TestNG.C:/Users/saidy/IdeaProjects/Brite_ERP/testng_runner.xml" />
-        <item itemvalue="TestNG.BRIT_133_ViewAllEventsOfWeek.BRIT_133" />
-        <item itemvalue="TestNG.BRIT_241_EndDate.EndDate" />
       </list>
     </recent_temporary>
   </component>
@@ -688,19 +711,17 @@
       <option name="project" value="LOCAL" />
       <updated>1549393242607</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="functionalTest2">
+      <created>1549598524694</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1549598524694</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_saidy_IdeaProjects_Brite_ERP_Said_smoke_tests_runner_xml - 2019.02.06 at 22h 18m 44s.xml">
-      <configuration name="C:/Users/saidy/IdeaProjects/Brite_ERP/Said_smoke_tests_runner.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_saidy_IdeaProjects_Brite_ERP_Said_smoke_tests_runner_xml - 2019.02.07 at 13h 30m 35s.xml">
-      <configuration name="C:/Users/saidy/IdeaProjects/Brite_ERP/Said_smoke_tests_runner.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_saidy_IdeaProjects_Brite_ERP_testng_runner_xml - 2019.02.07 at 13h 38m 58s.xml">
-      <configuration name="C:/Users/saidy/IdeaProjects/Brite_ERP/testng_runner.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_saidy_IdeaProjects_Brite_ERP_Said_smoke_tests_runner_xml - 2019.02.07 at 13h 40m 06s.xml">
       <configuration name="C:/Users/saidy/IdeaProjects/Brite_ERP/Said_smoke_tests_runner.xml" configurationId="TestNG" />
     </history-entry>
@@ -722,12 +743,21 @@
     <history-entry file="C__Users_saidy_IdeaProjects_Brite_ERP_Said_smoke_tests_runner_xml - 2019.02.07 at 15h 59m 42s.xml">
       <configuration name="C:/Users/saidy/IdeaProjects/Brite_ERP/Said_smoke_tests_runner.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="BRIT_137_CancelEvent_BRIT_137 - 2019.02.07 at 23h 00m 50s.xml">
+      <configuration name="BRIT_137_CancelEvent.BRIT_137" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BRIT_139_InternalMeetingEvent_BRIT_139 - 2019.02.07 at 23h 27m 42s.xml">
+      <configuration name="BRIT_139_InternalMeetingEvent.BRIT_139" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="BRIT_139_InternalMeetingEvent_BRIT_139 - 2019.02.07 at 23h 27m 45s.xml">
+      <configuration name="BRIT_139_InternalMeetingEvent.BRIT_139" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2874494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.351417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -736,7 +766,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928064" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23978686" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23978686" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -789,7 +819,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TestCommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="TestCommit" />
+    <MESSAGE value="functionalTest2" />
+    <option name="LAST_COMMIT_MESSAGE" value="functionalTest2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -816,65 +847,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/smoke_tests/BRIT_733.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/LandingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/HelpPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/InboxPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarListViewPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="62" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/utilities/Pages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="true" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/utilities/PageObjectManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="30" />
-          <folding>
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-output/ScreenshotsBRIT_24820190206033003.png" />
     <entry file="file://$PROJECT_DIR$/test-output/ScreenshotsBRIT_24820190206050535.png" />
     <entry file="file://$PROJECT_DIR$/test-output/ScreenshotsBRIT_24820190206055525.png" />
@@ -1153,17 +1125,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_138_Edit_Event.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_137_CancelEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="45" column="78" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="45" selection-end-column="78" />
+        <state relative-caret-position="289">
+          <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/functional_tests/BRIT_322.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/functional_tests/BRIT_323.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/functional_tests/BRIT_748.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Tremaine/functional_tests/BRIT_927.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarListViewPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_139_InternalMeetingEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/pages/CalendarPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="254" column="39" selection-start-line="254" selection-start-column="22" selection-end-line="254" selection-end-column="39" />
+        <state relative-caret-position="323">
+          <caret line="260" column="34" selection-start-line="260" selection-start-column="34" selection-end-line="260" selection-end-column="34" />
           <folding>
             <element signature="e#374#375#0" expanded="true" />
             <element signature="e#439#440#0" expanded="true" />
@@ -1171,8 +1185,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_137_CancelEvent.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_138_Edit_Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="60" column="76" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="60" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/BriteErp/tests/CreateEventFunctionality/Cigdem/functional_tests/BRIT_143_AddALocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

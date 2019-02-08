@@ -36,7 +36,7 @@ public class BRIT_137_CancelEvent extends TestBase {
         pages.calendar().createEventbyhour.click();
         Assert.assertTrue(pages.calendar().popOutCreate_button.isDisplayed());
 
-        extentLogger.info("8. Click 8 am on 01/11/2019 to be able to see edit button");
+        extentLogger.info("9. Click cancel to create or edit options");
         pages.calendar().cancelEventButton.click();
         Assert.assertTrue(pages.calendar().view_table_weekly.isDisplayed());
 
