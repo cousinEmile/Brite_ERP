@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class BRIT_233_HelpButtonTest extends TestBase {
 
-    @Test
+    @Test(groups = "smoke")
     public void BRIT_233(){
 
         extentLogger = report.createTest("BRIT_233_Help Button Test");
@@ -26,6 +26,7 @@ public class BRIT_233_HelpButtonTest extends TestBase {
         extentLogger.info("Expected  Result: Login successful");
         pages.login().managerLogin();
 
+        wait(2);
         extentLogger.info("5. Click Calendar ");
         extentLogger.info("Expected Result: Calendar page is displayed");
         pages.topNavigationBar().calendar_button.click();

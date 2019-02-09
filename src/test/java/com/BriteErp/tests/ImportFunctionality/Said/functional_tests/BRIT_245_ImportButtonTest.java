@@ -27,6 +27,7 @@ public class BRIT_245_ImportButtonTest extends TestBase {
         extentLogger.info("Expected  Result: Login successful");
         pages.login().managerLogin();
 
+        wait(2);
         extentLogger.info("5. Click Calendar ");
         extentLogger.info("Expected Result: Calendar page is displayed");
         pages.topNavigationBar().calendar_button.click();

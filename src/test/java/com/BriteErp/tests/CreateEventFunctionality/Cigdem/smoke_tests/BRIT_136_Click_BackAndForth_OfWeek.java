@@ -47,5 +47,7 @@ public class BRIT_136_Click_BackAndForth_OfWeek extends TestBase {
         extentLogger.info("Expected Result: Forth button is clickable and table is displayed ");
         pages.calendar().forth_week.click();
         Assert.assertTrue(pages.calendar().view_table_weekly.isDisplayed());
+        extentLogger.pass("ViewAllEventsOfWeekTest PASS");
+
     }
 }

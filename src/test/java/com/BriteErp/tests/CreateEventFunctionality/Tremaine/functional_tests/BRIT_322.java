@@ -1,14 +1,16 @@
-package com.BriteErp.tests.CreateEventFunctionality.Tremaine.smoke_tests;
+package com.BriteErp.tests.CreateEventFunctionality.Tremaine.functional_tests;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.TestBase;
 import org.testng.annotations.Test;
 
-public class BRIT_109 extends TestBase {
+
+
+public class BRIT_322 extends TestBase {
 
     @Test
-    public void Brit_109() {
-        extentLogger = report.createTest("Create Event_BRIT_109 Test-User");
+    public void BRIT_322test(){
+        extentLogger = report.createTest("Add attendee's to event_BRIT_322 Test-User");
         waitForPageToLoad(2);
 
         extentLogger.info("1.Precondition: Environment is ready.");
@@ -25,25 +27,29 @@ public class BRIT_109 extends TestBase {
 
         extentLogger.info("4.User then clicks on Calendar tab");
         extentLogger.info("Expected Result: User is taken to the Calendar page.");
-        wait(2);
         pages.topNavigationBar().calendar_button.click();
 
         extentLogger.info("5.User click on the Day button for main Calendar.");
         extentLogger.info("Expected Result: Calendar is refreshed to its Day format.");
         pages.calendar().dayButton.click();
 
-        extentLogger.info("6.User clicks on All-Day box");
+        extentLogger.info("6.User clicks on six am box");
         extentLogger.info("Expected Result: User should be presented with a pop-up box");
         wait(8);
-        pages.calendar().sixAmBox.click();
+        pages.calendar().eightAmBox.click();
 
-        extentLogger.info("7.User enters text to the summary input box");
-        pages.calendar().summaryInputBox.sendKeys("Testing created by User");
+        extentLogger.info("7.User then clicks on edit inside pop-up box");
+        extentLogger.info("Expected Result: User is presented with more options for ");
+        wait(10);
+        pages.calendar().editButton.click();
 
-        extentLogger.info("8.User then clicks on create button");
-        extentLogger.info("Expected Result: User should have successfully created an event");
-        pages.calendar().popOutCreate_button.click();
+        extentLogger.info("8.User then clicks on attendee's box  ");
+        pages.calendar().attendeesBox.click();
+
+        extentLogger.info("9.User clicks on clicks on save");
+        extentLogger.info("Expected Result:User successfully added an event with attendee attached.");
+        pages.calendar().saveButton.click();
+    }
 
 
     }
-}

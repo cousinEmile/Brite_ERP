@@ -28,6 +28,7 @@ public class BRIT_222_InputLineFailTest extends TestBase {
     extentLogger.info("Expected  Result: Login successful");
     pages.login().managerLogin();
 
+    wait(2);
     extentLogger.info("5. Click Calendar ");
     extentLogger.info("Expected Result: Calendar page is displayed");
     pages.topNavigationBar().calendar_button.click();

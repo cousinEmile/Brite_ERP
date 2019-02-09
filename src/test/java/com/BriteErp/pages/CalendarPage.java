@@ -1,10 +1,12 @@
 package com.BriteErp.pages;
 
+import com.BriteErp.identifiers.CalendarPageIdentifier;
 import com.BriteErp.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.security.cert.X509Certificate;
 import java.util.List;
 
 public class CalendarPage{
@@ -13,92 +15,117 @@ public class CalendarPage{
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "//div[@class='o_chat_header']/span/a[2]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarChatCloseXpath)
     public WebElement chatClose;
 
-    @FindBy(xpath = "//div[@class='o_calendar_buttons']/button")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarLastWeekButtonXpath)
     public WebElement lastWeek_button;
 
-    @FindBy(xpath = "//div[@class='o_calendar_buttons']/button[2]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarToday_ButtonXpath)
     public WebElement today_button;
 
-    @FindBy(xpath = "//div[@class='o_calendar_buttons']/button[3]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarNextWeek_ButtonXpath)
     public WebElement nextWeek_button;
 
-    @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarViewDay_ButtonXpath)
     public WebElement viewDay_button;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarDayButtonXpath)
     public WebElement dayButton;
 
-    @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button[2]")
+
+    @FindBy(xpath = CalendarPageIdentifier.CalendarViewWeek_ButtonXpath)
     public WebElement viewWeek_button;
 
-    @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button[3]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarViewMonth_ButtonXpath)
     public WebElement viewMonth_button;
 
-    @FindBy(xpath = "//div[@class='o_calendar_sidebar_container hidden-xs']/i")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarMiniCalendarCloseXpath)
     public WebElement miniCalendarClose;
 
-    @FindBy(xpath = "//div[@class='o_calendar_sidebar_container hidden-xs o_sidebar_hidden']/i")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarMiniCalendarOpenXpath)
     public WebElement miniCalendarOpen;
 
-    @FindBy(xpath = "//div[@class='o_calendar_sidebar']/div/div/div/a")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarMiniCalendarLastMonthXpath)
     public WebElement miniCalandarLastMonth;
 
-    @FindBy(xpath = "//div[@class='o_calendar_sidebar']/div/div/div/a[2]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarMiniCalendarNextMonthXpath)
     public WebElement miniCalandarNextMonth;
 
-    @FindBy(xpath = "//div[@class='btn-group btn-group-sm o_cp_switch_buttons']/button")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarCalendarViewXpath)
     public WebElement calandarView;
 
-    @FindBy(xpath = "//div[@class='btn-group btn-group-sm o_cp_switch_buttons']/button[2]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarListViewXpath)
     public WebElement listView;
 
-    @FindBy(xpath = "//div[@class='o_cp_searchview']/div/input")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarSearchBoxXpath)
     public WebElement searchBox;
 
-    @FindBy(xpath = "//div[@class='o_searchview']/span")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarAdvancedSearch_ButtonXpath)
     public WebElement advancedSearch_button;
 
-    @FindBy(xpath = "(//table)[3]/tbody/tr/td[5]")
+    @FindBy(xpath = CalendarPageIdentifier.Calendar_011618_AllDayXpath)
     public WebElement _011618_allDay;
 
-    @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/div[1]/div[1]/div/div/table/tbody/tr/td/div[1]/div/div[1]/table/tbody/tr/td[2]")
+    @FindBy(xpath=CalendarPageIdentifier.CalendarRecurrentCheckBox)
+    public WebElement recurrentCheckBox;
+
+    @FindBy(xpath=CalendarPageIdentifier.Calendar8AMBoxXpath)
+    public WebElement eightAmBox;
+
+    @FindBy(xpath = CalendarPageIdentifier.Calendar7AMBoxXpath)
+    public WebElement sevenAmBox;
+
+    @FindBy(xpath = CalendarPageIdentifier.Calendar6AMBoxXpath)
+    public WebElement sixAmBox;
+
+    @FindBy(xpath=CalendarPageIdentifier.CalendarTestingPurposes)
+    public WebElement testingPurposes;
+
+    @FindBy(xpath = CalendarPageIdentifier.CalendarAllDayBoxXpath)
     public WebElement allDayBox;
 
-    @FindBy(xpath = "//div[@class='modal-content']/div/div/input")
+    @FindBy(xpath=CalendarPageIdentifier.CalendarAllDayCheckBox)
+    public WebElement allDayCheckBox;
+
+    @FindBy(xpath=CalendarPageIdentifier.CalendarCreateEvent_buttonXpath)
+    public WebElement createEvent_button;
+
+    @FindBy(xpath = CalendarPageIdentifier.CalendarAddMeetingBox_PopOutXpath)
     public WebElement addMeetingBox_popOut;
 
-    @FindBy(xpath = "//div[@class='modal-footer']/button")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarPopOutCreate_ButtonXpath)
     public WebElement popOutCreate_button;
 
-    @FindBy(xpath="//input[@class='o_input']")
+    @FindBy(xpath=CalendarPageIdentifier.CalendarSummaryInputBoxXpath)
     public WebElement summaryInputBox;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[2]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarEditButtonXpath)
     public WebElement editButton;
 
-    @FindBy(xpath = "//div[@class='fc-view fc-month-view fc-basic-view']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarMonthViewXpath)
     public WebElement monthView;
 
-    @FindBy(xpath =  "(//li[@class='active'])[2]" )
+    @FindBy(xpath =  CalendarPageIdentifier.CalendarTheCurrentMonthTextXpath )
     public WebElement theCurrentMonthText;  // getAttribute
 
-    @FindBy(xpath = "//span[@class='fa fa-arrow-right']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarNextMonthXpath)
     public WebElement nextMonth;
 
-    @FindBy(xpath = "((//div[@class='fc-content-skeleton'])[3]/table/tbody/tr/td)[5]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarMAy15thXpath)
     public WebElement may15th;
 
-    @FindBy(xpath = "(//div[@class='o_field_name o_field_type_char'])")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarEventsXpath)
     public List<WebElement> events;
 
-    @FindBy(xpath="/html[1]/body[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/h2[1]/div[1]")
+    @FindBy(xpath=CalendarPageIdentifier.CalendarAttendeesBox)
     public WebElement attendeesBox;
 
-    @FindBy(xpath="/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[1]")
+    @FindBy(xpath= CalendarPageIdentifier.CalendarSaveButtonXpath)
     public WebElement saveButton;
+
+    @FindBy(xpath="//input[@placeholder='e.g. Business Lunch']")
+    public WebElement meetingSubjectBox;
 
     public WebElement getEvent(String text){
         for (WebElement event: events) {
@@ -108,108 +135,129 @@ public class CalendarPage{
         return null;
     }
 
-    @FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/button[3]")
+    @FindBy(xpath=CalendarPageIdentifier.CalendarNextDayButtonXpath)
     public WebElement nextDayButton;
 
 
-    @FindBy(xpath = "//div[@class='fc-view fc-agendaWeek-view fc-agenda-view']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarView_Table_WeeklyXpath)
     public WebElement view_table_weekly;
 
-    @FindBy(xpath = "//div[@class='fc-slats']//tr[21]//td[2]")
+@FindBy(xpath = CalendarPageIdentifier.CalendarClick_Table_WeeklyXpath)
     public WebElement click_table_weekly;
 
-    @FindBy(xpath = "//button[@class=\"o_calendar_button_prev btn btn-sm btn-primary\"]//span")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarBack_WeekXpath)
     public WebElement back_week;
 
-    @FindBy(xpath = "//button[@class=\"o_calendar_button_next btn btn-sm btn-primary\"]//span")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarForth_WeekXpath)
     public WebElement forth_week;
 
-    @FindBy(xpath = "( //span[@class='o_dropdown_button']   ) [2] ")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarEditDropDownXpath)
     public WebElement editDropDown;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[1]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarEditEventButtonXpath)
     public WebElement editEventButton;
 
-    @FindBy(xpath = "//input[@id='o_field_input_49']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarMeetingSubjectXpath)
     public WebElement meetingSubject;
 
-    @FindBy(xpath = "(//button[@class='btn btn-sm btn-default'])[1]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarDeleteEventXpath)
     public WebElement deleteEvent;
 
-    @FindBy(xpath = "//button[@class='btn btn-sm btn-primary']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarSaveEditEventXpath)
     public WebElement saveEditEvent;
 
 
-    @FindBy(xpath = "//div[@class='o_calendar_sidebar_container hidden-xs']/i")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarClose_Mini_CalendarXpath)
     public WebElement close_mini_calendar;
 
-    @FindBy(xpath = "//div[@class='o_calendar_sidebar_container hidden-xs o_sidebar_hidden']/i")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarOpenMiniCalendarXpath)
     public WebElement openMiniCalendar;
 
-    @FindBy(xpath = "//div[@class='o_calendar_filter']/div/div[5]/span[2]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarRemovingFilterXpath)
     public WebElement removingFilter;
 
-    @FindBy(xpath = "(//div[@class='o_calendar_filter_item'])[4]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarRemovingFilter2Xpath)
     public WebElement removingFilter2;
 
-    @FindBy(xpath = "//a[.='Options']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarOptionsEditButtonXpath)
     public WebElement optionsEditButton;
 
-    @FindBy (id = "o_field_input_83")
+    @FindBy (id = CalendarPageIdentifier.CalendarSelectClassID)
     public WebElement selectClass;
 
-    @FindBy(xpath = "//*[@class='o_notification_manager']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarErrorMessageXpath)
     public WebElement errorMessage;
 
-    @FindBy (id = "o_field_input_79")
+    @FindBy (id = CalendarPageIdentifier.CalendarSelectClassManagerID)
     public  WebElement selectClassManager;
 
-    @FindBy(xpath = "//div[@class='table-responsive']/table/tbody/tr")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarAllMeetingsXpath)
     public List<WebElement> allMeetings;
 
-    @FindBy (xpath ="(//button[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle'])[3]")
+    @FindBy (xpath = CalendarPageIdentifier.CalendarActionDropDownButtonXpath)
     public WebElement actionDropdownButton;
 
-    @FindBy(xpath = "((//ul[@class='dropdown-menu'])[5]/li)[3]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarSendSMSButtonXpath)
     public WebElement sendSMSbutton;
 
-    @FindBy(id = "o_field_input_358")
+    @FindBy(id = CalendarPageIdentifier.CalendarPhoneNumberID)
     public WebElement phoneNumber;
 
-    @FindBy(xpath = "//button[@class='btn btn-sm oe_highlight']" )
+    @FindBy(xpath = CalendarPageIdentifier.CalendarSendButtonXpath )
     public WebElement  sendButton;
 
-    @FindBy(id = "o_field_input_359")
+    @FindBy(id = CalendarPageIdentifier.CalendarEnterTextID)
     public WebElement enterText;
 
-    @FindBy(xpath = "//div[@class='o_dialog_warning modal-body']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarPhoneNumberErrorXpath)
     public WebElement phoneNumberError;
 
-    @FindBy(xpath = "(//div[@class='btn-group o_dropdown'])[2]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarAttachmentButtonXpath)
     public WebElement attachmentButton;
 
-    @FindBy(xpath = "//input[@class='o_input_file']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarAddAttachmentButtonXpath)
     public WebElement addAttachmentButton;
 
-    @FindBy(xpath = "((//ul[@class='dropdown-menu'])[5]/li)[2]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarDuplicateButtonXpath)
     public WebElement duplicateButton;
 
-    @FindBy(xpath = "//input[@class='o_field_char o_field_widget o_input o_required_modifier']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarDuplicateInputXpath)
     public WebElement duplicateInput;
 
-    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarSaveDuplicateButtonXpath)
     public WebElement saveDuplicateButton;
 
-    @FindBy(xpath = "//span[@class='o_field_char o_field_widget o_required_modifier']")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarDuplicateMeetingNameXpath)
     public WebElement duplicatedMeetingName;
 
-    @FindBy(xpath = "(//a[.='Meetings'])[1]")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarMeetingButtonXpath)
     public WebElement meetingButton;
 
-    @FindBy(xpath = "//div[@data-value='all']/div/input")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarEverybodysCalendarButtonXpath)
     public WebElement everybodysCalendarButton;
 
-    @FindBy(xpath = "//div[@class='fc-row fc-widget-header']/table/thead/tr/th")
+    @FindBy(xpath = CalendarPageIdentifier.CalendarDaysOfWeekXpath)
     public WebElement daysOfWeek;
+
+    @FindBy(xpath = "//div[@class='fc-slats']//tr[17]/td[2]")
+    public WebElement createEventbyhour;
+
+    @FindBy(xpath = "//div[@class='modal-content']")
+    public WebElement createDetailPage;
+
+    @FindBy(xpath = "//div[@class='oe_title']//h1//input")
+    public WebElement inputMeeting;
+
+    @FindBy(xpath = "//div[@class='modal-footer']//button[2]/span")
+    public WebElement editButtonEvent;
+
+    @FindBy(xpath = "//div[@class='modal-footer']//button[3]//span")
+    public WebElement cancelEventButton;
+
+    @FindBy(xpath = "//div[@name='categ_ids']/div/div")
+    public WebElement tagsDropDown;
+
+    @FindBy(name = "location")
+    public WebElement locationTextBox;
 
 }

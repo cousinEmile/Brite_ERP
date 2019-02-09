@@ -1,15 +1,18 @@
-package com.BriteErp.tests.CreateEventFunctionality.Cigdem.smoke_tests;
+package com.BriteErp.tests.CreateEventFunctionality.Cigdem.functional_tests;
 import com.BriteErp.utilities.TestBase;
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-public class BRIT_133_ViewAllEventsOfWeek extends TestBase {
 
-    @Test(groups = "smoke")
-    public void BRIT_133() {
+import java.security.Key;
+
+public class BRIT_138_Edit_Event extends TestBase {
+
+    @Test
+    public void BRIT_138() {
         extentLogger = report.createTest("BRIT_133_ListIcon Test");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
-
 
         extentLogger.info("2. Go to url");
         extentLogger.info("Expected  Result: Home page is displayed.");
@@ -31,16 +34,31 @@ public class BRIT_133_ViewAllEventsOfWeek extends TestBase {
         extentLogger.info("Expected Result: clicked");
         pages.topNavigationBar().calendar_button.click();
 
+        wait(2);
         extentLogger.info("7. Click Weekly button option");
         extentLogger.info("Expected Result: Table is displayed as weekly based");
         pages.calendar().viewWeek_button.click();
         Assert.assertTrue(pages.calendar().view_table_weekly.isDisplayed());
 
-        extentLogger.info("8. Click table to create an event");
-        extentLogger.info("Expected Result: Create popOut will be displayed");
-        pages.calendar().click_table_weekly.click();
+        extentLogger.info("8. Click 8 am on 01/11/2019 to be able to see edit button");
+        extentLogger.info("Expected Result: Popup is displayed and edit button is clickable");
+        pages.calendar().createEventbyhour.click();
         Assert.assertTrue(pages.calendar().popOutCreate_button.isDisplayed());
 
+        extentLogger.info("9. Click edit button");
+        extentLogger.info("Expected Result: Edit button is clickable");
+        pages.calendar().editButtonEvent.click();
+        Assert.assertTrue(pages.calendar().createDetailPage.isDisplayed());
+
+        wait(5);
+        extentLogger.info("10. Write a subject to the meeting subject box");
+        extentLogger.info("Expected Result: Verify to write a text");
+        pages.calendar().inputMeeting.sendKeys("cd" + Keys.ENTER);
+
+        extentLogger.info("11. Click save button");
+        extentLogger.info("Expected Result: Save button is clickable");
+        pages.calendar().saveButton.click();
+        Assert.assertTrue(pages.calendar().view_table_weekly.isDisplayed());
         extentLogger.pass("ViewAllEventsOfWeekTest PASS");
 
     }
