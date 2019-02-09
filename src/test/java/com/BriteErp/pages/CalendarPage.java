@@ -239,8 +239,9 @@ public class CalendarPage{
     @FindBy(xpath = CalendarPageIdentifier.CalendarDaysOfWeekXpath)
     public WebElement daysOfWeek;
 
-    @FindBy(xpath = "//div[@class='fc-slats']//tr[17]/td[2]")
-    public WebElement createEventbyhour;
+    //@FindBy(xpath = "//div[@class='fc-slats']//tr[17]//td[2]")
+    @FindBy(xpath = "//tr[@class='fc-minor'][8]")
+    public WebElement createEventByHour;
 
     @FindBy(xpath = "//div[@class='modal-content']")
     public WebElement createDetailPage;
@@ -248,7 +249,7 @@ public class CalendarPage{
     @FindBy(xpath = "//div[@class='oe_title']//h1//input")
     public WebElement inputMeeting;
 
-    @FindBy(xpath = "//div[@class='modal-footer']//button[2]/span")
+    @FindBy(xpath = "//div[@class='modal-footer']//button[2]//span")
     public WebElement editButtonEvent;
 
     @FindBy(xpath = "//div[@class='modal-footer']//button[3]//span")
@@ -259,5 +260,8 @@ public class CalendarPage{
 
     @FindBy(name = "location")
     public WebElement locationTextBox;
+
+    @FindBy(xpath = "//body/ul[3]//li[2]//a")
+    public WebElement tags;
 
 }

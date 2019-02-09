@@ -21,7 +21,7 @@ public interface CalendarPageIdentifier {
     String CalendarNextWeek_ButtonXpath         ="//div[@class='o_calendar_buttons']/button[3]";
     String CalendarViewDay_ButtonXpath          ="//div[@class='btn-group btn-group-sm']/button";
     String CalendarDayButtonXpath               ="//button[contains(text(),'Day')]";
-    String CalendarViewWeek_ButtonXpath         ="//div[@class='btn-group btn-group-sm']/button[2]";
+    String CalendarViewWeek_ButtonXpath         ="//div[@class='o_calendar_buttons']//div//button[2]";
     String CalendarViewMonth_ButtonXpath        ="//div[@class='btn-group btn-group-sm']/button[3]";
     String CalendarMiniCalendarCloseXpath       ="//div[@class='o_calendar_sidebar_container hidden-xs']/i";
     String CalendarMiniCalendarOpenXpath        ="//div[@class='o_calendar_sidebar_container hidden-xs o_sidebar_hidden']/i";
