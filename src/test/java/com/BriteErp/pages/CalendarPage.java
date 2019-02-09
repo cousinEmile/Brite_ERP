@@ -142,7 +142,7 @@ public class CalendarPage{
     @FindBy(xpath = CalendarPageIdentifier.CalendarView_Table_WeeklyXpath)
     public WebElement view_table_weekly;
 
-@FindBy(xpath = CalendarPageIdentifier.CalendarClick_Table_WeeklyXpath)
+    @FindBy(xpath = CalendarPageIdentifier.CalendarClick_Table_WeeklyXpath)
     public WebElement click_table_weekly;
 
     @FindBy(xpath = CalendarPageIdentifier.CalendarBack_WeekXpath)
