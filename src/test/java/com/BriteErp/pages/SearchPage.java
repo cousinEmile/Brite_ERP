@@ -190,7 +190,8 @@ public class SearchPage extends TestBase {
         return faker.artist ( ).name ( );
     }
 
-
+@FindBy(xpath = "(//div[@class='o_searchview_facet']//span)[2]")
+public WebElement FilterSearchTextConfirmation;
     /**
      * Just the bones, add meat and season as required
      * note : Static list.
@@ -199,5 +200,26 @@ public class SearchPage extends TestBase {
         Select select = new Select ( CustomGroupSelectElement );
     }
 
+    @FindBy(xpath = "//li[@class='selected']")
+    public WebElement FilterIsSelected;
+@FindBy(xpath = "//select[@class='o_input o_add_group o_group_selector']")
+    public WebElement ClickOnactions;
+
+    @FindBy(xpath = "//select[@class='o_input o_add_group o_group_selector']//option")
+    public WebElement DropDownListUnderGroupBy;
+    @FindBy(xpath = "//select[@class='o_input o_add_group o_group_selector']")
+    public WebElement DropDownListUnderGroupBy1;
+
+    @FindBy(xpath = "(//a[@class='oe_menu_toggler'])[10]")
+    public WebElement DahsboarboardButton;
+    @FindBy(xpath = "(//h2[@class='oe_header ui-sortable-handle']/span)[1]")
+    public WebElement getTextConfirmation;
+   @FindBy(xpath = "(//div[@class='o_checkbox'])[1]")
+   public WebElement  clickShareWithAllUsersCheckBox;
+
+    @FindBy(xpath = "(//ul[@class='dropdown-menu o_favorites_menu']//a)[6]")
+    public WebElement getTextConfirmationOnFavoriteButton;
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_add_group o_select_group']")
+    public WebElement SaveButton;
 
 }

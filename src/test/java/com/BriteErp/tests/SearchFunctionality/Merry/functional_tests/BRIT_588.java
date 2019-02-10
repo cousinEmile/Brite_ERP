@@ -1,6 +1,9 @@
 package com.BriteErp.tests.SearchFunctionality.Merry.functional_tests;
 
+import com.BriteErp.utilities.BrowserUtils;
 import com.BriteErp.utilities.TestBase;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BRIT_588 extends TestBase {
@@ -30,6 +33,20 @@ public class BRIT_588 extends TestBase {
 
         extentLogger.info("Clicking on Add custom Group");
         pages.searchPage().AddCustomDropDownGroup.click();
+
+        extentLogger.info("Click on the actions button");
+       pages.searchPage().ClickOnactions.click();
+
+       extentLogger.info("Verifying that the drop down list is alphabetical order");
+        waitForPageToLoad(5);
+        Select allList = new Select(pages.searchPage().DroupDownListUnderGroupBy);
+        String allList1 = allList.getFirstSelectedOption().getText();
+        for (int i = 0; i < allList.getOptions().size() - 1; i++) {
+            String firstOrder = allList.getOptions().get(i).getText();
+            String secondOrder = allList.getOptions().get(i + 1).getText();
+            Assert.assertTrue(firstOrder.compareTo(secondOrder) < 0);
+            extentLogger.info("the test case has passed");
+        }
 
     }
 }
