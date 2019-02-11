@@ -40,9 +40,9 @@ public class BRIT_229_ReloadingFile extends TestBase {
 
         extentLogger.info("8. upload file \"Utility.xlsx\" ");
         extentLogger.info("Expected  Result: \"Utility.xlsx\" is displayed ");
-        String path = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
-        pages.importPage().loadFile.sendKeys(path);
-        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "Utility.xlsx");
+
+        pages.importPage().loadFile.sendKeys(UPLOADED_FILE_UTILITY_SAID);
+        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), IMPORTED_UTILITY_XLSX);
 
 
         extentLogger.info("9. verify that the \"Reload File\" on the right side of Load File button ");
@@ -55,7 +55,7 @@ public class BRIT_229_ReloadingFile extends TestBase {
 
         extentLogger.info("11. verify that the \"Utility.xlsx\" on the Input Line");
         extentLogger.info("Expected  Result: \"Utility.xlsx\" displayed on the Input Line");
-        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), IMPORTED_FILE_UTILITY);
+        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), IMPORTED_UTILITY_XLSX);
 
         extentLogger.pass("BRIT_229_Reloading File Test FAIL");
     }

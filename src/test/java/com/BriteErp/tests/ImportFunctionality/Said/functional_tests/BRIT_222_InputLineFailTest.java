@@ -45,12 +45,12 @@ public class BRIT_222_InputLineFailTest extends TestBase {
     extentLogger.info("Expected  Result: The sign \"No file chosen...\" should be seen");
     Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("placeholder"), LOAD_FILE_INPUT_LINE);
 
-    extentLogger.info("9. type \"C:\\Users\\saidy\\Downloads\\Utility.xlsx\" to a Input line near Load File");
+    extentLogger.info("9. type \"C:\\Users\\saidy\\IdeaProjects\\Brite_ERP\\uploaded_files\\utility.xlsx\" to a Input line near Load File");
     extentLogger.info("Expected  Result: the \"Utility.xlsx\" should be seen on Input Line near to Load File");
-    pages.importPage().loadFileInputLine.sendKeys("C:\\Users\\saidy\\Downloads\\Utility.xlsx" + Keys.ENTER);
-    Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "C:\\Users\\saidy\\Downloads\\Utility.xlsx");
+    pages.importPage().loadFileInputLine.sendKeys( UPLOADED_FILE_UTILITY_SAID + Keys.ENTER);
+    Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), EXPECTED_FILE_UTILITY_SAID);
 
-    extentLogger.info("10. verify that \"C:\\Users\\saidy\\Downloads\\Utility.xlsx\" file uploaded after typing  ");
+    extentLogger.info("10. verify that\"C:\\Users\\saidy\\IdeaProjects\\Brite_ERP\\uploaded_files\\utility.xlsx\" file uploaded after typing  ");
     extentLogger.info("Expected  Result: the file does not uploaded. Fail");
     Assert.assertNotEquals(pages.importPage().mapYourColumnsToImport.getText(), MAP_YOUR_COULMS_TO_IMPORT);
 

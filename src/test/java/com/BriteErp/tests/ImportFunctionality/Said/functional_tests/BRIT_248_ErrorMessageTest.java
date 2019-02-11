@@ -41,9 +41,9 @@ public class BRIT_248_ErrorMessageTest extends TestBase {
 
         extentLogger.info("8. upload file \"Utility.xlsx\" ");
         extentLogger.info("Expected  Result: \"Utility.xlsx\" is displayed ");
-        String path = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
-        pages.importPage().loadFile.sendKeys(path);
-        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "Utility.xlsx");
+
+        pages.importPage().loadFile.sendKeys(UPLOADED_FILE_UTILITY_SAID);
+        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), IMPORTED_UTILITY_XLSX);
 
         extentLogger.info("9. click  \"The first row contains the label of the column\"");
         extentLogger.info("Expected  Result: clicked");
