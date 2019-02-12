@@ -38,12 +38,12 @@ public class BRIT_226_LoadingFileTest extends TestBase {
         extentLogger.info("Expected  Result: Import page is displayed");
         pages.calendarListViewPage().import_button.click();
 
-        extentLogger.info("8. click Load File Button and input \"C:\\Users\\saidy\\IdeaProjects\\Brite_ERP\\uploaded_files\\utility.xlsx\"");
-        extentLogger.info("Expected  Result: Load file should open \"C:\\Users\\saidy\\IdeaProjects\\Brite_ERP\\uploaded_files\\utility.xlsx\"");
+        extentLogger.info("8. click Load File Button and input \" C:\\Users\\saidy\\IdeaProjects\\Brite_ERP\\uploaded_files\\utility.xlsx\" ");
+        extentLogger.info("Expected  Result: Load file should open \" C:\\Users\\saidy\\IdeaProjects\\Brite_ERP\\uploaded_files\\utility.xlsx\" ");
         extentLogger.info("9. click Open to import all information");
         extentLogger.info("Expected  Result: all information on the Excel file should be dispayed under search File");
 
-        pages.importPage().loadFile.sendKeys(EXPECTED_FILE_UTILITY_SAID);
+        pages.importPage().loadFile.sendKeys(UPLOADED_FILE_UTILITY_SAID);
 
         extentLogger.info("10. verify that \"Utility.xlsx\" displayed on the Input Line");
         extentLogger.info("Expected  Result: \"Utility.xlsx\" is displayed on the Input Line");

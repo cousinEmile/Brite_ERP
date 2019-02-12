@@ -48,8 +48,8 @@ public interface ApplicationConstants {
     String OK_BUTTON = "Ok";
     String InventoryManager = "InventoryManager 2";
     String CWD = System.getProperty("user.dir");
-    String UPLOADED_FILE_UTILITY_SAID = CWD + "\\uploaded_files\\utility.xlsx";
-    String EXPECTED_FILE_UTILITY_SAID = "C:\\Users\\saidy\\IdeaProjects\\Brite_ERP\\uploaded_files\\utility.xlsx";
+    String UPLOADED_FILE_UTILITY_SAID = CWD + "/uploaded_files/utility.xlsx";
+    String EXPECTED_FILE_UTILITY_SAID = CWD + "/uploaded_files/utility.xlsx";
     String IMPORTED_UTILITY_XLSX = "utility.xlsx";
 
 
