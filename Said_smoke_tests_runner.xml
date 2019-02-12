@@ -1,5 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Brit_ERP Smoke Tests">
+
+    <listeners>
+        <listener class-name="com.BriteErp.utilities.listeners.RetryListener"/>
+    </listeners>
+
+
     <test name="Smoke">
 
         <groups>

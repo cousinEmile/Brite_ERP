@@ -52,6 +52,7 @@ public class BRIT_233_HelpButtonTest extends TestBase {
         String targetTitle = "How to import data into Odoo — Odoo 11.0 documentation";
         switchToWindow(targetTitle);
 
+        wait(2);
         extentLogger.info("11. Verify new URL: https://www.odoo.com/documentation/user/11.0/general/base_import/import_faq.html");
         extentLogger.info("Expected  Result: the new URL is displayed");
         Assert.assertEquals(driver.getCurrentUrl(),HELP_URL);

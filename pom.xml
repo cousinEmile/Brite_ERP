@@ -72,9 +72,11 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng_runner.xml</suiteXmlFile>
+                        <suiteXmlFile>${runner}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
+
 
         </plugins>
     </build>

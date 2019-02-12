@@ -17,9 +17,11 @@ public class Driver {
 
     private static WebDriver driver;
 
-    public static WebDriver getDriver() {
+    public static WebDriver getDriver(String browser) {
         if (driver == null) {
-            switch (ConfigurationReader.getProperties("browser")) {
+
+            browser = browser == null ? ConfigurationReader.getProperties("browser") : browser;
+            switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
@@ -66,6 +68,11 @@ public class Driver {
 
         return driver;
     }
+
+    public static WebDriver getDriver() {
+        return getDriver(null);
+    }
+
 
     public static void closeDriver() {
         if (driver != null) {
