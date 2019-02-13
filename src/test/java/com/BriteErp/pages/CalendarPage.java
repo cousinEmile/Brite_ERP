@@ -162,7 +162,7 @@ public class CalendarPage{
     @FindBy(xpath = CalendarPageIdentifier.CalendarOptionsEditButtonXpath)
     public WebElement optionsEditButton;
 
-    @FindBy (id = CalendarPageIdentifier.CalendarSelectClassID)
+    @FindBy (xpath = CalendarPageIdentifier.CalendarSelectClassID)
     public WebElement selectClass;
 
     @FindBy(xpath = CalendarPageIdentifier.CalendarErrorMessageXpath)
@@ -218,5 +218,12 @@ public class CalendarPage{
 
     @FindBy(xpath = CalendarPageIdentifier.CalendarDaysOfWeekXpath)
     public WebElement daysOfWeek;
+
+    @FindBy(xpath = "//h4[@class='modal-title']")
+    public WebElement eventInside;
+
+    @FindBy(xpath = "(//button[@class='btn btn-sm btn-primary'])[2]")
+    public  WebElement okToDeleteBtn;
+
 
 }

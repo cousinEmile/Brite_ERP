@@ -42,9 +42,10 @@ public class BRIT_338_EditEvent extends TestBase {
 
         extentLogger.info("3. Click on Options button");
         pages.calendar().optionsEditButton.click();
-
+        wait(7);
         extentLogger.info("Edit the privacy of the event as Only me");
         Select select = new Select(pages.calendar().selectClass);
+        wait(7);
         select.selectByIndex(2);
 
         extentLogger.info("Verifying the privacy is set as Only me");

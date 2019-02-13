@@ -1,6 +1,7 @@
 package com.BriteErp.tests.CreateEventFunctionality.mFeyyaz.functional_tests;
 
 import com.BriteErp.utilities.TestBase;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -18,7 +19,7 @@ public class BRIT_333_CreateAnEvent extends TestBase {
         pages.landing().BriteErpDemo_button.click();
 
         pages.login().userLogin();
-        wait(2);
+        wait(4);
 
         pages.topNavigationBar().calendar_button.click();
 
@@ -35,13 +36,15 @@ public class BRIT_333_CreateAnEvent extends TestBase {
 
         extentLogger.info("4. Click on day 15th.");
         pages.calendar().may15th.click();
+        wait(3);
 
-        wait(2);
+
         extentLogger.info("5. Create an event named: test event May15 2019");
         pages.calendar().summaryInputBox.sendKeys(eventName);
 
         pages.calendar().popOutCreate_button.click();
         wait(4);
+
 
         Assert.assertEquals(pages.calendar().getEvent(eventName).getText().trim(),eventName.trim());
 

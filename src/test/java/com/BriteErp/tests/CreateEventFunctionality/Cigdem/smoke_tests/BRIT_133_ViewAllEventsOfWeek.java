@@ -1,7 +1,12 @@
 package com.BriteErp.tests.CreateEventFunctionality.Cigdem.smoke_tests;
 import com.BriteErp.utilities.TestBase;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
+
 public class BRIT_133_ViewAllEventsOfWeek extends TestBase {
 
     @Test
@@ -36,12 +41,57 @@ public class BRIT_133_ViewAllEventsOfWeek extends TestBase {
         pages.calendar().viewWeek_button.click();
         Assert.assertTrue(pages.calendar().view_table_weekly.isDisplayed());
 
-        extentLogger.info("8. Click table to create an event");
-        extentLogger.info("Expected Result: Create popOut will be displayed");
-        pages.calendar().click_table_weekly.click();
-        Assert.assertTrue(pages.calendar().popOutCreate_button.isDisplayed());
 
-        extentLogger.pass("ViewAllEventsOfWeekTest PASS");
+
+//        List<WebElement> listDays = driver.findElements(By.xpath("//div[@class='fc-row fc-widget-header']/table/thead/tr/th"));
+//
+//
+//        for (WebElement x  : listDays
+//             ) {
+//            wait(1);
+//            String day = x.getText().trim();
+//
+//            System.out.println( x.getText());
+//        }
+
+
+        WebElement timeOfEvent = createEvent("18:00");
+        timeOfEvent.click();
+
+
+
+
+
+//        extentLogger.info("8. Click table to create an event");
+//        extentLogger.info("Expected Result: Create popOut will be displayed");
+//        pages.calendar().click_table_weekly.click();
+//        Assert.assertTrue(pages.calendar().popOutCreate_button.isDisplayed());
+//
+//        extentLogger.pass("ViewAllEventsOfWeekTest PASS");
 
     }
+
+
+    public WebElement createEvent(String time){
+        wait(1);
+        List<WebElement> timem = driver.findElements(By.xpath("//div[@class='fc-slats']/table/tbody/tr"));
+
+
+        WebElement clock1 = driver.findElement(By.xpath("(//div[@class='fc-slats']/table/tbody/tr)[1]"));
+        for (WebElement clock : timem
+             ) {
+
+            String clockStr = clock.getText().trim();
+            if( clockStr.equals(time)) {
+                System.out.println(clock.getText());
+                return clock;
+
+            }
+
+        }
+        return clock1;
+
+    }
+
+
 }

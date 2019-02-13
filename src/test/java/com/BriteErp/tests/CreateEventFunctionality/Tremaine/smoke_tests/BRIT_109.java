@@ -42,7 +42,7 @@ public class BRIT_109 extends TestBase {
 
         extentLogger.info("8.User then clicks on create button");
         extentLogger.info("Expected Result: User should have successfully created an event");
-        pages.calendar().createEvent_button.click();
+        pages.calendar().popOutCreate_button.click();
 
 
     }

@@ -41,7 +41,7 @@ public interface CalendarPageIdentifier {
     String CalendarForth_WeekXpath              ="//button[@class='o_calendar_button_next btn btn-sm btn-primary']//span";
     String CalendarEditDropDownXpath            ="//span[@class='o_dropdown_button'])[2]";
     String CalendarEditEventButtonXpath         ="/html[1]/body[1]/div[6]/div[1]/div[1]/div[3]/button[1]";
-    String CalendarMeetingSubjectXpath          ="//input[@id='o_field_input_49']";
+    String CalendarMeetingSubjectXpath          ="//input[@class='o_field_char o_field_widget o_input o_required_modifier']";
     String CalendarDeleteEventXpath             ="(//button[@class='btn btn-sm btn-default'])[1]";
     String CalendarSaveEditEventXpath           ="//button[@class='btn btn-sm btn-primary']";
     String CalendarClose_Mini_CalendarXpath     ="//div[@class='o_calendar_sidebar_container hidden-xs']/i";
@@ -49,7 +49,7 @@ public interface CalendarPageIdentifier {
     String CalendarRemovingFilterXpath          ="//div[@class='o_calendar_filter']/div/div[5]/span[2]";
     String CalendarRemovingFilter2Xpath         ="(//div[@class='o_calendar_filter_item'])[4]";
     String CalendarOptionsEditButtonXpath       ="//a[.='Options']";
-    String CalendarSelectClassID                ="o_field_input_83";
+    String CalendarSelectClassID                ="(//select[@class='o_input o_field_widget'])[4]";
     String CalendarErrorMessageXpath            ="//*[@class='o_notification_manager']";
     String CalendarSelectClassManagerID         ="o_field_input_79";
     String CalendarAllMeetingsXpath             ="//div[@class='table-responsive']/table/tbody/tr";
