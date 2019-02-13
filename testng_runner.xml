@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Brite_ERP" verbose="1">
+
+    <listeners>
+        <listener class-name="com.BriteErp.utilities.listeners.RetryListener"/>
+    </listeners>
+
+    <test name="Brite_ERP Automated Tests">
+
+        <packages>
+            <package name="com.BriteErp.tests.ImportFunctionality.Said.functional_tests"></package>
+        </packages>
+
+    </test>
+
+
+</suite>

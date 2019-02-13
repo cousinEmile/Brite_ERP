@@ -25,6 +25,7 @@ public class BRIT_240_TestImportButtonTest extends TestBase {
         extentLogger.info("Expected  Result: Login successful");
         pages.login().managerLogin();
 
+        wait(2);
         extentLogger.info("5. Click Calendar ");
         extentLogger.info("Expected Result: Calendar page is displayed");
         pages.topNavigationBar().calendar_button.click();
@@ -39,9 +40,9 @@ public class BRIT_240_TestImportButtonTest extends TestBase {
 
         extentLogger.info("8. upload file \"Utility.xlsx\" ");
         extentLogger.info("Expected  Result: \"Utility.xlsx\" is displayed ");
-        String path = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
-        pages.importPage().loadFile.sendKeys(path);
-        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "Utility.xlsx");
+
+        pages.importPage().loadFile.sendKeys(UPLOADED_FILE_UTILITY_SAID);
+        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), IMPORTED_UTILITY_XLSX);
 
         extentLogger.info("9. verify that \"Test Import\" on the left top corner side under Meetings / Import a File");
         extentLogger.info("Expected  Result: Test Import is displayed");

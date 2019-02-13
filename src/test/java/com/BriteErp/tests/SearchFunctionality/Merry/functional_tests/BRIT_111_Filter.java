@@ -46,6 +46,10 @@ public class BRIT_111_Filter extends TestBase {
         extentLogger.info("save the selected one by clicking Apply");
         pages.searchPage().ApplyButton.click();
 
+        Assert.assertTrue(pages.searchPage().FilterIsSelected.isDisplayed());
+        extentLogger.info("Customer can search what ever he wants!!!!Test Case Passed");
+
+
     }
 
 

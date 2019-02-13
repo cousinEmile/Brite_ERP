@@ -35,10 +35,10 @@ public class BRIT_109 extends TestBase {
         extentLogger.info("6.User clicks on All-Day box");
         extentLogger.info("Expected Result: User should be presented with a pop-up box");
         wait(8);
-        pages.calendar().allDayBox.click();
+        pages.calendar().sixAmBox.click();
 
         extentLogger.info("7.User enters text to the summary input box");
-        pages.calendar().summaryInputBox.sendKeys("Testing Purposes");
+        pages.calendar().summaryInputBox.sendKeys("Testing created by User");
 
         extentLogger.info("8.User then clicks on create button");
         extentLogger.info("Expected Result: User should have successfully created an event");

@@ -3,6 +3,7 @@ package com.BriteErp.tests.SearchFunctionality.Merry.functional_tests;
 import com.BriteErp.utilities.TestBase;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BRIT_529_SaveFavorites extends TestBase {
@@ -35,13 +36,15 @@ public class BRIT_529_SaveFavorites extends TestBase {
         pages.searchPage().clickOnSaveCurrentSearch.click();
 
 
-
+        wait(5);
         extentLogger.info("Sending Text On Save Current Search Box ");
-        setAttribute(pages.searchPage().SendTextOnSaveCurrentSearchBox, "type", "Heloo"  );
-        //pages.searchPage().SendTextOnSaveCurrentSearchBox.sendKeys("Heloo");
+        setAttribute(pages.searchPage().SendTextOnSaveCurrentSearchBox, "type", "hello" );
+
 
         extentLogger.info("Clicking to save the text under save current search");
         pages.searchPage().SaveButtonOnFavorites.click();
 
+        Assert.assertTrue(pages.searchPage().FilterIsSelected.isDisplayed());
+        extentLogger.info("Custome can save his search!!!!!!Test Case Passed");
     }
 }

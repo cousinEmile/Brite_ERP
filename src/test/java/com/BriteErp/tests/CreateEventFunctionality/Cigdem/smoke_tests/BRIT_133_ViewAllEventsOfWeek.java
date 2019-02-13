@@ -9,7 +9,7 @@ import java.util.List;
 
 public class BRIT_133_ViewAllEventsOfWeek extends TestBase {
 
-    @Test
+    @Test(groups = "smoke")
     public void BRIT_133() {
         extentLogger = report.createTest("BRIT_133_ListIcon Test");
 

@@ -1,6 +1,7 @@
 package com.BriteErp.tests.SearchFunctionality.Merry.functional_tests;
 
 import com.BriteErp.utilities.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BRIT_534_AddToDashBordFvaorite  extends TestBase {
@@ -41,6 +42,11 @@ public class BRIT_534_AddToDashBordFvaorite  extends TestBase {
 
         extentLogger.info("Clicking on Add Icone to save the Favorite to Dash Board");
         pages.searchPage().AddButtonUnderADDToMyDash.click();
+
+        extentLogger.info("Verify that text adds in dash board");
+        pages.searchPage().DahsboarboardButton.click();
+        Assert.assertTrue(pages.searchPage().getTextConfirmation.isDisplayed());
+        extentLogger.info("message is added in dash board");
 
     }
 }

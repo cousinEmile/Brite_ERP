@@ -1,6 +1,7 @@
 package com.BriteErp.tests.SearchFunctionality.Merry.smoke_tests;
 
 import com.BriteErp.utilities.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BRIT_529_SaveFavorites  extends TestBase {
@@ -32,13 +33,18 @@ public class BRIT_529_SaveFavorites  extends TestBase {
         extentLogger.info("Clicking to save the current search ");
         pages.searchPage().clickOnSaveCurrentSearch.click();
 
+        pages.searchPage().SendTextOnSaveCurrentSearchBox.clear();
 
-        wait(5);
+       waitForPageToLoad(10);
         extentLogger.info("Sending Text On Save Current Search Box ");
         pages.searchPage().SendTextOnSaveCurrentSearchBox.sendKeys("Heloo");
 
         extentLogger.info("Clicking to save the text under save current search");
         pages.searchPage().SaveButtonOnFavorites.click();
+
+        extentLogger.info("Verifying customer could save dhis favorite search");
+        Assert.assertTrue(pages.searchPage().FilterSearchTextConfirmation.isDisplayed());
+        extentLogger.info("Able to save his search!!!!!!!Test Case Passed");
 
     }
 

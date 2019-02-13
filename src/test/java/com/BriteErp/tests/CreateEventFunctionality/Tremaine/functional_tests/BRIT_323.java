@@ -2,6 +2,7 @@ package com.BriteErp.tests.CreateEventFunctionality.Tremaine.functional_tests;
 
 import com.BriteErp.utilities.ConfigurationReader;
 import com.BriteErp.utilities.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BRIT_323 extends TestBase {
@@ -33,14 +34,13 @@ public class BRIT_323 extends TestBase {
 
         extentLogger.info("6.User clicks on All-Day box");
         extentLogger.info("Expected Result: User should be presented with a pop-up box");
-        wait(10);
-        pages.calendar().allDayBox.click();
+        pages.calendar().sevenAmBox.click();
 
         extentLogger.info("7.User clicks on edit button");
         extentLogger.info("Expected Result: User should see more options for their event");
         pages.calendar().editButton.click();
+        Assert.assertTrue(pages.calendar().editButton.isEnabled());
 
 
 }
 }
-//as

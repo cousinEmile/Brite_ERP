@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Brite_ERP Tests" verbose="2">
+
+
+
+    <test name="Login tests using Chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <packages>
+            <package name="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests"></package>
+        </packages>
+    </test>
+
+    <test name="Login tests using Firefox">
+
+        <parameter name="browser" value="firefox"></parameter>
+        <packages>
+            <package name="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests"></package>
+        </packages>
+    </test>
+
+
+
+
+
+</suite>

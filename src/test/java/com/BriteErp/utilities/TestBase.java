@@ -1,14 +1,13 @@
 package com.BriteErp.utilities;
 
+import com.BriteErp.utilities.listeners.Retry;
+import com.BriteErp.utilities.listeners.RetryListener;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -22,16 +21,17 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
     protected static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
 
-    @BeforeMethod
-    public void setupMethod() {
-        driver = Driver.getDriver();
+    @Parameters("browser")
+    @BeforeMethod(alwaysRun = true)
+    public void setupMethod(@Optional String browser) {
+        driver = Driver.getDriver(browser);
         pages = new Pages();
         driver.manage().timeouts().implicitlyWait(13, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 //        driver.get(ConfigurationReader.getProperties("url"));
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDownMethod(ITestResult result) throws IOException {
         /* if any test fails, it can detect it, take a screen shot at that point and attach a report */
         if (result.getStatus() == ITestResult.FAILURE) {
@@ -44,11 +44,11 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
             extentLogger.skip("Test Case Skipped: " + result.getName());
         }
 
-//       Driver.closeDriver();
+    Driver.closeDriver();
     }
 
 
-    @BeforeTest
+    @BeforeTest(alwaysRun = true)
     public void setUpTest() {
         report = new ExtentReports();
         String filePath = System.getProperty("user.dir") + "/test-output/report.html";
@@ -65,7 +65,7 @@ public class TestBase extends BrowserUtils implements ApplicationConstants{
 
     }
 
-    @AfterTest
+    @AfterTest(alwaysRun = true)
     public void tearDownTest() {
         report.flush();
     }

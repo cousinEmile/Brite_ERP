@@ -4,7 +4,7 @@ public interface TopNavigationBarIdentifier {
 
 
     String TopNavigationBarDiscuss_ButtonXpath    ="//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li/a";
-    String TopNavigationBarCalendar_ButtonXpath   ="//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[2]/a/span";
+    String TopNavigationBarCalendar_ButtonXpath   ="//div[@class='navbar-collapse collapse']/ul[1]/li[2]/a/span";
     String TopNavigationBarNotes_ButtonXpath      ="//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[3]/a";
     String TopNavigationBarContacts_ButtonXpath   ="//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[4]/a";
     String TopNavigationBarWebsite_ButtonXpath    ="//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li[5]/a";

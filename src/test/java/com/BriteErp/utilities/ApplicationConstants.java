@@ -25,7 +25,6 @@ public interface ApplicationConstants {
     String LOAD_FILE_INPUT_LINE = "No file chosen...";
     String MAP_YOUR_COULMS_TO_IMPORT = "Map your columns to import";
     String MYEVENTS_SEARCHBARICON_LABEL = "My Events";
-    String IMPORTED_FILE_UTILITY = "Utility.xlsx";
     String RELOAD_FILE_ICON = "Reload File";
     String HELP_ICON = "Help";
     String HELP_URL = "https://www.odoo.com/documentation/user/11.0/general/base_import/import_faq.html";
@@ -48,6 +47,11 @@ public interface ApplicationConstants {
     String UNCAUGHT_EVENT_SETTINGS_CHANGED_MESSAGE = "Uncaught event settings_changed inappropriate in current state previewing";
     String OK_BUTTON = "Ok";
     String InventoryManager = "InventoryManager 2";
+    String CWD = System.getProperty("user.dir");
+    String UPLOADED_FILE_UTILITY_SAID = CWD + "/uploaded_files/utility.xlsx";
+    String EXPECTED_FILE_UTILITY_SAID = CWD + "/uploaded_files/utility.xlsx";
+    String IMPORTED_UTILITY_XLSX = "utility.xlsx";
+
 
 
 

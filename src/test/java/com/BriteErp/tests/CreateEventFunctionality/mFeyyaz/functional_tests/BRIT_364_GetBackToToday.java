@@ -47,12 +47,6 @@ public class BRIT_364_GetBackToToday extends TestBase {
         extentLogger.pass(" getBackToTodayTest Pass");
     }
 
-
-
-
-
-
-
     public String getCurrentMonth() {
         String currentMonth = pages.calendar().theCurrentMonthText.getText();
         return currentMonth;

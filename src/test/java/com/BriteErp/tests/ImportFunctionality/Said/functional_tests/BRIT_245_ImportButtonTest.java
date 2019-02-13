@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class BRIT_245_ImportButtonTest extends TestBase {
-
+//said
     @Test
     public void BRIT_245() {
 
@@ -27,6 +27,7 @@ public class BRIT_245_ImportButtonTest extends TestBase {
         extentLogger.info("Expected  Result: Login successful");
         pages.login().managerLogin();
 
+        wait(2);
         extentLogger.info("5. Click Calendar ");
         extentLogger.info("Expected Result: Calendar page is displayed");
         pages.topNavigationBar().calendar_button.click();
@@ -41,9 +42,9 @@ public class BRIT_245_ImportButtonTest extends TestBase {
 
         extentLogger.info("8. upload file \"Utility.xlsx\" ");
         extentLogger.info("Expected  Result: \"Utility.xlsx\" is displayed ");
-        String path = "C:\\Users\\saidy\\Downloads\\Utility.xlsx";
-        pages.importPage().loadFile.sendKeys(path);
-        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), "Utility.xlsx");
+
+        pages.importPage().loadFile.sendKeys(UPLOADED_FILE_UTILITY_SAID);
+        Assert.assertEquals(pages.importPage().loadFileInputLine.getAttribute("value"), IMPORTED_UTILITY_XLSX);
 
         extentLogger.info("9. verify that \"Import\" on the left top corner side under Meetings / Import a File");
         extentLogger.info("Expected  Result: Import page is displayed");
