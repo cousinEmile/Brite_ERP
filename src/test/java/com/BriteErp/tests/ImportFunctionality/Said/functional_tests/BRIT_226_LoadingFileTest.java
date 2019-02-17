@@ -9,17 +9,23 @@ public class BRIT_226_LoadingFileTest extends TestBase {
 
     @Test
     public void BRIT_226(){
-        extentLogger = report.createTest("BRIT_222_Loading File Test");
+        extentLogger = report.createTest("BRIT_226_Loading File Test");
 
         extentLogger.info("1. Pre-Condition Environment is up and running.");
+
+        getScreenshot("1"); // this method gets screen shot and we can add it to our Jira
 
         extentLogger.info("2. Go to url");
         extentLogger.info("Expected  Result: Home page is displayed.");
         pages.login().open();
 
+        getScreenshot("2"); // this method gets screen shot and we can add it to our Jira
+
         extentLogger.info("3. Click Brite Erp Demo");
         extentLogger.info("Expected  Result: Clicked");
         pages.landing().BriteErpDemo_button.click();
+
+        getScreenshot("3"); // this method gets screen shot and we can add it to our Jira
 
         extentLogger.info("4. Enter username and password for Inventory Manager 2 ");
         extentLogger.info("Expected  Result: Login successful");
@@ -42,8 +48,8 @@ public class BRIT_226_LoadingFileTest extends TestBase {
         extentLogger.info("Expected  Result: Load file should open \" C:\\Users\\saidy\\IdeaProjects\\Brite_ERP\\uploaded_files\\utility.xlsx\" ");
         extentLogger.info("9. click Open to import all information");
         extentLogger.info("Expected  Result: all information on the Excel file should be dispayed under search File");
-
         pages.importPage().loadFile.sendKeys(UPLOADED_FILE_UTILITY_SAID);
+        System.out.println(UPLOADED_FILE_UTILITY_SAID);
 
         extentLogger.info("10. verify that \"Utility.xlsx\" displayed on the Input Line");
         extentLogger.info("Expected  Result: \"Utility.xlsx\" is displayed on the Input Line");
@@ -55,6 +61,6 @@ public class BRIT_226_LoadingFileTest extends TestBase {
         Assert.assertEquals(MAP_YOUR_COULMS_TO_IMPORT, pages.importPage().mapYourColumnsToImport.getText());
 
 
-        extentLogger.pass("BRIT_222_Loading File Test PASS");
+        extentLogger.pass("BRIT_226_Loading File Test PASS");
     }
 }

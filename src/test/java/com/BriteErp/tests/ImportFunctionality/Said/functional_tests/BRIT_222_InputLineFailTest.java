@@ -52,7 +52,7 @@ public class BRIT_222_InputLineFailTest extends TestBase {
 
     extentLogger.info("10. verify that\"C:\\Users\\saidy\\IdeaProjects\\Brite_ERP\\uploaded_files\\utility.xlsx\" file uploaded after typing  ");
     extentLogger.info("Expected  Result: the file does not uploaded. Fail");
-    Assert.assertNotEquals(pages.importPage().mapYourColumnsToImport.getText(), MAP_YOUR_COULMS_TO_IMPORT);
+    Assert.assertNotEquals(pages.importPage().loadFileInputLine.getAttribute("value"), UPLOADED_FILE_UTILITY_SAID);
 
     extentLogger.pass("BRIT_222_Input Line Fail Test FAIL");
 

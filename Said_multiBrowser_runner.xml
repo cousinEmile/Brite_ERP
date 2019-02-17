@@ -11,13 +11,11 @@
     </test>
 
     <test name="Login tests using Firefox">
-
         <parameter name="browser" value="firefox"></parameter>
         <packages>
             <package name="com.BriteErp.tests.ImportFunctionality.Said.smoke_tests"></package>
         </packages>
     </test>
-
 
 
 
